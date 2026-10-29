@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     headers: { Authorization: `Bearer ${key}` },
     body: out,
   });
-  if (!res.ok) return upstreamError(res);
+  if (!res.ok) return await upstreamError(res);
   const { text } = (await res.json()) as { text: string };
   return Response.json({ text: text.trim() });
 }

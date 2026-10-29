@@ -159,3 +159,29 @@ describe("ai evaluation schema", () => {
     expect(evaluation.safeParse({ scores: "bad" }).success).toBe(false);
   });
 });
+
+describe("groq", () => {
+  it("снятая модель → повтор с моделью по умолчанию; gpt-oss получает reasoning_effort и запас токенов", async () => {
+    const { groqChat, DEFAULT_MODEL, upstreamError } = await import("./ai/groq");
+    const sent: Record<string, unknown>[] = [];
+    const orig = globalThis.fetch;
+    globalThis.fetch = (async (_url: string, init: RequestInit) => {
+      const body = JSON.parse(String(init.body));
+      sent.push(body);
+      return body.model === "llama-3.3-70b-versatile"
+        ? Response.json({ error: { message: "The model `llama-3.3-70b-versatile` has been decommissioned" } }, { status: 400 })
+        : Response.json({ ok: true });
+    }) as typeof fetch;
+    try {
+      const res = await groqChat("k", { model: "llama-3.3-70b-versatile", max_tokens: 200, messages: [] });
+      expect(res.ok).toBe(true);
+      expect(sent.map((b) => b.model)).toEqual(["llama-3.3-70b-versatile", DEFAULT_MODEL]);
+      expect(sent[0].reasoning_effort).toBeUndefined();
+      expect(sent[1]).toMatchObject({ reasoning_effort: "low", max_completion_tokens: 1224 });
+      const err = await upstreamError(Response.json({ error: { message: "boom" } }, { status: 500 }));
+      expect(await err.json()).toEqual({ error: "upstream", status: 500, detail: "boom" });
+    } finally {
+      globalThis.fetch = orig;
+    }
+  });
+});

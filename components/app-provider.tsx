@@ -9,11 +9,15 @@ import { t as tr, type Key, type Lang } from "@/lib/i18n";
 // Только на устройстве (localStorage): ключ Groq, модель, упрощённый режим.
 export type LocalSettings = { groqKey: string; groqModel: string; simple: boolean; lang: Lang; theme: "dark" | "light" };
 const LS_KEY = "dtz-settings";
-const defaults: LocalSettings = { groqKey: "", groqModel: "llama-3.3-70b-versatile", simple: false, lang: "ru", theme: "dark" };
+const defaults: LocalSettings = { groqKey: "", groqModel: "openai/gpt-oss-120b", simple: false, lang: "ru", theme: "dark" };
+
+// Модели, которые Groq уже отключил (console.groq.com/docs/deprecations).
+const RETIRED = /^(llama-3\.3-70b-versatile|llama-3\.1-8b-instant|qwen\/qwen3-32b|qwen\/qwen3\.6-27b|meta-llama\/llama-4|moonshotai\/kimi|gemma|mixtral|deepseek)/;
 
 function readLocal(): LocalSettings {
   try {
-    return { ...defaults, ...JSON.parse(localStorage.getItem(LS_KEY) ?? "{}") };
+    const s: LocalSettings = { ...defaults, ...JSON.parse(localStorage.getItem(LS_KEY) ?? "{}") };
+    return RETIRED.test(s.groqModel) ? { ...s, groqModel: defaults.groqModel } : s;
   } catch {
     return defaults;
   }

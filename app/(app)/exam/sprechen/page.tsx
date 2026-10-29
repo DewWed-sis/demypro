@@ -8,7 +8,7 @@ import { GlassButton, GlassCard } from "@/components/ui";
 import { RecordButton } from "@/components/record-button";
 import { EvaluationView } from "@/components/evaluation-view";
 import { Redemittel, type RedemittelGroup } from "@/components/redemittel";
-import { aiErrorKey, aiJson, chatStream, transcribe } from "@/lib/ai/client";
+import { aiErrorText, aiJson, chatStream, transcribe } from "@/lib/ai/client";
 import type { ExtractedError, SpeakingEvaluation } from "@/lib/ai/schemas";
 import { loadTasks, saveAttempt, saveErrors, totalScore, type ExamTask } from "@/lib/exam";
 import { completeBlock } from "@/lib/cards";
@@ -67,7 +67,7 @@ function Sprechen() {
       setMsgs([...history, { role: "assistant", content: reply }]);
       speak(reply, 0.95);
     } catch (e) {
-      setError(t(aiErrorKey(e)));
+      setError(aiErrorText(e, t));
     } finally {
       setBusy("");
     }
@@ -82,7 +82,7 @@ function Sprechen() {
       if (!text) return setBusy("");
       await ask([...msgs, { role: "user", content: text }]);
     } catch (e) {
-      setError(t(aiErrorKey(e)));
+      setError(aiErrorText(e, t));
       setBusy("");
     }
   }
@@ -92,7 +92,7 @@ function Sprechen() {
     try {
       setHint(await chatStream(body(msgs, { hint: lang }), settings.groqKey, setHint));
     } catch (e) {
-      setError(t(aiErrorKey(e)));
+      setError(aiErrorText(e, t));
     } finally {
       setBusy("");
     }
@@ -132,7 +132,7 @@ function Sprechen() {
       await saveErrors(errors, attemptId);
       setSaved(errors.length > 0);
     } catch (e) {
-      setError(e instanceof Error && !("code" in e) ? e.message : t(aiErrorKey(e)));
+      setError(e instanceof Error && !("code" in e) ? e.message : aiErrorText(e, t));
     } finally {
       setBusy("");
     }

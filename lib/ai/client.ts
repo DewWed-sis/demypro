@@ -5,8 +5,11 @@ import type { Key } from "@/lib/i18n";
 // Клиентский вызов AI-роутов: ключ из localStorage в заголовке x-groq-key,
 // при 429 ждём столько, сколько сказал Groq (Retry-After), и повторяем.
 export class AiError extends Error {
-  constructor(public code: "no_key" | "bad_key" | "rate_limit" | "bad_input" | "upstream" | "network") {
-    super(code);
+  constructor(
+    public code: "no_key" | "bad_key" | "rate_limit" | "bad_input" | "upstream" | "network",
+    public detail?: string,
+  ) {
+    super(detail ? `${code}: ${detail}` : code);
   }
 }
 
@@ -31,8 +34,8 @@ export async function aiFetch(path: string, key: string, body: BodyInit | object
       await sleep(Math.min(30, Number(res.headers.get("retry-after")) || 5) * 1000);
       continue;
     }
-    const { error } = (await res.json().catch(() => ({}))) as { error?: AiError["code"] };
-    throw new AiError(error ?? "upstream");
+    const { error, detail } = (await res.json().catch(() => ({}))) as { error?: AiError["code"]; detail?: string };
+    throw new AiError(error ?? "upstream", detail);
   }
 }
 
@@ -71,3 +74,7 @@ export async function chatStream(body: object, key: string, onDelta: (text: stri
 export async function aiJson<T>(path: string, key: string, body: object): Promise<T> {
   return (await aiFetch(path, key, body)).json() as Promise<T>;
 }
+
+/** Текст ошибки для экрана: понятная фраза + причина от Groq, если есть. */
+export const aiErrorText = (e: unknown, t: (k: Key) => string) =>
+  t(aiErrorKey(e)) + (e instanceof AiError && e.detail ? ` (${e.detail})` : "");

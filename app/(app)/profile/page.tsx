@@ -69,7 +69,12 @@ export default function ProfilePage() {
       const res = await fetch("/api/ai/ping", { method: "POST", headers: { "x-groq-key": key.trim() } });
       const body = (await res.json()) as { ok?: boolean; models?: string[] };
       setKeyStatus(body.ok ? "ok" : "bad");
-      if (body.models) setModels(body.models);
+      if (body.models) {
+        setModels(body.models);
+        // Выбранной модели больше нет у Groq — берём рекомендованную.
+        if (!body.models.includes(settings.groqModel))
+          setSettings({ groqModel: body.models.includes("openai/gpt-oss-120b") ? "openai/gpt-oss-120b" : body.models[0] });
+      }
     } catch {
       setKeyStatus("bad");
     }

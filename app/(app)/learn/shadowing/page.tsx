@@ -8,7 +8,7 @@ import { GlassButton, GlassCard } from "@/components/ui";
 import { RecordButton } from "@/components/record-button";
 import { DiffView } from "@/components/diff-view";
 import { DeText } from "@/components/flashcard";
-import { aiErrorKey, transcribe } from "@/lib/ai/client";
+import { aiErrorText, transcribe } from "@/lib/ai/client";
 import { completeBlock, shadowingItems, type Item } from "@/lib/cards";
 import { wordDiff } from "@/lib/diff";
 import { play, speak } from "@/lib/audio";
@@ -40,7 +40,7 @@ function Shadowing() {
       setTried(n);
       if (plan && n === PLAN_GOAL) completeBlock("speak");
     } catch (e) {
-      setError(t(aiErrorKey(e)));
+      setError(aiErrorText(e, t));
     } finally {
       setBusy(false);
     }

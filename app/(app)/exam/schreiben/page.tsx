@@ -7,7 +7,7 @@ import { useApp } from "@/components/app-provider";
 import { GlassButton, GlassCard } from "@/components/ui";
 import { EvaluationView } from "@/components/evaluation-view";
 import { Redemittel } from "@/components/redemittel";
-import { aiErrorKey, aiJson } from "@/lib/ai/client";
+import { aiErrorText, aiJson } from "@/lib/ai/client";
 import type { Evaluation, ExtractedError } from "@/lib/ai/schemas";
 import { loadTasks, saveAttempt, saveErrors, totalScore, type ExamTask } from "@/lib/exam";
 import { completeBlock } from "@/lib/cards";
@@ -127,7 +127,7 @@ function Schreiben() {
       await saveErrors(errors, attemptId);
       setSaved(errors.length > 0);
     } catch (e) {
-      setError(t(aiErrorKey(e)));
+      setError(aiErrorText(e, t));
     } finally {
       setBusy(false);
     }

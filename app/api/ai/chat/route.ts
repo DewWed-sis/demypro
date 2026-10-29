@@ -1,4 +1,4 @@
-import { badInput, GROQ_BASE, groqHeaders, groqKey, noKey, upstreamError } from "@/lib/ai/groq";
+import { badInput, groqChat, groqKey, noKey, upstreamError } from "@/lib/ai/groq";
 import { examinerPrompt, hintPrompt } from "@/lib/ai/prompts";
 import { chatInput } from "@/lib/ai/schemas";
 
@@ -11,18 +11,14 @@ export async function POST(req: Request) {
   const { model, level, part, task, messages, hint } = input.data;
 
   const system = examinerPrompt(part, level, task) + (hint ? `\n\n${hintPrompt(hint)}` : "");
-  const res = await fetch(`${GROQ_BASE}/chat/completions`, {
-    method: "POST",
-    headers: groqHeaders(key),
-    body: JSON.stringify({
-      model,
-      stream: true,
-      temperature: 0.7,
-      max_tokens: hint ? 250 : 160,
-      messages: [{ role: "system", content: system }, ...(messages.length ? messages : [{ role: "user", content: "(Prüfung beginnt)" }])],
-    }),
+  const res = await groqChat(key, {
+    model,
+    stream: true,
+    temperature: 0.7,
+    max_tokens: hint ? 300 : 200,
+    messages: [{ role: "system", content: system }, ...(messages.length ? messages : [{ role: "user", content: "(Prüfung beginnt)" }])],
   });
-  if (!res.ok || !res.body) return upstreamError(res);
+  if (!res.ok || !res.body) return await upstreamError(res);
 
   // SSE "data: {...choices[0].delta.content}" → чистый текст
   const decoder = new TextDecoder();
