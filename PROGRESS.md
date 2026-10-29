@@ -36,6 +36,7 @@
 - Тест Vitest: 310 вопросов, NRW 301–310, 4 варианта, переводы согласованы.
 
 ## Инфраструктура
+- GitHub: remote `origin` = https://github.com/DewWed-sis/demypro.git. **Пушить только по явной команде владельца «запуш на гитхаб».**
 - Supabase: проект `deutsch-dtz` (ref gokbwmzuumzhbmffzele, eu-west-2). Миграция и сиды применены через SQL Editor.
 - `.env.local`: URL + publishable key (публичные). Service-ключ не используется нигде.
 
@@ -70,4 +71,3 @@
 - В survival-фразах была ошибка «Kein Ahnung» → исправлено на «Keine Ahnung».
 
 ## Блокеры (нужен владелец)
-- **GitHub push:** создание приватного репо и `git push` заблокировал классификатор прав Claude Code (не Git). Нужно разрешить в настройках или выполнить `gh repo create deutsch-dtz --private --source=. --remote=origin --push` вручную.
