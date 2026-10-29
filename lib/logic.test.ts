@@ -72,3 +72,19 @@ describe("content", () => {
     expect(ids.size).toBeGreaterThanOrEqual(300);
   });
 });
+
+describe("lid", () => {
+  it("310 официальных вопросов, NRW 301–310, переводы согласованы", async () => {
+    const { lidRows } = await import("./lid-source");
+    const rows = lidRows();
+    expect(rows).toHaveLength(310);
+    expect(rows.filter((r) => r.bundesland === "NW").map((r) => r.id)).toEqual([301, 302, 303, 304, 305, 306, 307, 308, 309, 310]);
+    for (const r of rows) {
+      expect(r.answers, `#${r.id}`).toHaveLength(4);
+      expect(r.correct).toBeGreaterThanOrEqual(0);
+      expect(r.correct).toBeLessThan(4);
+      if (r.answers_ru) expect(r.answers_ru, `#${r.id} ru`).toHaveLength(4);
+      if (r.answers_uk) expect(r.answers_uk, `#${r.id} uk`).toHaveLength(4);
+    }
+  });
+});

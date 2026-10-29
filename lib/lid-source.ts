@@ -15,8 +15,14 @@ const images: Record<number, string> = {
   21: "/lid/q21-{n}.webp",
   209: "/lid/q21-{n}.webp",
   301: "/lid/q301-{n}.webp",
+  226: "/lid/q226-{n}.webp",
   55: "/lid/q55.webp",
+  70: "/lid/q70.webp",
+  130: "/lid/q130.webp",
+  176: "/lid/q176.webp",
+  181: "/lid/q181.webp",
   216: "/lid/q216.webp",
+  235: "/lid/q235.webp",
   308: "/lid/q308.webp",
 };
 

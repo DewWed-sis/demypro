@@ -31,7 +31,7 @@ qs = questions(range(1, first_ii), 0) + [q for q in questions(range(nrw, nrw + 5
 for q in qs:
     del q["open"]
     # выделенные в PDF слова разбиты пробелом: «nicht i m», «zu r gesetzlichen»
-    t = re.sub(r"\bzu r ", "zur ", q["question"])
+    t = re.sub(r"\bzu r ", "zur ", q["question"]).replace("deu tsche", "deutsche").replace("wä hrend", "während")
     t = re.sub(r"\b([a-zA-ZäöüÄÖÜ]) ([a-zäöüß]+)\b", r"\1\2", t)
     q["question"] = re.sub(r"\s{2,}", " ", t)
 print("total", len(qs), "missing", sorted(set(range(1, 311)) - {q["n"] for q in qs}), "empty", [q["n"] for q in qs if len(q["question"]) < 8])
