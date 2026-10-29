@@ -21,10 +21,27 @@ export type Item = {
   lesson_id: string | null;
 };
 
-export type QueueEntry = { item: Item; cardId: string | null; fsrs: StoredCard };
+export type QueueEntry = { item: Item; cardId: string | null; fsrs: StoredCard; type?: "content" | "error" };
+
+const REVIEW_TYPES = ["content", "error"];
 
 const ITEM_COLS = "id, kind, de, ru, uk, cloze, example_de, example_ru, example_uk, article, plural, audio_url, lesson_id";
 const today = () => ymd();
+
+/** Личная карточка из тетради ошибок: спереди правило и ошибочный вариант, сзади исправление. */
+async function errorItems(ids: string[]) {
+  if (!ids.length) return new Map<string, Item>();
+  const { data } = await supabase.from("error_log").select("id, example, correction, rule_ru, rule_uk").in("id", ids);
+  return new Map(
+    (data ?? []).map((e) => [
+      e.id as string,
+      {
+        id: e.id, kind: "phrase", de: e.correction, ru: e.rule_ru || "Исправь ошибку", uk: e.rule_uk || "Виправ помилку",
+        cloze: `✗ ${e.example}`, example_de: null, example_ru: null, example_uk: null, article: null, plural: null, audio_url: null, lesson_id: null,
+      } as Item,
+    ]),
+  );
+}
 
 async function itemsByIds(ids: string[]) {
   if (!ids.length) return new Map<string, Item>();
@@ -37,7 +54,7 @@ export async function dueCount() {
   const { count } = await supabase
     .from("user_cards")
     .select("id", { count: "exact", head: true })
-    .eq("item_type", "content")
+    .in("item_type", REVIEW_TYPES)
     .lte("due", new Date().toISOString());
   return count ?? 0;
 }
@@ -45,16 +62,17 @@ export async function dueCount() {
 export async function loadDue(limit = 60): Promise<QueueEntry[]> {
   const { data, error } = await supabase
     .from("user_cards")
-    .select("id, item_id, fsrs")
-    .eq("item_type", "content")
+    .select("id, item_id, item_type, fsrs")
+    .in("item_type", REVIEW_TYPES)
     .lte("due", new Date().toISOString())
     .order("due")
     .limit(limit);
   if (error) throw error;
-  const items = await itemsByIds(data.map((c) => c.item_id));
+  const items = await itemsByIds(data.filter((c) => c.item_type === "content").map((c) => c.item_id));
+  const errors = await errorItems(data.filter((c) => c.item_type === "error").map((c) => c.item_id));
   return data.flatMap((c) => {
-    const item = items.get(c.item_id);
-    return item ? [{ item, cardId: c.id as string, fsrs: c.fsrs as StoredCard }] : [];
+    const item = c.item_type === "error" ? errors.get(c.item_id) : items.get(c.item_id);
+    return item ? [{ item, cardId: c.id as string, fsrs: c.fsrs as StoredCard, type: c.item_type as "content" | "error" }] : [];
   });
 }
 
@@ -82,7 +100,7 @@ export async function rate(entry: QueueEntry, rating: Grade) {
   } else {
     const { data, error } = await supabase
       .from("user_cards")
-      .upsert({ item_type: "content", item_id: entry.item.id, fsrs: card, due: card.due }, { onConflict: "user_id,item_type,item_id" })
+      .upsert({ item_type: entry.type ?? "content", item_id: entry.item.id, fsrs: card, due: card.due }, { onConflict: "user_id,item_type,item_id" })
       .select("id")
       .single();
     if (error) throw error;

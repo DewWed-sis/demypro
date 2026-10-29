@@ -1,0 +1,61 @@
+{
+  "sprechen1": [
+    { "de": "Ich heiße … und komme aus …", "ru": "Меня зовут … и я из …", "uk": "Мене звуть … і я з …" },
+    { "de": "Ich wohne seit zwei Jahren in …", "ru": "Я живу в … уже два года", "uk": "Я живу в … вже два роки" },
+    { "de": "Ich bin verheiratet und habe zwei Kinder.", "ru": "Я женат/замужем, у меня двое детей.", "uk": "Я одружений/заміжня, маю двох дітей." },
+    { "de": "Von Beruf bin ich …, aber im Moment arbeite ich als …", "ru": "По профессии я …, но сейчас работаю …", "uk": "За фахом я …, але зараз працюю …" },
+    { "de": "Ich spreche Russisch, Ukrainisch und ein bisschen Deutsch.", "ru": "Я говорю по-русски, по-украински и немного по-немецки.", "uk": "Я розмовляю російською, українською й трохи німецькою." },
+    { "de": "Können Sie das bitte wiederholen?", "ru": "Повторите, пожалуйста.", "uk": "Повторіть, будь ласка." },
+    { "de": "Entschuldigung, das habe ich nicht verstanden.", "ru": "Извините, я не понял(а).", "uk": "Вибачте, я не зрозумів(ла)." }
+  ],
+  "sprechen2": [
+    { "de": "Auf dem Bild sehe ich …", "ru": "На картинке я вижу …", "uk": "На картинці я бачу …" },
+    { "de": "Im Vordergrund / Im Hintergrund ist …", "ru": "На переднем / заднем плане …", "uk": "На передньому / задньому плані …" },
+    { "de": "Ich glaube, die Leute sind gerade …", "ru": "Думаю, люди сейчас …", "uk": "Думаю, люди зараз …" },
+    { "de": "Das kenne ich auch. Bei mir ist das so: …", "ru": "Мне это знакомо. У меня так: …", "uk": "Мені це знайоме. У мене так: …" },
+    { "de": "In meinem Heimatland ist das ein bisschen anders.", "ru": "В моей стране это немного иначе.", "uk": "У моїй країні це трохи інакше." },
+    { "de": "Früher habe ich …, aber jetzt …", "ru": "Раньше я …, а теперь …", "uk": "Раніше я …, а тепер …" },
+    { "de": "Mir ist wichtig, dass …", "ru": "Мне важно, чтобы …", "uk": "Мені важливо, щоб …" }
+  ],
+  "sprechen3": [
+    { "de": "Was hältst du davon, wenn wir …?", "ru": "Как ты смотришь на то, чтобы мы …?", "uk": "Як ти дивишся на те, щоб ми …?" },
+    { "de": "Ich schlage vor, dass wir am Samstag …", "ru": "Предлагаю в субботу …", "uk": "Пропоную в суботу …" },
+    { "de": "Gute Idee! / Das finde ich gut.", "ru": "Хорошая идея! / Мне нравится.", "uk": "Гарна ідея! / Мені подобається." },
+    { "de": "Hm, ich weiß nicht. Vielleicht lieber …", "ru": "Хм, не знаю. Может, лучше …", "uk": "Хм, не знаю. Може, краще …" },
+    { "de": "Am Samstag kann ich leider nicht. Geht es auch am Sonntag?", "ru": "В субботу я, к сожалению, не могу. А в воскресенье?", "uk": "У суботу я, на жаль, не можу. А в неділю?" },
+    { "de": "Wer kümmert sich um …?", "ru": "Кто займётся …?", "uk": "Хто займеться …?" },
+    { "de": "Das übernehme ich.", "ru": "Это беру на себя.", "uk": "Це беру на себе." },
+    { "de": "Also, dann machen wir es so: …", "ru": "Итак, тогда делаем так: …", "uk": "Отже, тоді робимо так: …" }
+  ],
+  "formell": [
+    { "de": "Sehr geehrte Damen und Herren,", "ru": "Уважаемые дамы и господа, (имя неизвестно)", "uk": "Шановні пані та панове, (ім'я невідоме)" },
+    { "de": "Sehr geehrte Frau Müller, / Sehr geehrter Herr Müller,", "ru": "Уважаемая госпожа / Уважаемый господин Мюллер,", "uk": "Шановна пані / Шановний пане Мюллер," },
+    { "de": "ich schreibe Ihnen, weil …", "ru": "я пишу вам, потому что … (после запятой — со строчной)", "uk": "я пишу вам, тому що … (після коми — з малої)" },
+    { "de": "Ich möchte mich über … beschweren.", "ru": "Я хочу пожаловаться на …", "uk": "Я хочу поскаржитися на …" },
+    { "de": "Könnten Sie mir bitte mitteilen, ob …?", "ru": "Не могли бы вы сообщить, … ли …?", "uk": "Чи не могли б ви повідомити, чи …?" },
+    { "de": "Ich bitte Sie, … bis zum 15. Mai …", "ru": "Прошу вас … до 15 мая …", "uk": "Прошу вас … до 15 травня …" },
+    { "de": "Vielen Dank im Voraus.", "ru": "Заранее спасибо.", "uk": "Заздалегідь дякую." },
+    { "de": "Mit freundlichen Grüßen", "ru": "С уважением (без запятой в конце)", "uk": "З повагою (без коми в кінці)" }
+  ],
+  "informell": [
+    { "de": "Liebe Anna, / Lieber Max,", "ru": "Дорогая Анна, / Дорогой Макс,", "uk": "Люба Анно, / Любий Максе," },
+    { "de": "vielen Dank für deine Nachricht!", "ru": "спасибо за твоё сообщение!", "uk": "дякую за твоє повідомлення!" },
+    { "de": "Wie geht es dir? Mir geht es gut.", "ru": "Как дела? У меня всё хорошо.", "uk": "Як справи? У мене все добре." },
+    { "de": "Leider kann ich am Samstag nicht kommen, weil …", "ru": "К сожалению, в субботу я не смогу прийти, потому что …", "uk": "На жаль, у суботу я не зможу прийти, тому що …" },
+    { "de": "Hast du Lust, …?", "ru": "Хочешь …?", "uk": "Маєш бажання …?" },
+    { "de": "Ich freue mich auf deine Antwort.", "ru": "Жду твоего ответа.", "uk": "Чекаю на твою відповідь." },
+    { "de": "Viele Grüße / Liebe Grüße", "ru": "Привет / С любовью", "uk": "Привіт / З любов'ю" }
+  ],
+  "b1": [
+    { "de": "Zuerst … / Danach … / Zum Schluss …", "ru": "Сначала … / Потом … / В конце …", "uk": "Спочатку … / Потім … / Наприкінці …" },
+    { "de": "Außerdem möchte ich fragen, ob …", "ru": "Кроме того, хочу спросить, … ли …", "uk": "Крім того, хочу запитати, чи …" },
+    { "de": "Deshalb / Deswegen …", "ru": "Поэтому … (глагол сразу после!)", "uk": "Тому … (дієслово одразу після!)" },
+    { "de": "Obwohl ich wenig Zeit habe, …", "ru": "Хотя у меня мало времени, …", "uk": "Хоча в мене мало часу, …" },
+    { "de": "Ich hätte gern einen Termin.", "ru": "Я бы хотел(а) записаться.", "uk": "Я б хотів(ла) записатися." },
+    { "de": "Es wäre schön, wenn …", "ru": "Было бы хорошо, если бы …", "uk": "Було б добре, якби …" },
+    { "de": "Ich würde mich freuen, wenn Sie mir helfen könnten.", "ru": "Я был(а) бы рад(а), если бы вы мне помогли.", "uk": "Я був(ла) б радий(а), якби ви мені допомогли." },
+    { "de": "Falls Sie Fragen haben, erreichen Sie mich unter …", "ru": "Если будут вопросы, со мной можно связаться по …", "uk": "Якщо будуть питання, зі мною можна зв'язатися за …" },
+    { "de": "Leider ist … kaputt / funktioniert nicht.", "ru": "К сожалению, … сломан / не работает.", "uk": "На жаль, … зламаний / не працює." },
+    { "de": "Es tut mir leid, dass ich mich erst jetzt melde.", "ru": "Извини(те), что пишу только сейчас.", "uk": "Вибач(те), що пишу тільки зараз." }
+  ]
+}

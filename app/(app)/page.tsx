@@ -13,7 +13,7 @@ const parts = ["Hören", "Lesen", "Schreiben", "Sprechen", "LiD"];
 const blockMeta: Record<Block["kind"], { key: Key; href?: (b: Block) => string }> = {
   review: { key: "blockReview", href: (b) => `/learn/cards?mode=review&min=${b.minutes}` },
   new: { key: "blockNew", href: (b) => `/learn/cards?mode=new&min=${b.minutes}` },
-  speak: { key: "blockSpeak", href: () => "/learn/shadowing?plan=1" },
+  speak: { key: "blockSpeak", href: () => "/exam/sprechen?plan=1" },
   write: { key: "blockWrite" },
   lid: { key: "blockLid", href: () => "/lid/practice?plan=1" },
 };

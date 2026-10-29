@@ -52,3 +52,22 @@ const errKey: Record<AiError["code"], Key> = {
   upstream: "aiUpstream",
 };
 export const aiErrorKey = (e: unknown): Key => (e instanceof AiError ? errKey[e.code] : "aiUpstream");
+
+/** Стрим ответа экзаменатора: onDelta получает накопленный текст. */
+export async function chatStream(body: object, key: string, onDelta: (text: string) => void) {
+  const res = await aiFetch("/api/ai/chat", key, body);
+  const reader = res.body!.getReader();
+  const dec = new TextDecoder();
+  let text = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    text += dec.decode(value, { stream: true });
+    onDelta(text);
+  }
+  return text.trim();
+}
+
+export async function aiJson<T>(path: string, key: string, body: object): Promise<T> {
+  return (await aiFetch(path, key, body)).json() as Promise<T>;
+}

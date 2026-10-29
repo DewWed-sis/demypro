@@ -33,3 +33,22 @@ export const fileSchema = z.object({
 
 export type ContentFile = z.infer<typeof fileSchema>;
 export type ContentItem = z.infer<typeof itemSchema>;
+
+// Задания DTZ (/content/exam/*.json) → exam_tasks.
+const i18n = z.object({ de: z.string(), ru: z.string(), uk: z.string() });
+export const examTaskSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  part: z.enum(["hoeren", "lesen", "schreiben", "sprechen"]),
+  teil: z.number().int().min(1).max(5),
+  type: z.string(),
+  level: z.enum(["A1", "A2", "B1"]),
+  topic: z.string().nullable().default(null),
+  instructions: i18n,
+  text: z.string().optional(),
+  options: z.array(z.unknown()).default([]),
+  answers: z.array(z.unknown()).default([]),
+  meta: z.record(z.string(), z.unknown()).default({}),
+  time_limit_sec: z.number().int().optional(),
+});
+export const examFileSchema = z.array(examTaskSchema).min(1);
+export type ExamTaskSeed = z.infer<typeof examTaskSchema>;

@@ -51,6 +51,10 @@ export default function LearnPage() {
         <span>{t("shadowing")}</span>
         <span aria-hidden>🎙</span>
       </Link>
+      <Link href="/learn/errors" className={row}>
+        <span>{t("errorNotebook")}</span>
+        <span aria-hidden>📒</span>
+      </Link>
 
       {lessons.length > 0 && (
         <GlassCard className="space-y-1 p-3">
