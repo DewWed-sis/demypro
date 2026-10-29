@@ -36,6 +36,9 @@
 - Тест Vitest: 310 вопросов, NRW 301–310, 4 варианта, переводы согласованы.
 
 ## Инфраструктура
+- Сайт: https://demypro.vercel.app (Vercel-проект `demypro`, команда DewWed-sis, Hobby). Подключён к GitHub: каждый push в `main` = продакшн-деплой. Env в Vercel: только NEXT_PUBLIC_SUPABASE_URL и NEXT_PUBLIC_SUPABASE_ANON_KEY (публичные).
+- Supabase Auth: Site URL = https://demypro.vercel.app; Redirect URLs: demypro.vercel.app/**, превью demypro-*-dewwed-sis.vercel.app/**, localhost:3000/**.
+- Репозиторий demypro публичный — секретов в нём нет (.env.local в .gitignore).
 - GitHub: remote `origin` = https://github.com/DewWed-sis/demypro.git. **Пушить только по явной команде владельца «запуш на гитхаб».**
 - Supabase: проект `deutsch-dtz` (ref gokbwmzuumzhbmffzele, eu-west-2). Миграция и сиды применены через SQL Editor.
 - `.env.local`: URL + publishable key (публичные). Service-ключ не используется нигде.
