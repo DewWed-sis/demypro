@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "verkehr",
+  "lesson": { "id": "a1-verkehr-1", "title_ru": "Транспорт", "title_uk": "Транспорт", "sort": 17 },
+  "items": [
+    { "id": "a1-ver-01", "de": "Ich fahre mit dem Bus zur Arbeit.", "ru": "Я езжу на работу на автобусе.", "uk": "Я їжджу на роботу автобусом.", "cloze": "Ich fahre mit ___ Bus zur Arbeit.", "tags": ["case_dativ"] },
+    { "id": "a1-ver-02", "de": "Die U-Bahn kommt alle zehn Minuten.", "ru": "Метро ходит каждые десять минут.", "uk": "Метро ходить кожні десять хвилин." },
+    { "id": "a1-ver-03", "de": "Von welchem Gleis fährt der Zug ab?", "ru": "С какого пути отправляется поезд?", "uk": "З якої колії відправляється потяг?" },
+    { "id": "a1-ver-04", "de": "Ich muss in Köln umsteigen.", "ru": "Мне нужно сделать пересадку в Кёльне.", "uk": "Мені треба пересісти в Кельні.", "tags": ["verb_final"] },
+    { "id": "a1-ver-05", "de": "Der Bus fällt heute aus.", "ru": "Автобус сегодня отменён.", "uk": "Автобус сьогодні скасовано." },
+    { "id": "a1-ver-06", "de": "Ich habe ein Deutschlandticket.", "ru": "У меня есть Deutschlandticket (проездной).", "uk": "У мене є Deutschlandticket (проїзний)." },
+    { "id": "a1-ver-07", "de": "Ich gehe zu Fuß.", "ru": "Я иду пешком.", "uk": "Я йду пішки." },
+    { "id": "a1-ver-08", "de": "An der nächsten Haltestelle steigen wir aus.", "ru": "На следующей остановке мы выходим.", "uk": "На наступній зупинці ми виходимо.", "tags": ["word_order_v2", "separable_verb"] },
+    { "id": "a1-ver-09", "de": "Ist der Platz noch frei?", "ru": "Это место свободно?", "uk": "Це місце вільне?" },
+    { "id": "a1-ver-10", "kind": "word", "de": "der Bahnhof", "article": "der", "plural": "die Bahnhöfe", "ru": "вокзал", "uk": "вокзал", "example_de": "Wir treffen uns am Bahnhof.", "example_ru": "Встретимся на вокзале.", "example_uk": "Зустрінемося на вокзалі." },
+    { "id": "a1-ver-11", "kind": "word", "de": "die Haltestelle", "article": "die", "plural": "die Haltestellen", "ru": "остановка", "uk": "зупинка", "example_de": "Die Haltestelle ist direkt vor dem Haus.", "example_ru": "Остановка прямо перед домом.", "example_uk": "Зупинка прямо перед будинком." },
+    { "id": "a1-ver-12", "kind": "word", "de": "die Fahrkarte", "article": "die", "plural": "die Fahrkarten", "ru": "проездной билет", "uk": "квиток", "example_de": "Die Fahrkarte kaufe ich in der App.", "example_ru": "Билет я покупаю в приложении.", "example_uk": "Квиток я купую в застосунку." },
+    { "id": "a1-ver-13", "kind": "word", "de": "das Auto", "article": "das", "plural": "die Autos", "ru": "машина", "uk": "автомобіль", "example_de": "Wir haben kein Auto.", "example_ru": "У нас нет машины.", "example_uk": "У нас немає автомобіля." },
+    { "id": "a1-ver-14", "kind": "word", "de": "das Fahrrad", "article": "das", "plural": "die Fahrräder", "ru": "велосипед", "uk": "велосипед", "example_de": "Im Sommer fahre ich Fahrrad.", "example_ru": "Летом я езжу на велосипеде.", "example_uk": "Влітку я їжджу на велосипеді." },
+    { "id": "a1-ver-15", "kind": "word", "de": "die Verspätung", "article": "die", "plural": "die Verspätungen", "ru": "опоздание, задержка", "uk": "запізнення, затримка", "example_de": "Der Zug hat zwanzig Minuten Verspätung.", "example_ru": "Поезд опаздывает на двадцать минут.", "example_uk": "Потяг запізнюється на двадцять хвилин." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "kennenlernen",
+  "lesson": { "id": "a1-kennenlernen-1", "title_ru": "Знакомство", "title_uk": "Знайомство", "sort": 10 },
+  "items": [
+    { "id": "a1-ken-01", "de": "Darf ich mich vorstellen? Ich bin Olga.", "ru": "Разрешите представиться? Я Ольга.", "uk": "Дозвольте представитися? Я Ольга." },
+    { "id": "a1-ken-02", "de": "Mein Vorname ist Taras, mein Nachname ist Kowal.", "ru": "Моё имя Тарас, моя фамилия Коваль.", "uk": "Моє ім'я Тарас, моє прізвище Коваль.", "cloze": "Mein ___ ist Taras, mein Nachname ist Kowal." },
+    { "id": "a1-ken-03", "de": "Ich bin seit einem Jahr in Deutschland.", "ru": "Я в Германии уже год.", "uk": "Я в Німеччині вже рік.", "cloze": "Ich bin ___ einem Jahr in Deutschland.", "tags": ["case_dativ"] },
+    { "id": "a1-ken-04", "de": "Meine Muttersprache ist Russisch.", "ru": "Мой родной язык — русский.", "uk": "Моя рідна мова — російська." },
+    { "id": "a1-ken-05", "de": "Ich spreche Ukrainisch, Russisch und ein bisschen Deutsch.", "ru": "Я говорю по-украински, по-русски и немного по-немецки.", "uk": "Я розмовляю українською, російською і трохи німецькою." },
+    { "id": "a1-ken-06", "de": "Was machst du beruflich?", "ru": "Кем ты работаешь?", "uk": "Ким ти працюєш?" },
+    { "id": "a1-ken-07", "de": "Ich bin Ingenieur von Beruf.", "ru": "По профессии я инженер.", "uk": "За професією я інженер.", "tags": ["no_article_profession"] },
+    { "id": "a1-ken-08", "de": "Wo wohnst du genau?", "ru": "Где именно ты живёшь?", "uk": "Де саме ти живеш?" },
+    { "id": "a1-ken-09", "de": "Das ist mein Mann, und das ist meine Tochter.", "ru": "Это мой муж, а это моя дочь.", "uk": "Це мій чоловік, а це моя донька." },
+    { "id": "a1-ken-10", "de": "Was sind deine Hobbys?", "ru": "Какие у тебя хобби?", "uk": "Які в тебе хобі?" },
+    { "id": "a1-ken-11", "kind": "word", "de": "der Name", "plural": "die Namen", "article": "der", "ru": "имя", "uk": "ім'я", "example_de": "Können Sie Ihren Namen buchstabieren?", "example_ru": "Можете продиктовать свою фамилию по буквам?", "example_uk": "Можете продиктувати своє прізвище по літерах?" },
+    { "id": "a1-ken-12", "kind": "word", "de": "das Land", "plural": "die Länder", "article": "das", "ru": "страна", "uk": "країна", "example_de": "Aus welchem Land kommen Sie?", "example_ru": "Из какой вы страны?", "example_uk": "З якої ви країни?" },
+    { "id": "a1-ken-13", "kind": "word", "de": "die Sprache", "plural": "die Sprachen", "article": "die", "ru": "язык", "uk": "мова", "example_de": "Welche Sprachen sprichst du?", "example_ru": "На каких языках ты говоришь?", "example_uk": "Якими мовами ти розмовляєш?" },
+    { "id": "a1-ken-14", "kind": "word", "de": "der Beruf", "plural": "die Berufe", "article": "der", "ru": "профессия", "uk": "професія", "example_de": "Was ist Ihr Beruf?", "example_ru": "Какая у вас профессия?", "example_uk": "Яка у вас професія?" },
+    { "id": "a1-ken-15", "kind": "word", "de": "die Adresse", "plural": "die Adressen", "article": "die", "ru": "адрес", "uk": "адреса", "example_de": "Meine Adresse ist Gartenstraße 5.", "example_ru": "Мой адрес — Гартенштрассе, 5.", "example_uk": "Моя адреса — Гартенштрассе, 5." }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "level": "A1",
+  "topic": "wohnen",
+  "lesson": { "id": "a1-wohnen-1", "title_ru": "Жильё", "title_uk": "Житло", "sort": 12 },
+  "items": [
+    { "id": "a1-woh-01", "de": "Die Wohnung hat drei Zimmer, Küche und Bad.", "ru": "В квартире три комнаты, кухня и ванная.", "uk": "У квартирі три кімнати, кухня й ванна." },
+    { "id": "a1-woh-02", "de": "Wie hoch ist die Miete?", "ru": "Какая арендная плата?", "uk": "Яка орендна плата?" },
+    { "id": "a1-woh-03", "de": "Die Miete ist 700 Euro warm.", "ru": "Аренда — 700 евро с коммунальными.", "uk": "Оренда — 700 євро з комунальними." },
+    { "id": "a1-woh-04", "de": "Ist die Wohnung noch frei?", "ru": "Квартира ещё свободна?", "uk": "Квартира ще вільна?" },
+    { "id": "a1-woh-05", "de": "Wann kann ich die Wohnung besichtigen?", "ru": "Когда можно посмотреть квартиру?", "uk": "Коли можна подивитися квартиру?", "tags": ["verb_final"] },
+    { "id": "a1-woh-06", "de": "Wir wohnen im dritten Stock.", "ru": "Мы живём на третьем этаже.", "uk": "Ми живемо на третьому поверсі." },
+    { "id": "a1-woh-07", "de": "Gibt es einen Aufzug?", "ru": "Есть лифт?", "uk": "Є ліфт?", "cloze": "Gibt es ___ Aufzug?" },
+    { "id": "a1-woh-08", "de": "Das Fenster in der Küche geht nicht zu.", "ru": "Окно на кухне не закрывается.", "uk": "Вікно на кухні не зачиняється." },
+    { "id": "a1-woh-09", "de": "Der Müll kommt in die gelbe Tonne.", "ru": "Этот мусор — в жёлтый бак.", "uk": "Це сміття — у жовтий бак.", "tags": ["case_akkusativ"] },
+    { "id": "a1-woh-10", "de": "Ab 22 Uhr ist Ruhezeit.", "ru": "С 22 часов — время тишины.", "uk": "З 22 години — час тиші." },
+    { "id": "a1-woh-11", "kind": "word", "de": "die Wohnung", "article": "die", "plural": "die Wohnungen", "ru": "квартира", "uk": "квартира", "example_de": "Unsere Wohnung ist klein, aber hell.", "example_ru": "Наша квартира маленькая, но светлая.", "example_uk": "Наша квартира маленька, але світла." },
+    { "id": "a1-woh-12", "kind": "word", "de": "das Zimmer", "article": "das", "plural": "die Zimmer", "ru": "комната", "uk": "кімната", "example_de": "Das Zimmer hat einen Balkon.", "example_ru": "В комнате есть балкон.", "example_uk": "У кімнаті є балкон." },
+    { "id": "a1-woh-13", "kind": "word", "de": "die Küche", "article": "die", "plural": "die Küchen", "ru": "кухня", "uk": "кухня", "example_de": "Die Küche ist neu.", "example_ru": "Кухня новая.", "example_uk": "Кухня нова." },
+    { "id": "a1-woh-14", "kind": "word", "de": "der Vermieter", "article": "der", "plural": "die Vermieter", "ru": "арендодатель", "uk": "орендодавець", "example_de": "Ich rufe den Vermieter an.", "example_ru": "Я позвоню арендодателю.", "example_uk": "Я зателефоную орендодавцю." },
+    { "id": "a1-woh-15", "kind": "word", "de": "der Schlüssel", "article": "der", "plural": "die Schlüssel", "ru": "ключ", "uk": "ключ", "example_de": "Ich finde meinen Schlüssel nicht.", "example_ru": "Я не могу найти свой ключ.", "example_uk": "Я не можу знайти свій ключ." },
+    { "id": "a1-woh-16", "kind": "word", "de": "das Bad", "article": "das", "plural": "die Bäder", "ru": "ванная", "uk": "ванна кімната", "example_de": "Das Bad ist gleich links.", "example_ru": "Ванная сразу слева.", "example_uk": "Ванна одразу ліворуч." }
+  ]
+}

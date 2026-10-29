@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "aemter",
+  "lesson": { "id": "a1-aemter-1", "title_ru": "Ведомства", "title_uk": "Установи", "sort": 16 },
+  "items": [
+    { "id": "a1-amt-01", "de": "Ich möchte mich anmelden.", "ru": "Я хочу зарегистрироваться (по месту жительства).", "uk": "Я хочу зареєструватися (за місцем проживання).", "tags": ["reflexive"] },
+    { "id": "a1-amt-02", "de": "Welche Unterlagen brauche ich?", "ru": "Какие документы мне нужны?", "uk": "Які документи мені потрібні?" },
+    { "id": "a1-amt-03", "de": "Bitte füllen Sie dieses Formular aus.", "ru": "Пожалуйста, заполните этот бланк.", "uk": "Будь ласка, заповніть цей бланк.", "tags": ["separable_verb"] },
+    { "id": "a1-amt-04", "de": "Wo muss ich unterschreiben?", "ru": "Где мне нужно подписать?", "uk": "Де мені треба підписати?" },
+    { "id": "a1-amt-05", "de": "Ziehen Sie bitte eine Nummer.", "ru": "Возьмите, пожалуйста, номерок.", "uk": "Візьміть, будь ласка, номерок." },
+    { "id": "a1-amt-06", "de": "Ich habe einen Brief vom Jobcenter bekommen.", "ru": "Я получил(а) письмо из джобцентра.", "uk": "Я отримав (отримала) лист від джобцентру.", "tags": ["perfekt"] },
+    { "id": "a1-amt-07", "de": "Ich verstehe diesen Brief nicht.", "ru": "Я не понимаю это письмо.", "uk": "Я не розумію цей лист." },
+    { "id": "a1-amt-08", "de": "Bis wann muss ich das abgeben?", "ru": "До какого числа это нужно сдать?", "uk": "До якого числа це треба здати?" },
+    { "id": "a1-amt-09", "de": "Mein Aufenthaltstitel läuft bald ab.", "ru": "Мой вид на жительство скоро заканчивается.", "uk": "Мій дозвіл на проживання скоро закінчується." },
+    { "id": "a1-amt-10", "kind": "word", "de": "das Formular", "article": "das", "plural": "die Formulare", "ru": "бланк, анкета", "uk": "бланк, анкета", "example_de": "Das Formular gibt es auch online.", "example_ru": "Бланк есть и онлайн.", "example_uk": "Бланк є й онлайн." },
+    { "id": "a1-amt-11", "kind": "word", "de": "der Ausweis", "article": "der", "plural": "die Ausweise", "ru": "удостоверение личности", "uk": "посвідчення особи", "example_de": "Haben Sie Ihren Ausweis dabei?", "example_ru": "У вас с собой удостоверение?", "example_uk": "У вас із собою посвідчення?" },
+    { "id": "a1-amt-12", "kind": "word", "de": "der Reisepass", "article": "der", "plural": "die Reisepässe", "ru": "загранпаспорт", "uk": "закордонний паспорт", "example_de": "Ich brauche eine Kopie von Ihrem Reisepass.", "example_ru": "Мне нужна копия вашего паспорта.", "example_uk": "Мені потрібна копія вашого паспорта." },
+    { "id": "a1-amt-13", "kind": "word", "de": "die Unterschrift", "article": "die", "plural": "die Unterschriften", "ru": "подпись", "uk": "підпис", "example_de": "Hier fehlt noch Ihre Unterschrift.", "example_ru": "Здесь не хватает вашей подписи.", "example_uk": "Тут бракує вашого підпису." },
+    { "id": "a1-amt-14", "kind": "word", "de": "das Amt", "article": "das", "plural": "die Ämter", "ru": "ведомство, учреждение", "uk": "установа, відомство", "example_de": "Das Amt öffnet um halb acht.", "example_ru": "Учреждение открывается в половине восьмого.", "example_uk": "Установа відкривається о пів на восьму." },
+    { "id": "a1-amt-15", "kind": "word", "de": "der Termin", "article": "der", "plural": "die Termine", "ru": "запись, назначенная встреча", "uk": "запис, призначена зустріч", "example_de": "Ohne Termin geht es leider nicht.", "example_ru": "Без записи, к сожалению, нельзя.", "example_uk": "Без запису, на жаль, не можна." }
+  ]
+}

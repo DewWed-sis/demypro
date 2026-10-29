@@ -1,0 +1,23 @@
+{
+  "level": "A1",
+  "topic": "familie",
+  "lesson": { "id": "a1-familie-1", "title_ru": "Семья", "title_uk": "Сім'я", "sort": 11 },
+  "items": [
+    { "id": "a1-fam-01", "de": "Hast du Geschwister?", "ru": "У тебя есть братья или сёстры?", "uk": "У тебе є брати чи сестри?" },
+    { "id": "a1-fam-02", "de": "Ich habe einen Bruder und eine Schwester.", "ru": "У меня есть брат и сестра.", "uk": "У мене є брат і сестра.", "cloze": "Ich habe ___ Bruder und eine Schwester.", "tags": ["case_akkusativ"] },
+    { "id": "a1-fam-03", "de": "Meine Eltern leben noch in der Ukraine.", "ru": "Мои родители ещё живут в Украине.", "uk": "Мої батьки ще живуть в Україні." },
+    { "id": "a1-fam-04", "de": "Mein Sohn geht in die Kita.", "ru": "Мой сын ходит в детский сад.", "uk": "Мій син ходить у дитячий садок.", "cloze": "Mein Sohn geht in ___ Kita.", "tags": ["case_akkusativ"] },
+    { "id": "a1-fam-05", "de": "Wir sind zu viert.", "ru": "Нас четверо.", "uk": "Нас четверо." },
+    { "id": "a1-fam-06", "de": "Ich bin geschieden.", "ru": "Я в разводе.", "uk": "Я розлучений (розлучена)." },
+    { "id": "a1-fam-07", "de": "Meine Frau arbeitet in einem Supermarkt.", "ru": "Моя жена работает в супермаркете.", "uk": "Моя дружина працює в супермаркеті.", "tags": ["case_dativ"] },
+    { "id": "a1-fam-08", "de": "Wie alt sind deine Kinder?", "ru": "Сколько лет твоим детям?", "uk": "Скільки років твоїм дітям?" },
+    { "id": "a1-fam-09", "de": "Am Wochenende besuchen wir meine Oma.", "ru": "На выходных мы навещаем мою бабушку.", "uk": "На вихідних ми відвідуємо мою бабусю.", "cloze": "Am Wochenende ___ wir meine Oma.", "tags": ["word_order_v2"] },
+    { "id": "a1-fam-10", "kind": "word", "de": "die Mutter", "article": "die", "plural": "die Mütter", "ru": "мать", "uk": "мати", "example_de": "Meine Mutter kocht sehr gut.", "example_ru": "Моя мама очень хорошо готовит.", "example_uk": "Моя мама дуже добре готує." },
+    { "id": "a1-fam-11", "kind": "word", "de": "der Vater", "article": "der", "plural": "die Väter", "ru": "отец", "uk": "батько", "example_de": "Mein Vater ist Rentner.", "example_ru": "Мой отец — пенсионер.", "example_uk": "Мій батько — пенсіонер." },
+    { "id": "a1-fam-12", "kind": "word", "de": "das Kind", "article": "das", "plural": "die Kinder", "ru": "ребёнок", "uk": "дитина", "example_de": "Das Kind schläft schon.", "example_ru": "Ребёнок уже спит.", "example_uk": "Дитина вже спить." },
+    { "id": "a1-fam-13", "kind": "word", "de": "die Tochter", "article": "die", "plural": "die Töchter", "ru": "дочь", "uk": "донька", "example_de": "Meine Tochter ist zehn Jahre alt.", "example_ru": "Моей дочери десять лет.", "example_uk": "Моїй доньці десять років." },
+    { "id": "a1-fam-14", "kind": "word", "de": "der Sohn", "article": "der", "plural": "die Söhne", "ru": "сын", "uk": "син", "example_de": "Unser Sohn spielt Fußball.", "example_ru": "Наш сын играет в футбол.", "example_uk": "Наш син грає у футбол." },
+    { "id": "a1-fam-15", "kind": "word", "de": "die Eltern", "plural": "die Eltern", "ru": "родители (только мн. ч.)", "uk": "батьки (лише мн.)", "example_de": "Meine Eltern rufen jeden Sonntag an.", "example_ru": "Мои родители звонят каждое воскресенье.", "example_uk": "Мої батьки телефонують щонеділі." },
+    { "id": "a1-fam-16", "kind": "word", "de": "das Baby", "article": "das", "plural": "die Babys", "ru": "младенец", "uk": "немовля", "example_de": "Das Baby weint.", "example_ru": "Малыш плачет.", "example_uk": "Немовля плаче." }
+  ]
+}

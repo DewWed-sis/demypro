@@ -1,0 +1,21 @@
+{
+  "level": "A1",
+  "topic": "schule",
+  "lesson": { "id": "a1-schule-1", "title_ru": "Школа и дети", "title_uk": "Школа і діти", "sort": 19 },
+  "items": [
+    { "id": "a1-sch-01", "de": "Mein Sohn geht in die zweite Klasse.", "ru": "Мой сын ходит во второй класс.", "uk": "Мій син ходить у другий клас.", "tags": ["case_akkusativ"] },
+    { "id": "a1-sch-02", "de": "Die Schule fängt um acht Uhr an.", "ru": "Уроки начинаются в восемь.", "uk": "Уроки починаються о восьмій.", "tags": ["separable_verb"] },
+    { "id": "a1-sch-03", "de": "Ich hole meine Tochter um vier ab.", "ru": "Я забираю дочь в четыре.", "uk": "Я забираю доньку о четвертій.", "cloze": "Ich hole meine Tochter um vier ___.", "tags": ["separable_verb"] },
+    { "id": "a1-sch-04", "de": "Mein Kind ist krank und kommt heute nicht.", "ru": "Мой ребёнок болен и сегодня не придёт.", "uk": "Моя дитина хвора й сьогодні не прийде." },
+    { "id": "a1-sch-05", "de": "Wann ist der Elternabend?", "ru": "Когда родительское собрание?", "uk": "Коли батьківські збори?" },
+    { "id": "a1-sch-06", "de": "Wir suchen einen Kitaplatz.", "ru": "Мы ищем место в детском саду.", "uk": "Ми шукаємо місце в дитсадку." },
+    { "id": "a1-sch-07", "de": "Die Kinder machen Hausaufgaben.", "ru": "Дети делают домашнее задание.", "uk": "Діти роблять домашнє завдання." },
+    { "id": "a1-sch-08", "de": "In den Ferien fahren wir weg.", "ru": "На каникулах мы уезжаем.", "uk": "На канікулах ми кудись їдемо.", "tags": ["word_order_v2"] },
+    { "id": "a1-sch-09", "kind": "word", "de": "die Schule", "article": "die", "plural": "die Schulen", "ru": "школа", "uk": "школа", "example_de": "Die Schule ist nicht weit.", "example_ru": "Школа недалеко.", "example_uk": "Школа недалеко." },
+    { "id": "a1-sch-10", "kind": "word", "de": "der Lehrer", "article": "der", "plural": "die Lehrer", "ru": "учитель", "uk": "учитель", "example_de": "Der Lehrer heißt Herr Wagner.", "example_ru": "Учителя зовут господин Вагнер.", "example_uk": "Учителя звати пан Вагнер." },
+    { "id": "a1-sch-11", "kind": "word", "de": "die Lehrerin", "article": "die", "plural": "die Lehrerinnen", "ru": "учительница", "uk": "учителька", "example_de": "Ich schreibe der Lehrerin eine E-Mail.", "example_ru": "Я пишу учительнице письмо.", "example_uk": "Я пишу вчительці листа.", "tags": ["case_dativ"] },
+    { "id": "a1-sch-12", "kind": "word", "de": "die Kita", "article": "die", "plural": "die Kitas", "ru": "детский сад", "uk": "дитячий садок", "example_de": "Die Kita schließt um 16 Uhr.", "example_ru": "Детский сад закрывается в 16 часов.", "example_uk": "Дитсадок зачиняється о 16-й." },
+    { "id": "a1-sch-13", "kind": "word", "de": "das Zeugnis", "article": "das", "plural": "die Zeugnisse", "ru": "табель, аттестат", "uk": "табель, атестат", "example_de": "Im Juli gibt es Zeugnisse.", "example_ru": "В июле выдают табели.", "example_uk": "У липні видають табелі." },
+    { "id": "a1-sch-14", "kind": "word", "de": "die Ferien", "plural": "die Ferien", "ru": "каникулы (только мн. ч.)", "uk": "канікули (лише мн.)", "example_de": "Die Ferien sind leider vorbei.", "example_ru": "Каникулы, к сожалению, закончились.", "example_uk": "Канікули, на жаль, закінчилися." }
+  ]
+}

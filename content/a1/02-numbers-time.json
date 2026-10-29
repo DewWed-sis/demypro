@@ -1,0 +1,31 @@
+{
+  "level": "A1",
+  "topic": null,
+  "lesson": { "id": "a1-start-numbers", "kind": "start", "title_ru": "Числа и время", "title_uk": "Числа і час", "sort": 2 },
+  "items": [
+    { "id": "a1-num-0-10", "kind": "number", "de": "null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn", "ru": "0–10", "uk": "0–10" },
+    { "id": "a1-num-11-12", "kind": "number", "de": "elf, zwölf", "ru": "11, 12", "uk": "11, 12" },
+    { "id": "a1-num-13-19", "kind": "number", "de": "dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn", "ru": "13–17 (sechzehn, siebzehn — без -s/-en)", "uk": "13–17 (sechzehn, siebzehn — без -s/-en)" },
+    { "id": "a1-num-tens", "kind": "number", "de": "zwanzig, dreißig, vierzig, fünfzig, hundert", "ru": "20, 30, 40, 50, 100", "uk": "20, 30, 40, 50, 100" },
+    { "id": "a1-num-21", "kind": "number", "de": "einundzwanzig", "ru": "21 — сначала единицы, потом десятки: «один-и-двадцать»", "uk": "21 — спочатку одиниці, потім десятки: «один-і-двадцять»", "example_de": "Ich wohne in der Nummer einundzwanzig.", "example_ru": "Я живу в доме номер 21.", "example_uk": "Я живу в будинку номер 21." },
+    { "id": "a1-num-phone", "kind": "number", "de": "Meine Nummer ist null eins sieben sechs …", "ru": "Номер телефона диктуют по одной цифре.", "uk": "Номер телефону диктують по одній цифрі." },
+    { "id": "a1-num-price", "kind": "number", "de": "Das kostet drei Euro neunzig.", "ru": "Это стоит 3,90 €.", "uk": "Це коштує 3,90 €.", "cloze": "Das ___ drei Euro neunzig." },
+    { "id": "a1-num-age", "kind": "number", "de": "Meine Tochter ist sieben.", "ru": "Моей дочери семь.", "uk": "Моїй доньці сім." },
+    { "id": "a1-time-uhr", "de": "Es ist acht Uhr.", "ru": "Сейчас восемь часов.", "uk": "Зараз восьма година." },
+    { "id": "a1-time-viertelnach", "de": "Es ist Viertel nach zehn.", "ru": "Четверть одиннадцатого (10:15).", "uk": "Чверть на одинадцяту (10:15)." },
+    { "id": "a1-time-viertelvor", "de": "Es ist Viertel vor zwölf.", "ru": "Без четверти двенадцать (11:45).", "uk": "За чверть дванадцята (11:45)." },
+    { "id": "a1-time-halb", "de": "Es ist halb sieben.", "ru": "Половина седьмого (6:30) — «halb» смотрит на следующий час!", "uk": "Пів на сьому (6:30) — «halb» дивиться на наступну годину!", "tags": ["typical_error"] },
+    { "id": "a1-time-official", "de": "Der Termin ist um 14:30 Uhr.", "ru": "Приём в 14:30 (официально — 24-часовой формат: vierzehn Uhr dreißig).", "uk": "Прийом о 14:30 (офіційно — 24-годинний формат: vierzehn Uhr dreißig)." },
+    { "id": "a1-time-um", "de": "Um wie viel Uhr?", "ru": "Во сколько?", "uk": "О котрій?" },
+    { "id": "a1-time-von-bis", "de": "Die Praxis ist von acht bis zwölf geöffnet.", "ru": "Кабинет врача открыт с восьми до двенадцати.", "uk": "Кабінет лікаря відкритий з восьмої до дванадцятої." },
+    { "id": "a1-day-montag", "de": "am Montag, am Dienstag, am Mittwoch", "ru": "в понедельник, во вторник, в среду (дни — с «am»)", "uk": "у понеділок, у вівторок, у середу (дні — з «am»)" },
+    { "id": "a1-day-donnerstag", "de": "am Donnerstag, am Freitag, am Samstag, am Sonntag", "ru": "в четверг, в пятницу, в субботу, в воскресенье", "uk": "у четвер, у п'ятницю, у суботу, у неділю" },
+    { "id": "a1-day-wochenende", "de": "am Wochenende", "ru": "на выходных", "uk": "на вихідних" },
+    { "id": "a1-time-morgen", "de": "heute, morgen, übermorgen, gestern", "ru": "сегодня, завтра, послезавтра, вчера", "uk": "сьогодні, завтра, післязавтра, вчора" },
+    { "id": "a1-time-tageszeit", "de": "am Morgen, am Mittag, am Nachmittag, am Abend, in der Nacht", "ru": "утром, в обед, после обеда, вечером, ночью", "uk": "вранці, в обід, після обіду, ввечері, вночі" },
+    { "id": "a1-month-im", "de": "im Januar, im Mai, im Dezember", "ru": "в январе, в мае, в декабре (месяцы — с «im»)", "uk": "у січні, у травні, у грудні (місяці — з «im»)" },
+    { "id": "a1-date", "de": "Heute ist der dritte Oktober.", "ru": "Сегодня третье октября.", "uk": "Сьогодні третє жовтня." },
+    { "id": "a1-date-birthday", "de": "Ich habe am zwölften März Geburtstag.", "ru": "У меня день рождения двенадцатого марта.", "uk": "У мене день народження дванадцятого березня.", "cloze": "Ich habe am zwölften März ___." },
+    { "id": "a1-time-dauer", "de": "Das dauert zehn Minuten.", "ru": "Это займёт десять минут.", "uk": "Це триватиме десять хвилин." }
+  ]
+}

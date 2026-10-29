@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "deutschland",
+  "lesson": { "id": "a1-deutschland-1", "title_ru": "Германия и культура", "title_uk": "Німеччина і культура", "sort": 21 },
+  "items": [
+    { "id": "a1-deu-01", "de": "Sonntags sind die Geschäfte zu.", "ru": "По воскресеньям магазины закрыты.", "uk": "У неділю магазини зачинені." },
+    { "id": "a1-deu-02", "de": "In Deutschland trennt man den Müll.", "ru": "В Германии мусор сортируют.", "uk": "У Німеччині сміття сортують." },
+    { "id": "a1-deu-03", "de": "Bei uns sagt man „Moin“.", "ru": "У нас говорят «Мойн» (привет на севере).", "uk": "У нас кажуть «Мойн» (привіт на півночі)." },
+    { "id": "a1-deu-04", "de": "Pünktlichkeit ist hier sehr wichtig.", "ru": "Пунктуальность здесь очень важна.", "uk": "Пунктуальність тут дуже важлива." },
+    { "id": "a1-deu-05", "de": "Weihnachten feiern wir mit der Familie.", "ru": "Рождество мы празднуем с семьёй.", "uk": "Різдво ми святкуємо з родиною.", "tags": ["word_order_v2", "case_dativ"] },
+    { "id": "a1-deu-06", "de": "Die Pfandflasche bringe ich zurück in den Supermarkt.", "ru": "Бутылку с залогом я сдаю обратно в супермаркет.", "uk": "Пляшку із заставою я здаю назад у супермаркет.", "tags": ["word_order_v2"] },
+    { "id": "a1-deu-07", "de": "Im Winter ist es oft grau und kalt.", "ru": "Зимой часто серо и холодно.", "uk": "Взимку часто сіро й холодно." },
+    { "id": "a1-deu-08", "de": "Wie ist das Wetter heute?", "ru": "Какая сегодня погода?", "uk": "Яка сьогодні погода?" },
+    { "id": "a1-deu-09", "de": "Es regnet schon den ganzen Tag.", "ru": "Дождь идёт уже весь день.", "uk": "Дощ іде вже цілий день." },
+    { "id": "a1-deu-10", "kind": "word", "de": "die Stadt", "article": "die", "plural": "die Städte", "ru": "город", "uk": "місто", "example_de": "Köln ist eine große Stadt.", "example_ru": "Кёльн — большой город.", "example_uk": "Кельн — велике місто." },
+    { "id": "a1-deu-11", "kind": "word", "de": "das Bundesland", "article": "das", "plural": "die Bundesländer", "ru": "федеральная земля", "uk": "федеральна земля", "example_de": "Deutschland hat sechzehn Bundesländer.", "example_ru": "В Германии шестнадцать федеральных земель.", "example_uk": "У Німеччині шістнадцять федеральних земель." },
+    { "id": "a1-deu-12", "kind": "word", "de": "das Wetter", "article": "das", "ru": "погода", "uk": "погода", "example_de": "Das Wetter ist heute schön.", "example_ru": "Погода сегодня хорошая.", "example_uk": "Погода сьогодні гарна." },
+    { "id": "a1-deu-13", "kind": "word", "de": "der Feiertag", "article": "der", "plural": "die Feiertage", "ru": "праздничный день", "uk": "святковий день", "example_de": "Am Feiertag arbeite ich nicht.", "example_ru": "В праздник я не работаю.", "example_uk": "У свято я не працюю." },
+    { "id": "a1-deu-14", "kind": "word", "de": "der Nachbar", "article": "der", "plural": "die Nachbarn", "ru": "сосед", "uk": "сусід", "example_de": "Unser Nachbar ist sehr hilfsbereit.", "example_ru": "Наш сосед очень отзывчивый.", "example_uk": "Наш сусід дуже чуйний." },
+    { "id": "a1-deu-15", "kind": "word", "de": "die Nachbarin", "article": "die", "plural": "die Nachbarinnen", "ru": "соседка", "uk": "сусідка", "example_de": "Die Nachbarin hat ein Paket für uns angenommen.", "example_ru": "Соседка приняла для нас посылку.", "example_uk": "Сусідка прийняла для нас посилку.", "tags": ["perfekt"] }
+  ]
+}

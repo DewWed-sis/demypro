@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "arbeit",
+  "lesson": { "id": "a1-arbeit-1", "title_ru": "Работа", "title_uk": "Робота", "sort": 13 },
+  "items": [
+    { "id": "a1-arb-01", "de": "Ich arbeite Vollzeit.", "ru": "Я работаю полный день.", "uk": "Я працюю повний день." },
+    { "id": "a1-arb-02", "de": "Ich arbeite in Teilzeit, zwanzig Stunden pro Woche.", "ru": "Я работаю неполный день, двадцать часов в неделю.", "uk": "Я працюю неповний день, двадцять годин на тиждень." },
+    { "id": "a1-arb-03", "de": "Ich fange um sieben Uhr an.", "ru": "Я начинаю в семь часов.", "uk": "Я починаю о сьомій.", "cloze": "Ich fange um sieben Uhr ___.", "tags": ["separable_verb"] },
+    { "id": "a1-arb-04", "de": "Morgen habe ich frei.", "ru": "Завтра у меня выходной.", "uk": "Завтра в мене вихідний.", "tags": ["word_order_v2"] },
+    { "id": "a1-arb-05", "de": "Ich bin heute krank und kann nicht kommen.", "ru": "Я сегодня заболел(а) и не могу прийти.", "uk": "Я сьогодні захворів (захворіла) і не можу прийти.", "tags": ["verb_final"] },
+    { "id": "a1-arb-06", "de": "Mein Chef ist sehr nett.", "ru": "Мой начальник очень приятный.", "uk": "Мій начальник дуже приємний." },
+    { "id": "a1-arb-07", "de": "Ich mache gerade einen Deutschkurs.", "ru": "Я сейчас прохожу курс немецкого.", "uk": "Я зараз проходжу курс німецької." },
+    { "id": "a1-arb-08", "de": "Ich habe eine Bewerbung geschrieben.", "ru": "Я написал(а) заявление о приёме на работу.", "uk": "Я написав (написала) заяву про прийом на роботу.", "tags": ["perfekt"] },
+    { "id": "a1-arb-09", "de": "Wann ist Mittagspause?", "ru": "Когда обеденный перерыв?", "uk": "Коли обідня перерва?" },
+    { "id": "a1-arb-10", "kind": "word", "de": "die Arbeit", "article": "die", "plural": "die Arbeiten", "ru": "работа", "uk": "робота", "example_de": "Nach der Arbeit gehe ich einkaufen.", "example_ru": "После работы я иду за покупками.", "example_uk": "Після роботи я йду по покупки." },
+    { "id": "a1-arb-11", "kind": "word", "de": "der Kollege", "article": "der", "plural": "die Kollegen", "ru": "коллега (м.)", "uk": "колега (ч.)", "example_de": "Mein Kollege hilft mir.", "example_ru": "Мой коллега мне помогает.", "example_uk": "Мій колега мені допомагає." },
+    { "id": "a1-arb-12", "kind": "word", "de": "die Kollegin", "article": "die", "plural": "die Kolleginnen", "ru": "коллега (ж.)", "uk": "колега (ж.)", "example_de": "Meine Kollegin kommt aus Polen.", "example_ru": "Моя коллега из Польши.", "example_uk": "Моя колега з Польщі." },
+    { "id": "a1-arb-13", "kind": "word", "de": "der Lohn", "article": "der", "plural": "die Löhne", "ru": "зарплата", "uk": "зарплата", "example_de": "Der Lohn kommt am Monatsende.", "example_ru": "Зарплата приходит в конце месяца.", "example_uk": "Зарплата приходить наприкінці місяця." },
+    { "id": "a1-arb-14", "kind": "word", "de": "die Firma", "article": "die", "plural": "die Firmen", "ru": "фирма", "uk": "фірма", "example_de": "Die Firma sucht neue Mitarbeiter.", "example_ru": "Фирма ищет новых сотрудников.", "example_uk": "Фірма шукає нових працівників." },
+    { "id": "a1-arb-15", "kind": "word", "de": "der Urlaub", "article": "der", "plural": "die Urlaube", "ru": "отпуск", "uk": "відпустка", "example_de": "Im August habe ich Urlaub.", "example_ru": "В августе у меня отпуск.", "example_uk": "У серпні в мене відпустка." }
+  ]
+}

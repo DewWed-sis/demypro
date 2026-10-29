@@ -1,0 +1,23 @@
+{
+  "level": "A1",
+  "topic": "gesundheit",
+  "lesson": { "id": "a1-gesundheit-1", "title_ru": "Врач и здоровье", "title_uk": "Лікар і здоров'я", "sort": 14 },
+  "items": [
+    { "id": "a1-ges-01", "de": "Ich möchte einen Termin beim Hausarzt.", "ru": "Я хочу записаться к семейному врачу.", "uk": "Я хочу записатися до сімейного лікаря.", "tags": ["case_dativ"] },
+    { "id": "a1-ges-02", "de": "Haben Sie heute noch einen Termin frei?", "ru": "У вас есть ещё свободное время на сегодня?", "uk": "У вас є ще вільний час на сьогодні?" },
+    { "id": "a1-ges-03", "de": "Was fehlt Ihnen?", "ru": "Что вас беспокоит?", "uk": "Що вас турбує?" },
+    { "id": "a1-ges-04", "de": "Mein Bauch tut weh.", "ru": "У меня болит живот.", "uk": "У мене болить живіт.", "cloze": "Mein Bauch tut ___." },
+    { "id": "a1-ges-05", "de": "Ich habe seit drei Tagen Fieber.", "ru": "У меня три дня температура.", "uk": "У мене три дні температура.", "tags": ["case_dativ"] },
+    { "id": "a1-ges-06", "de": "Ich habe Husten und Schnupfen.", "ru": "У меня кашель и насморк.", "uk": "У мене кашель і нежить." },
+    { "id": "a1-ges-07", "de": "Hier ist meine Versichertenkarte.", "ru": "Вот моя медицинская страховая карта.", "uk": "Ось моя медична страхова картка." },
+    { "id": "a1-ges-08", "de": "Nehmen Sie die Tabletten dreimal am Tag.", "ru": "Принимайте таблетки три раза в день.", "uk": "Приймайте таблетки тричі на день." },
+    { "id": "a1-ges-09", "de": "Ich brauche eine Krankmeldung für die Arbeit.", "ru": "Мне нужен больничный для работы.", "uk": "Мені потрібен лікарняний для роботи." },
+    { "id": "a1-ges-10", "de": "Gute Besserung!", "ru": "Выздоравливай(те)!", "uk": "Одужуй(те)!" },
+    { "id": "a1-ges-11", "kind": "word", "de": "der Arzt", "article": "der", "plural": "die Ärzte", "ru": "врач (м.)", "uk": "лікар", "example_de": "Ich gehe morgen zum Arzt.", "example_ru": "Завтра я иду к врачу.", "example_uk": "Завтра я йду до лікаря.", "tags": ["case_dativ"] },
+    { "id": "a1-ges-12", "kind": "word", "de": "die Ärztin", "article": "die", "plural": "die Ärztinnen", "ru": "врач (ж.)", "uk": "лікарка", "example_de": "Die Ärztin ist sehr freundlich.", "example_ru": "Врач очень приветливая.", "example_uk": "Лікарка дуже привітна." },
+    { "id": "a1-ges-13", "kind": "word", "de": "die Praxis", "article": "die", "plural": "die Praxen", "ru": "кабинет врача, практика", "uk": "кабінет лікаря, практика", "example_de": "Die Praxis ist mittwochs nachmittags geschlossen.", "example_ru": "По средам после обеда кабинет закрыт.", "example_uk": "У середу після обіду кабінет зачинений." },
+    { "id": "a1-ges-14", "kind": "word", "de": "das Rezept", "article": "das", "plural": "die Rezepte", "ru": "рецепт", "uk": "рецепт", "example_de": "Mit dem Rezept gehen Sie in die Apotheke.", "example_ru": "С рецептом идите в аптеку.", "example_uk": "З рецептом ідіть в аптеку." },
+    { "id": "a1-ges-15", "kind": "word", "de": "die Apotheke", "article": "die", "plural": "die Apotheken", "ru": "аптека", "uk": "аптека", "example_de": "Wo ist die nächste Apotheke?", "example_ru": "Где ближайшая аптека?", "example_uk": "Де найближча аптека?" },
+    { "id": "a1-ges-16", "kind": "word", "de": "der Kopf", "article": "der", "plural": "die Köpfe", "ru": "голова", "uk": "голова", "example_de": "Mir tut der Kopf weh.", "example_ru": "У меня болит голова.", "example_uk": "У мене болить голова." }
+  ]
+}

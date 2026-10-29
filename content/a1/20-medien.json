@@ -1,0 +1,21 @@
+{
+  "level": "A1",
+  "topic": "medien",
+  "lesson": { "id": "a1-medien-1", "title_ru": "СМИ и связь", "title_uk": "ЗМІ та зв'язок", "sort": 20 },
+  "items": [
+    { "id": "a1-med-01", "de": "Ich schreibe dir eine Nachricht.", "ru": "Я напишу тебе сообщение.", "uk": "Я напишу тобі повідомлення.", "tags": ["case_dativ"] },
+    { "id": "a1-med-02", "de": "Schick mir bitte die Adresse.", "ru": "Пришли мне, пожалуйста, адрес.", "uk": "Надішли мені, будь ласка, адресу." },
+    { "id": "a1-med-03", "de": "Mein Akku ist leer.", "ru": "У меня сел аккумулятор.", "uk": "У мене сів акумулятор." },
+    { "id": "a1-med-04", "de": "Wie ist das WLAN-Passwort?", "ru": "Какой пароль от Wi-Fi?", "uk": "Який пароль від Wi-Fi?" },
+    { "id": "a1-med-05", "de": "Ich rufe dich später an.", "ru": "Я перезвоню тебе позже.", "uk": "Я зателефоную тобі пізніше.", "cloze": "Ich rufe dich später ___.", "tags": ["separable_verb"] },
+    { "id": "a1-med-06", "de": "Ich höre jeden Morgen Radio.", "ru": "Я каждое утро слушаю радио.", "uk": "Я щоранку слухаю радіо." },
+    { "id": "a1-med-07", "de": "Hast du die Nachrichten gesehen?", "ru": "Ты видел(а) новости?", "uk": "Ти бачив (бачила) новини?", "tags": ["perfekt"] },
+    { "id": "a1-med-08", "de": "Die Verbindung ist schlecht.", "ru": "Связь плохая.", "uk": "Зв'язок поганий." },
+    { "id": "a1-med-09", "kind": "word", "de": "das Handy", "article": "das", "plural": "die Handys", "ru": "мобильный телефон", "uk": "мобільний телефон", "example_de": "Mein Handy ist kaputt.", "example_ru": "Мой телефон сломался.", "example_uk": "Мій телефон зламався." },
+    { "id": "a1-med-10", "kind": "word", "de": "die E-Mail", "article": "die", "plural": "die E-Mails", "ru": "электронное письмо", "uk": "електронний лист", "example_de": "Ich lese meine E-Mails am Abend.", "example_ru": "Я читаю почту вечером.", "example_uk": "Я читаю пошту ввечері." },
+    { "id": "a1-med-11", "kind": "word", "de": "die Nachricht", "article": "die", "plural": "die Nachrichten", "ru": "сообщение; мн. ч. — новости", "uk": "повідомлення; мн. — новини", "example_de": "Ich habe deine Nachricht bekommen.", "example_ru": "Я получил(а) твоё сообщение.", "example_uk": "Я отримав (отримала) твоє повідомлення." },
+    { "id": "a1-med-12", "kind": "word", "de": "der Fernseher", "article": "der", "plural": "die Fernseher", "ru": "телевизор", "uk": "телевізор", "example_de": "Der Fernseher steht im Wohnzimmer.", "example_ru": "Телевизор стоит в гостиной.", "example_uk": "Телевізор стоїть у вітальні." },
+    { "id": "a1-med-13", "kind": "word", "de": "die Zeitung", "article": "die", "plural": "die Zeitungen", "ru": "газета", "uk": "газета", "example_de": "In der Zeitung steht ein Artikel über unsere Stadt.", "example_ru": "В газете статья о нашем городе.", "example_uk": "У газеті стаття про наше місто." },
+    { "id": "a1-med-14", "kind": "word", "de": "der Computer", "article": "der", "plural": "die Computer", "ru": "компьютер", "uk": "комп'ютер", "example_de": "Ich arbeite viel am Computer.", "example_ru": "Я много работаю за компьютером.", "example_uk": "Я багато працюю за комп'ютером." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "level": "A1",
+  "topic": "freizeit",
+  "lesson": { "id": "a1-freizeit-1", "title_ru": "Свободное время", "title_uk": "Вільний час", "sort": 18 },
+  "items": [
+    { "id": "a1-fre-01", "de": "Was machst du am Wochenende?", "ru": "Что ты делаешь на выходных?", "uk": "Що ти робиш на вихідних?" },
+    { "id": "a1-fre-02", "de": "Ich gehe gern spazieren.", "ru": "Я люблю гулять.", "uk": "Я люблю гуляти.", "cloze": "Ich gehe ___ spazieren." },
+    { "id": "a1-fre-03", "de": "Hast du Lust auf Kino?", "ru": "Хочешь в кино?", "uk": "Хочеш у кіно?" },
+    { "id": "a1-fre-04", "de": "Ja, gute Idee!", "ru": "Да, хорошая идея!", "uk": "Так, гарна ідея!" },
+    { "id": "a1-fre-05", "de": "Heute kann ich leider nicht.", "ru": "Сегодня, к сожалению, не могу.", "uk": "Сьогодні, на жаль, не можу.", "tags": ["word_order_v2"] },
+    { "id": "a1-fre-06", "de": "Wann treffen wir uns?", "ru": "Когда встретимся?", "uk": "Коли зустрінемося?", "tags": ["reflexive"] },
+    { "id": "a1-fre-07", "de": "Treffen wir uns um sechs vor dem Kino?", "ru": "Встретимся в шесть перед кинотеатром?", "uk": "Зустрінемося о шостій перед кінотеатром?" },
+    { "id": "a1-fre-08", "de": "Ich spiele Fußball im Verein.", "ru": "Я играю в футбол в клубе.", "uk": "Я граю у футбол у клубі." },
+    { "id": "a1-fre-09", "de": "Am Abend sehe ich fern.", "ru": "Вечером я смотрю телевизор.", "uk": "Увечері я дивлюся телевізор.", "tags": ["separable_verb", "word_order_v2"] },
+    { "id": "a1-fre-10", "de": "Ich lese gern Bücher.", "ru": "Я люблю читать книги.", "uk": "Я люблю читати книжки." },
+    { "id": "a1-fre-11", "kind": "word", "de": "das Hobby", "article": "das", "plural": "die Hobbys", "ru": "хобби", "uk": "хобі", "example_de": "Mein Hobby ist Kochen.", "example_ru": "Моё хобби — готовка.", "example_uk": "Моє хобі — кулінарія." },
+    { "id": "a1-fre-12", "kind": "word", "de": "der Park", "article": "der", "plural": "die Parks", "ru": "парк", "uk": "парк", "example_de": "Die Kinder spielen im Park.", "example_ru": "Дети играют в парке.", "example_uk": "Діти граються в парку." },
+    { "id": "a1-fre-13", "kind": "word", "de": "das Schwimmbad", "article": "das", "plural": "die Schwimmbäder", "ru": "бассейн", "uk": "басейн", "example_de": "Im Sommer gehen wir ins Schwimmbad.", "example_ru": "Летом мы ходим в бассейн.", "example_uk": "Влітку ми ходимо в басейн." },
+    { "id": "a1-fre-14", "kind": "word", "de": "der Ausflug", "article": "der", "plural": "die Ausflüge", "ru": "поездка, экскурсия", "uk": "поїздка, екскурсія", "example_de": "Am Sonntag machen wir einen Ausflug.", "example_ru": "В воскресенье мы едем на прогулку за город.", "example_uk": "У неділю ми їдемо на прогулянку за місто." },
+    { "id": "a1-fre-15", "kind": "word", "de": "die Musik", "article": "die", "ru": "музыка", "uk": "музика", "example_de": "Welche Musik hörst du gern?", "example_ru": "Какую музыку ты любишь слушать?", "example_uk": "Яку музику ти любиш слухати?" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "level": "A1",
+  "topic": "einkaufen",
+  "lesson": { "id": "a1-einkaufen-1", "title_ru": "Покупки", "title_uk": "Покупки", "sort": 15 },
+  "items": [
+    { "id": "a1-ein-01", "de": "Ich suche Milch. Wo finde ich die?", "ru": "Я ищу молоко. Где его найти?", "uk": "Я шукаю молоко. Де його знайти?" },
+    { "id": "a1-ein-02", "de": "Haben Sie das auch in Größe 40?", "ru": "У вас это есть 40-го размера?", "uk": "У вас це є 40-го розміру?" },
+    { "id": "a1-ein-03", "de": "Kann ich das anprobieren?", "ru": "Можно это примерить?", "uk": "Можна це приміряти?", "tags": ["separable_verb"] },
+    { "id": "a1-ein-04", "de": "Ich möchte das umtauschen.", "ru": "Я хочу это обменять.", "uk": "Я хочу це обміняти." },
+    { "id": "a1-ein-05", "de": "Was darf es sein?", "ru": "Что желаете? (продавец)", "uk": "Що бажаєте? (продавець)" },
+    { "id": "a1-ein-06", "de": "Ich hätte gern 200 Gramm Käse.", "ru": "Мне, пожалуйста, 200 грамм сыра.", "uk": "Мені, будь ласка, 200 грамів сиру." },
+    { "id": "a1-ein-07", "de": "Sonst noch etwas?", "ru": "Что-нибудь ещё?", "uk": "Щось іще?" },
+    { "id": "a1-ein-08", "de": "Nein, das ist alles.", "ru": "Нет, это всё.", "uk": "Ні, це все." },
+    { "id": "a1-ein-09", "de": "Das Angebot gilt bis Samstag.", "ru": "Акция действует до субботы.", "uk": "Акція діє до суботи." },
+    { "id": "a1-ein-10", "de": "Der Supermarkt hat bis 22 Uhr auf.", "ru": "Супермаркет открыт до 22 часов.", "uk": "Супермаркет відчинений до 22 години." },
+    { "id": "a1-ein-11", "kind": "word", "de": "das Brot", "article": "das", "plural": "die Brote", "ru": "хлеб", "uk": "хліб", "example_de": "Ein Vollkornbrot, bitte.", "example_ru": "Цельнозерновой хлеб, пожалуйста.", "example_uk": "Цільнозерновий хліб, будь ласка." },
+    { "id": "a1-ein-12", "kind": "word", "de": "die Kasse", "article": "die", "plural": "die Kassen", "ru": "касса", "uk": "каса", "example_de": "Bitte zahlen Sie an der Kasse.", "example_ru": "Пожалуйста, оплатите на кассе.", "example_uk": "Будь ласка, оплатіть на касі." },
+    { "id": "a1-ein-13", "kind": "word", "de": "der Preis", "article": "der", "plural": "die Preise", "ru": "цена", "uk": "ціна", "example_de": "Der Preis ist gut.", "example_ru": "Цена хорошая.", "example_uk": "Ціна хороша." },
+    { "id": "a1-ein-14", "kind": "word", "de": "das Geld", "article": "das", "ru": "деньги (ед. ч.!)", "uk": "гроші (одн.!)", "example_de": "Ich habe kein Geld dabei.", "example_ru": "У меня нет с собой денег.", "example_uk": "У мене немає з собою грошей.", "tags": ["typical_error"] },
+    { "id": "a1-ein-15", "kind": "word", "de": "die Tüte", "article": "die", "plural": "die Tüten", "ru": "пакет", "uk": "пакет", "example_de": "Die Tüte kostet zehn Cent.", "example_ru": "Пакет стоит десять центов.", "example_uk": "Пакет коштує десять центів." },
+    { "id": "a1-ein-16", "kind": "word", "de": "der Kassenbon", "article": "der", "plural": "die Kassenbons", "ru": "кассовый чек", "uk": "касовий чек", "example_de": "Brauchen Sie den Kassenbon?", "example_ru": "Вам нужен чек?", "example_uk": "Вам потрібен чек?" }
+  ]
+}
