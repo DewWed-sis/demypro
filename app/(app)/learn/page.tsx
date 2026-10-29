@@ -47,6 +47,11 @@ export default function LearnPage() {
         </span>
       </Link>
 
+      <Link href="/learn/shadowing" className={row}>
+        <span>{t("shadowing")}</span>
+        <span aria-hidden>🎙</span>
+      </Link>
+
       {lessons.length > 0 && (
         <GlassCard className="space-y-1 p-3">
           {lessons.map((l) => (

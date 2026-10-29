@@ -88,3 +88,16 @@ describe("lid", () => {
     }
   });
 });
+
+describe("diff", () => {
+  it("совпадение без учёта регистра и пунктуации, пропуски и лишние слова", async () => {
+    const { wordDiff } = await import("./diff");
+    expect(wordDiff("Wie geht's dir?", "wie gehts dir").score).toBe(1);
+    const d = wordDiff("Ich heiße Anna.", "Ich heisse äh Anna");
+    expect(d.score).toBe(1);
+    expect(d.tokens.filter((x) => x.kind === "extra").map((x) => x.word)).toEqual(["äh"]);
+    const m = wordDiff("Ich wohne in Köln", "Ich wohne Köln");
+    expect(m.tokens.find((x) => x.kind === "miss")?.word).toBe("in");
+    expect(m.score).toBe(0.75);
+  });
+});

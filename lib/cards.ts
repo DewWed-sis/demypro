@@ -119,3 +119,14 @@ export async function completeBlock(kind: Block["kind"]) {
     })
     .eq("id", data.id);
 }
+
+/** Фразы для shadowing: уже начатые пользователем, иначе первые фразы курса. */
+export async function shadowingItems(limit: number): Promise<Item[]> {
+  const { data: own } = await supabase.from("user_cards").select("item_id").eq("item_type", "content").limit(300);
+  const ids = (own ?? []).map((c) => c.item_id as string);
+  let q = supabase.from("content_items").select(ITEM_COLS).eq("kind", "phrase");
+  q = ids.length >= limit ? q.in("id", ids) : q.order("sort").limit(limit * 3);
+  const { data, error } = await q;
+  if (error) throw error;
+  return (data as Item[]).sort(() => Math.random() - 0.5).slice(0, limit);
+}
