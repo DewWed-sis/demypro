@@ -26,10 +26,7 @@ export function speak(text: string, rate = 0.95) {
   speechSynthesis.speak(u);
 }
 
-export function play(item: { de: string; audio_url?: string | null }) {
-  if (item.audio_url) {
-    new Audio(item.audio_url).play().catch(() => speak(item.de));
-  } else {
-    speak(item.de.replace(/\s—\s/g, ", "));
-  }
+// Piper-файлы лежат статикой в public/audio/<id>.m4a (npm run tts); audio_url — для внешних ссылок.
+export function play(item: { id: string; de: string; audio_url?: string | null }) {
+  new Audio(item.audio_url ?? `/audio/${item.id}.m4a`).play().catch(() => speak(item.de.replace(/\s—\s/g, ", ")));
 }

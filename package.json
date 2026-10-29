@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "seed": "tsx --env-file=.env.local scripts/seed.ts",
-    "tts": "tsx --env-file=.env.local scripts/tts.ts"
+    "tts": "tsx scripts/tts.ts",
+    "seed": "tsx scripts/seed-sql.ts > supabase/seed.sql"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0",
