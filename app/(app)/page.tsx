@@ -15,7 +15,7 @@ const blockMeta: Record<Block["kind"], { key: Key; href?: (b: Block) => string }
   new: { key: "blockNew", href: (b) => `/learn/cards?mode=new&min=${b.minutes}` },
   speak: { key: "blockSpeak" },
   write: { key: "blockWrite" },
-  lid: { key: "blockLid" },
+  lid: { key: "blockLid", href: () => "/lid/practice?plan=1" },
 };
 
 export default function TodayPage() {

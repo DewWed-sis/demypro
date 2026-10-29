@@ -20,7 +20,7 @@ if (!existsSync(join(dir, `${VOICE}.onnx`))) {
 const speakable = (de: string) => de.replace(/\s—\s/g, ", ").replace(/…/g, "");
 
 const root = join(process.cwd(), "content");
-const items = readdirSync(root).flatMap((level) =>
+const items = readdirSync(root).filter((d) => /^[ab][12]$/.test(d)).flatMap((level) =>
   readdirSync(join(root, level))
     .filter((f) => f.endsWith(".json"))
     .flatMap((f) => fileSchema.parse(JSON.parse(readFileSync(join(root, level, f), "utf8"))).items),

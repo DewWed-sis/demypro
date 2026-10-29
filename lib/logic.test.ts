@@ -59,7 +59,7 @@ describe("content", () => {
   it("все JSON-сиды валидны, id уникальны", () => {
     const ids = new Set<string>();
     const root = join(__dirname, "..", "content");
-    for (const level of readdirSync(root)) {
+    for (const level of readdirSync(root).filter((d) => /^[ab][12]$/.test(d))) {
       for (const f of readdirSync(join(root, level)).filter((f) => f.endsWith(".json"))) {
         const data = fileSchema.parse(JSON.parse(readFileSync(join(root, level, f), "utf8")));
         for (const it of data.items) {

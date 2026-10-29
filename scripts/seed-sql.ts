@@ -2,13 +2,14 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileSchema } from "../lib/content-schema";
+import { lidRows } from "../lib/lid-source";
 
 const q = (v: unknown): string =>
   v === undefined || v === null ? "null" : Array.isArray(v) ? `array[${v.map(q).join(",")}]::text[]` : typeof v === "number" ? String(v) : `'${String(v).replace(/'/g, "''")}'`;
 
 const root = join(process.cwd(), "content");
 const out: string[] = [];
-for (const level of readdirSync(root).sort()) {
+for (const level of readdirSync(root).filter((d) => /^[ab][12]$/.test(d)).sort()) {
   for (const f of readdirSync(join(root, level)).filter((f) => f.endsWith(".json")).sort()) {
     const file = fileSchema.parse(JSON.parse(readFileSync(join(root, level, f), "utf8")));
     const l = file.lesson;
@@ -23,4 +24,12 @@ for (const level of readdirSync(root).sort()) {
     out.push(`insert into public.content_items (${cols.join(",")}) values\n${rows.join(",\n")}\non conflict (id) do update set ${upd};`);
   }
 }
+// LiD: официальный каталог BAMF (310 вопросов)
+const lidCols = ["id", "question", "answers", "correct", "topic", "bundesland", "image_url", "question_ru", "question_uk", "answers_ru", "answers_uk", "explanation_ru", "explanation_uk"] as const;
+const j = (v: unknown) => (v == null ? "null" : `'${JSON.stringify(v).replace(/'/g, "''")}'::jsonb`);
+const lid = lidRows().map((r) =>
+  `(${[q(r.id), q(r.question), j(r.answers), q(r.correct), q(r.topic), q(r.bundesland), q(r.image_url), q(r.question_ru), q(r.question_uk), j(r.answers_ru), j(r.answers_uk), q(r.explanation_ru), q(r.explanation_uk)].join(",")})`,
+);
+out.push(`insert into public.lid_questions (${lidCols.join(",")}) values\n${lid.join(",\n")}\non conflict (id) do update set ${lidCols.filter((c) => c !== "id").map((c) => `${c} = excluded.${c}`).join(", ")};`);
+
 console.log(out.join("\n\n"));
