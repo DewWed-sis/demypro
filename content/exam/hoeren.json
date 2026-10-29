@@ -1,0 +1,141 @@
+[
+  { "id": "h-a-1", "part": "hoeren", "teil": 1, "type": "mc", "level": "A2", "topic": null,
+    "instructions": { "de": "Sie hören vier Ansagen. Zu jeder Ansage gibt es eine Aufgabe. Welche Lösung (a, b oder c) passt am besten?", "ru": "Четыре объявления, к каждому одно задание. Какой вариант (a, b, c) подходит лучше всего?", "uk": "Чотири оголошення, до кожного одне завдання. Який варіант (a, b, c) підходить найкраще?" },
+    "meta": { "satz": "A", "plays": 2, "audio": true,
+      "segments": [
+        [{ "s": "f", "de": "Praxis Dr. Albers, guten Tag. Sie rufen außerhalb unserer Sprechzeiten an. Wir sind montags bis freitags von acht bis zwölf Uhr für Sie da, dienstags und donnerstags auch nachmittags von fünfzehn bis achtzehn Uhr. In dringenden Fällen wählen Sie bitte die 116 117." }],
+        [{ "s": "m", "de": "Hallo Svetlana, hier ist Jonas. Du, wegen morgen: Ich kann dich leider nicht mit dem Auto abholen, meine Werkstatt hat angerufen, das Auto ist noch nicht fertig. Nimm doch einfach die S-Bahn bis Hauptbahnhof, ich warte dann am Ausgang Nord auf dich. Bis morgen!" }],
+        [{ "s": "n", "de": "Liebe Kundinnen und Kunden, heute bis achtzehn Uhr: Alle Wintermäntel und Jacken im ersten Stock um dreißig Prozent reduziert. Schuhe gibt es zum halben Preis, aber nur im Erdgeschoss an der Sonderkasse." }],
+        [{ "s": "f", "de": "Guten Tag, Frau Petrenko, hier ist Gabriele Wolf vom Bürgeramt. Ihr neuer Personalausweis ist da. Sie können ihn ab Montag abholen. Bitte bringen Sie den alten Ausweis mit. Einen Termin brauchen Sie dafür nicht." }]
+      ] },
+    "options": [
+      { "q": "Wann hat die Praxis am Mittwochnachmittag geöffnet?", "choices": ["Von 15 bis 18 Uhr.", "Gar nicht.", "Von 8 bis 12 Uhr."], "answer": 1, "seg": 0,
+        "trap_ru": "Ловушка: 15–18 звучит, но только для вторника и четверга. В среду после обеда закрыто.", "trap_uk": "Пастка: 15–18 звучить, але лише для вівторка й четверга. У середу після обіду зачинено." },
+      { "q": "Wie soll Svetlana morgen fahren?", "choices": ["Mit dem Auto.", "Mit der S-Bahn.", "Mit dem Taxi."], "answer": 1, "seg": 1,
+        "trap_ru": "Слово «Auto» звучит первым, но с отрицанием: машина ещё в ремонте.", "trap_uk": "Слово «Auto» звучить першим, але із запереченням: авто ще в ремонті." },
+      { "q": "Was ist heute billiger?", "choices": ["Nur Mäntel und Jacken.", "Alles im ersten Stock.", "Mäntel, Jacken und Schuhe."], "answer": 2, "seg": 2,
+        "trap_ru": "Скидка есть и на обувь (zum halben Preis = за полцены) — синоним вместо слова «billiger».", "trap_uk": "Знижка є й на взуття (zum halben Preis = за пів ціни) — синонім замість слова «billiger»." },
+      { "q": "Was muss Frau Petrenko tun?", "choices": ["Einen Termin machen.", "Den alten Ausweis mitbringen.", "Am Montag anrufen."], "answer": 1, "seg": 3,
+        "trap_ru": "«Termin» упомянут, но с отрицанием: запись не нужна.", "trap_uk": "«Termin» згадано, але із запереченням: запис не потрібен." }
+    ] },
+  { "id": "h-a-2", "part": "hoeren", "teil": 2, "type": "mc", "level": "A2", "topic": "medien",
+    "instructions": { "de": "Sie hören fünf Ansagen aus dem Radio. Zu jeder Ansage gibt es eine Aufgabe. Welche Lösung (a, b oder c) passt am besten?", "ru": "Пять объявлений по радио. Какой вариант подходит лучше всего?", "uk": "П'ять оголошень по радіо. Який варіант підходить найкраще?" },
+    "meta": { "satz": "A", "plays": 1, "audio": true,
+      "segments": [
+        [{ "s": "n", "de": "Und jetzt das Wetter für morgen: Am Vormittag noch Regen, ab Mittag wird es freundlicher und im Westen kommt sogar die Sonne heraus. Die Temperaturen steigen auf vierzehn Grad." }],
+        [{ "s": "m", "de": "Achtung, Autofahrer auf der A40 Richtung Essen: Zwischen Bochum-Stahlhausen und Bochum-West ist ein Fahrstreifen wegen Bauarbeiten gesperrt. Sie verlieren dort etwa zwanzig Minuten. Wir empfehlen, die Umleitung über die A43 zu nehmen." }],
+        [{ "s": "n", "de": "Am Samstag ist wieder Familientag im Stadtmuseum. Kinder unter zwölf Jahren haben freien Eintritt, Erwachsene zahlen nur die Hälfte. Um elf Uhr gibt es eine Führung auf Ukrainisch und Russisch." }],
+        [{ "s": "m", "de": "Sie suchen einen Ausbildungsplatz? Dann kommen Sie am Donnerstag zur Ausbildungsmesse in die Westfalenhalle. Über hundert Firmen stellen sich vor. Bringen Sie Ihren Lebenslauf mit – viele Firmen führen direkt Gespräche." }],
+        [{ "s": "n", "de": "Eine Information der Stadtwerke: Wegen Arbeiten an den Leitungen gibt es am Dienstag zwischen neun und dreizehn Uhr in der Nordstadt kein Wasser. Bitte füllen Sie vorher Wasser ab." }]
+      ] },
+    "options": [
+      { "q": "Wie wird das Wetter morgen Nachmittag?", "choices": ["Es regnet.", "Es wird besser.", "Es wird kälter."], "answer": 1, "seg": 0,
+        "trap_ru": "Дождь только утром. «Freundlicher» = погода улучшается — синоним к «besser».", "trap_uk": "Дощ лише зранку. «Freundlicher» = погода покращується — синонім до «besser»." },
+      { "q": "Was sollen Autofahrer tun?", "choices": ["Eine andere Autobahn nehmen.", "Zwanzig Minuten warten.", "In Bochum-West abfahren."], "answer": 0, "seg": 1,
+        "trap_ru": "«Umleitung über die A43» = ехать по другой автостраде. 20 минут — это потеря времени, а не совет.", "trap_uk": "«Umleitung über die A43» = їхати іншою автострадою. 20 хвилин — це втрата часу, а не порада." },
+      { "q": "Was gibt es am Samstag im Museum?", "choices": ["Eintritt frei für alle.", "Eine Führung in mehreren Sprachen.", "Ein Programm nur für Kinder."], "answer": 1, "seg": 2,
+        "trap_ru": "Бесплатно только детям до 12, взрослые платят половину. Экскурсия на украинском и русском — «в нескольких языках».", "trap_uk": "Безкоштовно лише дітям до 12, дорослі платять половину. Екскурсія українською й російською — «кількома мовами»." },
+      { "q": "Auf der Ausbildungsmesse kann man", "choices": ["sofort mit Firmen sprechen.", "einen Lebenslauf schreiben lassen.", "nur Informationen bekommen."], "answer": 0, "seg": 3,
+        "trap_ru": "Лебенслауф нужно принести самому, а не заказать. «Direkt Gespräche» = сразу поговорить.", "trap_uk": "Резюме треба принести самому, а не замовити. «Direkt Gespräche» = одразу поговорити." },
+      { "q": "Was passiert am Dienstag?", "choices": ["Das Wasser kostet mehr.", "In einem Stadtteil gibt es zeitweise kein Wasser.", "Die Stadtwerke sind geschlossen."], "answer": 1, "seg": 4,
+        "trap_ru": "«Nordstadt» = один район, «zwischen neun und dreizehn Uhr» = временно.", "trap_uk": "«Nordstadt» = один район, «zwischen neun und dreizehn Uhr» = тимчасово." }
+    ] },
+  { "id": "h-a-3", "part": "hoeren", "teil": 3, "type": "rf-mc", "level": "B1", "topic": null,
+    "instructions": { "de": "Sie hören vier Gespräche. Zu jedem Gespräch gibt es zwei Aufgaben: richtig oder falsch und a, b oder c.", "ru": "Четыре разговора, к каждому два задания: верно/неверно и a, b, c.", "uk": "Чотири розмови, до кожної два завдання: правильно/неправильно та a, b, c." },
+    "meta": { "satz": "A", "plays": 1, "audio": true,
+      "segments": [
+        [{ "s": "f", "de": "Herr Novak, haben Sie kurz Zeit? Ich ziehe am Wochenende aus und brauche noch jemanden, der am Samstag die Schlüssel vom Hausmeister annimmt." }, { "s": "m", "de": "Am Samstag bin ich leider bei meiner Schwester in Köln. Aber meine Frau ist zu Hause, die macht das bestimmt." }, { "s": "f", "de": "Oh, super, vielen Dank! Ich bringe Ihnen dann noch ein Stück Kuchen vorbei." }],
+        [{ "s": "m", "de": "Na, Olena, wie läuft's im neuen Job?" }, { "s": "f", "de": "Eigentlich gut. Die Kollegen sind total nett. Nur die Schichten sind anstrengend, ich muss oft schon um sechs anfangen." }, { "s": "m", "de": "Und dein Chef?" }, { "s": "f", "de": "Der ist ganz okay. Er hat gesagt, ab Januar kann ich vielleicht in die Spätschicht wechseln." }],
+        [{ "s": "f", "de": "Entschuldigung, fährt dieser Bus zum Klinikum?" }, { "s": "m", "de": "Nein, das ist die 12, die fährt zum Bahnhof. Zum Klinikum müssen Sie die 7 nehmen, aber die fährt heute nicht von hier, wegen der Baustelle. Gehen Sie da vorne links, zur Haltestelle Marktplatz." }, { "s": "f", "de": "Ach so, danke schön!" }],
+        [{ "s": "m", "de": "Schau mal, die Jacke hier. Die ist doch schön, oder?" }, { "s": "f", "de": "Ja, die Farbe ist toll. Aber neunundachtzig Euro? Das ist mir zu viel. Ich warte lieber bis zum Schlussverkauf." }, { "s": "m", "de": "Wie du meinst. Ich finde, für die Qualität ist das nicht teuer." }]
+      ] },
+    "options": [
+      { "q": "Die Frau zieht aus.", "choices": ["richtig", "falsch"], "answer": 0, "seg": 0, "trap_ru": "«Ich ziehe am Wochenende aus» — прямо сказано.", "trap_uk": "«Ich ziehe am Wochenende aus» — прямо сказано." },
+      { "q": "Wer nimmt die Schlüssel an?", "choices": ["Herr Novak.", "Die Frau von Herrn Novak.", "Der Hausmeister."], "answer": 1, "seg": 0, "trap_ru": "Херр Новак отказывается (будет в Кёльне), поможет его жена.", "trap_uk": "Пан Новак відмовляється (буде в Кельні), допоможе його дружина." },
+      { "q": "Olena ist mit ihren Kollegen zufrieden.", "choices": ["richtig", "falsch"], "answer": 0, "seg": 1, "trap_ru": "«Total nett» = очень милые. «Anstrengend» относится к сменам, не к коллегам.", "trap_uk": "«Total nett» = дуже милі. «Anstrengend» стосується змін, а не колег." },
+      { "q": "Was sagt der Chef?", "choices": ["Olena muss um sechs anfangen.", "Olena kann später vielleicht andere Schichten arbeiten.", "Olena bekommt ab Januar mehr Geld."], "answer": 1, "seg": 1, "trap_ru": "Шесть утра — это слова Олены, не шефа. Шеф говорит про позднюю смену.", "trap_uk": "Шоста ранку — це слова Олени, не шефа. Шеф говорить про пізню зміну." },
+      { "q": "Der Bus 12 fährt zum Klinikum.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 2, "trap_ru": "12-й идёт к вокзалу, к клинике — 7-й.", "trap_uk": "12-й їде до вокзалу, до клініки — 7-й." },
+      { "q": "Die Frau soll", "choices": ["hier auf die 7 warten.", "zu einer anderen Haltestelle gehen.", "zum Bahnhof fahren."], "answer": 1, "seg": 2, "trap_ru": "7-й сегодня отсюда не ходит — нужно идти на Marktplatz.", "trap_uk": "7-й сьогодні звідси не ходить — треба йти на Marktplatz." },
+      { "q": "Die Frau kauft die Jacke heute.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 3, "trap_ru": "Цвет нравится, но «zu viel» — она ждёт распродажи.", "trap_uk": "Колір подобається, але «zu viel» — вона чекає на розпродаж." },
+      { "q": "Der Mann findet die Jacke", "choices": ["zu teuer.", "nicht schön.", "ihren Preis wert."], "answer": 2, "seg": 3, "trap_ru": "«Für die Qualität nicht teuer» = стоит своих денег. «Zu teuer» — мнение женщины.", "trap_uk": "«Für die Qualität nicht teuer» = вартує своїх грошей. «Zu teuer» — думка жінки." }
+    ] },
+  { "id": "h-a-4", "part": "hoeren", "teil": 4, "type": "zuordnung", "level": "B1", "topic": "medien",
+    "instructions": { "de": "Sie hören Aussagen zum Thema „Kinder und Handy“. Welcher Satz (a–f) passt zu welcher Aussage?", "ru": "Высказывания на тему «Дети и смартфон». Какое предложение (a–f) подходит к какому высказыванию?", "uk": "Висловлювання на тему «Діти й смартфон». Яке речення (a–f) підходить до якого висловлювання?" },
+    "meta": { "satz": "A", "plays": 2, "audio": true,
+      "statements": ["Kinder brauchen ein Handy, damit die Eltern sie erreichen können.", "Handys machen Kinder unkonzentriert in der Schule.", "Die Eltern sollten selbst ein Vorbild sein.", "Kinder sollten erst mit vierzehn ein Handy bekommen.", "Mit dem Handy lernen Kinder auch viel.", "Handys sind für Kinder zu teuer."],
+      "segments": [
+        [{ "s": "f", "de": "Meine Tochter ist zehn und fährt allein mit dem Bus zum Training. Ich bin einfach ruhiger, wenn ich sie anrufen kann und sie mich. Deshalb hat sie ein Handy, aber ein ganz einfaches." }],
+        [{ "s": "m", "de": "Ehrlich gesagt: Wir Erwachsenen schauen doch ständig aufs Handy, beim Essen, im Park, überall. Wie sollen die Kinder es dann anders machen? Da müssen wir zuerst bei uns selbst anfangen." }],
+        [{ "s": "f", "de": "Ich bin Lehrerin, und ich sehe es jeden Tag: Wenn das Handy in der Tasche vibriert, denken die Kinder an nichts anderes mehr. Seit wir die Handys morgens einsammeln, ist es im Unterricht viel ruhiger." }]
+      ] },
+    "options": [
+      { "q": "Aussage 1", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 0, "seg": 0, "trap_ru": "Ключ: «anrufen kann und sie mich» = родители могут связаться. Про «einfaches Handy» — не про цену.", "trap_uk": "Ключ: «anrufen kann und sie mich» = батьки можуть зв'язатися. Про «einfaches Handy» — не про ціну." },
+      { "q": "Aussage 2", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 2, "seg": 1, "trap_ru": "«Bei uns selbst anfangen» = быть примером. Слово «Vorbild» не звучит.", "trap_uk": "«Bei uns selbst anfangen» = бути прикладом. Слово «Vorbild» не звучить." },
+      { "q": "Aussage 3", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 1, "seg": 2, "trap_ru": "«Denken an nichts anderes mehr» = не могут сосредоточиться.", "trap_uk": "«Denken an nichts anderes mehr» = не можуть зосередитися." }
+    ] },
+  { "id": "h-b-1", "part": "hoeren", "teil": 1, "type": "mc", "level": "A2", "topic": null,
+    "instructions": { "de": "Sie hören vier Ansagen. Zu jeder Ansage gibt es eine Aufgabe. Welche Lösung (a, b oder c) passt am besten?", "ru": "Четыре объявления, к каждому одно задание.", "uk": "Чотири оголошення, до кожного одне завдання." },
+    "meta": { "satz": "B", "plays": 2, "audio": true,
+      "segments": [
+        [{ "s": "n", "de": "Sehr geehrte Fahrgäste, der Regionalexpress nach Dortmund fährt heute nicht von Gleis drei, sondern von Gleis fünf ab. Die Abfahrtszeit bleibt unverändert: neun Uhr zwölf." }],
+        [{ "s": "f", "de": "Hallo Mama, ich bin's, Katja. Ich komme heute später, wir haben nach der Schule noch Theaterprobe. Kannst du Lena um vier vom Kindergarten abholen? Ich bin dann um sechs zu Hause." }],
+        [{ "s": "m", "de": "Guten Tag, hier ist das Autohaus Krämer. Ihr Wagen ist fertig. Leider mussten wir auch die Bremsen erneuern, deshalb wird es etwas teurer als besprochen. Sie können das Auto heute bis neunzehn Uhr abholen." }],
+        [{ "s": "f", "de": "Herzlich willkommen in der Stadtbibliothek. Bitte beachten Sie: Ab nächster Woche haben wir samstags geschlossen. Dafür sind wir donnerstags bis zwanzig Uhr für Sie da." }]
+      ] },
+    "options": [
+      { "q": "Was ist heute anders?", "choices": ["Der Zug fährt später.", "Der Zug fährt von einem anderen Gleis.", "Der Zug fällt aus."], "answer": 1, "seg": 0, "trap_ru": "Время звучит, но «bleibt unverändert» = не меняется.", "trap_uk": "Час звучить, але «bleibt unverändert» = не змінюється." },
+      { "q": "Was soll die Mutter machen?", "choices": ["Katja von der Schule abholen.", "Lena abholen.", "Um sechs zu Hause sein."], "answer": 1, "seg": 1, "trap_ru": "В шесть будет дома Катя, а маму просят забрать Лену.", "trap_uk": "О шостій удома буде Катя, а маму просять забрати Лену." },
+      { "q": "Was sagt das Autohaus?", "choices": ["Die Reparatur kostet mehr.", "Das Auto ist noch nicht fertig.", "Man kann das Auto morgen abholen."], "answer": 0, "seg": 2, "trap_ru": "«Etwas teurer als besprochen» = дороже, чем договаривались.", "trap_uk": "«Etwas teurer als besprochen» = дорожче, ніж домовлялися." },
+      { "q": "Wann hat die Bibliothek ab nächster Woche länger geöffnet?", "choices": ["Am Samstag.", "Am Donnerstag.", "Jeden Tag bis 20 Uhr."], "answer": 1, "seg": 3, "trap_ru": "Суббота упомянута, но как выходной.", "trap_uk": "Субота згадана, але як вихідний." }
+    ] },
+  { "id": "h-b-2", "part": "hoeren", "teil": 2, "type": "mc", "level": "A2", "topic": "medien",
+    "instructions": { "de": "Sie hören fünf Ansagen aus dem Radio. Welche Lösung (a, b oder c) passt am besten?", "ru": "Пять объявлений по радио.", "uk": "П'ять оголошень по радіо." },
+    "meta": { "satz": "B", "plays": 1, "audio": true,
+      "segments": [
+        [{ "s": "m", "de": "Verkehrsmeldung: Wegen eines Unfalls ist die Bahnstrecke zwischen Hamm und Unna bis voraussichtlich vierzehn Uhr gesperrt. Zwischen den beiden Bahnhöfen fahren Busse als Ersatz." }],
+        [{ "s": "n", "de": "Gute Nachricht für alle Eltern: Ab September kostet das Mittagessen in den städtischen Kitas nur noch zwei Euro pro Tag. Familien mit wenig Geld zahlen gar nichts." }],
+        [{ "s": "f", "de": "Heute Abend bei uns im Studio: Ärztin Dr. Meyer beantwortet Ihre Fragen zum Thema Erkältung. Rufen Sie an zwischen zwanzig und einundzwanzig Uhr unter null acht null null, zwölf, zwölf, zwölf." }],
+        [{ "s": "m", "de": "Am Wochenende ist verkaufsoffener Sonntag in der Innenstadt. Die Geschäfte haben von dreizehn bis achtzehn Uhr geöffnet. Busse und Bahnen fahren an diesem Tag häufiger." }],
+        [{ "s": "n", "de": "Das Wetter: Heute bleibt es trocken, aber es wird kalt, nachts bis minus fünf Grad. Autofahrer sollten morgen früh mit Glätte rechnen." }]
+      ] },
+    "options": [
+      { "q": "Wie kommt man von Hamm nach Unna?", "choices": ["Mit dem Zug.", "Mit dem Bus.", "Gar nicht."], "answer": 1, "seg": 0, "trap_ru": "«Busse als Ersatz» = вместо поезда автобусы.", "trap_uk": "«Busse als Ersatz» = замість поїзда автобуси." },
+      { "q": "Was ändert sich im September?", "choices": ["Das Kita-Essen wird billiger.", "Das Kita-Essen ist für alle kostenlos.", "Die Kitas bekommen eine neue Küche."], "answer": 0, "seg": 1, "trap_ru": "Бесплатно только семьям с малым доходом, для остальных 2 € — дешевле.", "trap_uk": "Безкоштовно лише родинам із малим доходом, для інших 2 € — дешевше." },
+      { "q": "Was kann man heute Abend machen?", "choices": ["Zum Arzt gehen.", "Fragen zur Gesundheit stellen.", "Ein Medikament gewinnen."], "answer": 1, "seg": 2, "trap_ru": "Врача можно спросить по телефону, а не пойти к нему.", "trap_uk": "Лікарку можна запитати телефоном, а не піти до неї." },
+      { "q": "Am Sonntag", "choices": ["sind die Geschäfte den ganzen Tag offen.", "fahren mehr Busse und Bahnen.", "ist die Innenstadt für Autos gesperrt."], "answer": 1, "seg": 3, "trap_ru": "Магазины открыты только с 13 до 18, не весь день. «Häufiger» = чаще = больше.", "trap_uk": "Магазини відкриті лише з 13 до 18, не весь день. «Häufiger» = частіше = більше." },
+      { "q": "Was sollen Autofahrer morgen beachten?", "choices": ["Es regnet stark.", "Die Straßen können glatt sein.", "Es gibt viele Staus."], "answer": 1, "seg": 4, "trap_ru": "«Trocken» = без дождя. Glätte = гололёд.", "trap_uk": "«Trocken» = без дощу. Glätte = ожеледиця." }
+    ] },
+  { "id": "h-b-3", "part": "hoeren", "teil": 3, "type": "rf-mc", "level": "B1", "topic": null,
+    "instructions": { "de": "Sie hören vier Gespräche. Zu jedem Gespräch gibt es zwei Aufgaben.", "ru": "Четыре разговора, по два задания.", "uk": "Чотири розмови, по два завдання." },
+    "meta": { "satz": "B", "plays": 1, "audio": true,
+      "segments": [
+        [{ "s": "m", "de": "Guten Morgen, ich habe Rückenschmerzen und hätte gern so schnell wie möglich einen Termin." }, { "s": "f", "de": "Heute ist alles voll, tut mir leid. Morgen um acht Uhr dreißig wäre etwas frei. Oder Sie kommen heute in die offene Sprechstunde ab sechzehn Uhr, aber da müssen Sie mit Wartezeit rechnen." }, { "s": "m", "de": "Dann komme ich lieber heute Nachmittag." }],
+        [{ "s": "f", "de": "Igor, hast du am Freitag schon was vor? Wir wollen mit dem Kurs ins Kino." }, { "s": "m", "de": "Freitag arbeite ich bis zehn, leider. Aber am Samstag hätte ich Zeit." }, { "s": "f", "de": "Hm, die anderen können nur Freitag. Schade! Dann machen wir nächstes Mal zusammen was." }],
+        [{ "s": "m", "de": "Ich möchte bitte dieses Paket nach Polen schicken." }, { "s": "f", "de": "Gern. Das wiegt sechs Kilo, das kostet neunzehn neunundneunzig. Möchten Sie es versichern?" }, { "s": "m", "de": "Nein danke, da sind nur Kleider drin. Aber kann ich mit Karte zahlen?" }, { "s": "f", "de": "Natürlich." }],
+        [{ "s": "f", "de": "Frau Lehmann, Ihr Sohn hat in Mathe große Fortschritte gemacht. Aber er vergisst oft seine Hausaufgaben." }, { "s": "m", "de": "Ja, das weiß ich. Wir schauen jetzt jeden Abend zusammen ins Heft." }, { "s": "f", "de": "Sehr gut. Und vielleicht kann er auch in die Hausaufgabenhilfe am Mittwoch gehen." }]
+      ] },
+    "options": [
+      { "q": "Der Mann bekommt heute einen festen Termin.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 0, "trap_ru": "Сегодня — только открытый приём с ожиданием, фиксированный термин — завтра.", "trap_uk": "Сьогодні — лише відкритий прийом з очікуванням, фіксований термін — завтра." },
+      { "q": "Der Mann", "choices": ["kommt morgen um 8:30.", "geht heute in die offene Sprechstunde.", "sucht eine andere Praxis."], "answer": 1, "seg": 0, "trap_ru": "«Lieber heute Nachmittag» = выбирает сегодня после обеда.", "trap_uk": "«Lieber heute Nachmittag» = обирає сьогодні по обіді." },
+      { "q": "Igor geht am Freitag mit ins Kino.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 1, "trap_ru": "В пятницу он работает до десяти.", "trap_uk": "У п'ятницю він працює до десятої." },
+      { "q": "Die Kursgruppe", "choices": ["geht am Samstag ins Kino.", "geht ohne Igor ins Kino.", "geht nicht ins Kino."], "answer": 1, "seg": 1, "trap_ru": "Остальные могут только в пятницу — пойдут без Игоря.", "trap_uk": "Інші можуть лише в п'ятницю — підуть без Ігоря." },
+      { "q": "Der Mann versichert das Paket.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 2, "trap_ru": "«Nein danke» — страховка не нужна.", "trap_uk": "«Nein danke» — страховка не потрібна." },
+      { "q": "Der Mann bezahlt", "choices": ["bar.", "mit Karte.", "19,90 Euro."], "answer": 1, "seg": 2, "trap_ru": "Цена 19,99, а не 19,90 — ловушка с числами.", "trap_uk": "Ціна 19,99, а не 19,90 — пастка з числами." },
+      { "q": "Der Sohn ist in Mathe besser geworden.", "choices": ["richtig", "falsch"], "answer": 0, "seg": 3, "trap_ru": "«Große Fortschritte» = стал лучше.", "trap_uk": "«Große Fortschritte» = став кращим." },
+      { "q": "Die Lehrerin empfiehlt", "choices": ["mehr Mathe zu üben.", "eine Hausaufgabenhilfe.", "jeden Abend ins Heft zu schauen."], "answer": 1, "seg": 3, "trap_ru": "Смотреть в тетрадь — это делают родители сами. Учительница советует Hausaufgabenhilfe.", "trap_uk": "Дивитися в зошит — це роблять батьки самі. Учителька радить Hausaufgabenhilfe." }
+    ] },
+  { "id": "h-b-4", "part": "hoeren", "teil": 4, "type": "zuordnung", "level": "B1", "topic": "arbeit",
+    "instructions": { "de": "Sie hören Aussagen zum Thema „Homeoffice“. Welcher Satz (a–f) passt?", "ru": "Высказывания на тему «Работа из дома». Какое предложение подходит?", "uk": "Висловлювання на тему «Робота з дому». Яке речення підходить?" },
+    "meta": { "satz": "B", "plays": 2, "audio": true,
+      "statements": ["Zu Hause kann man sich schlecht konzentrieren.", "Man spart viel Zeit für den Weg.", "Im Homeoffice fehlen die Kollegen.", "Homeoffice ist nur für junge Leute gut.", "Der Chef kontrolliert zu viel.", "Homeoffice ist in vielen Berufen nicht möglich."],
+      "segments": [
+        [{ "s": "m", "de": "Früher war ich jeden Tag fast zwei Stunden im Zug. Jetzt arbeite ich drei Tage zu Hause, und die Zeit habe ich für meine Familie. Das ist für mich das Wichtigste." }],
+        [{ "s": "f", "de": "Ich bin Krankenpflegerin. Homeoffice? Das klingt schön, aber die Patienten kann ich ja nicht per Video waschen. Für Leute wie mich ist das einfach kein Thema." }],
+        [{ "s": "m", "de": "Am Anfang fand ich es super. Aber nach ein paar Monaten habe ich gemerkt: Mir fehlt der Kaffee in der Küche, das kurze Gespräch zwischendurch. Allein am Schreibtisch ist es auf Dauer langweilig." }]
+      ] },
+    "options": [
+      { "q": "Aussage 1", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 1, "seg": 0, "trap_ru": "Две часа в поезде → теперь время для семьи = экономия времени на дорогу.", "trap_uk": "Дві години в поїзді → тепер час для родини = економія часу на дорогу." },
+      { "q": "Aussage 2", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 5, "seg": 1, "trap_ru": "Медсестра: в её профессии это невозможно.", "trap_uk": "Медсестра: у її професії це неможливо." },
+      { "q": "Aussage 3", "choices": ["a", "b", "c", "d", "e", "f"], "answer": 2, "seg": 2, "trap_ru": "«Langweilig» — не про концентрацию; ему не хватает разговоров с коллегами.", "trap_uk": "«Langweilig» — не про концентрацію; йому бракує розмов із колегами." }
+    ] }
+]

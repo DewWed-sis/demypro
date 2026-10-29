@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "tts": "tsx scripts/tts.ts",
+    "tts": "tsx scripts/tts.ts && tsx scripts/tts-exam.ts",
     "seed": "tsx scripts/seed-sql.ts > supabase/seed.sql"
   },
   "dependencies": {

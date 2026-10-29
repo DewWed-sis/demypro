@@ -39,7 +39,7 @@ const exam = readdirSync(examDir)
   .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
   .sort()
   .flatMap((f) => examFileSchema.parse(JSON.parse(readFileSync(join(examDir, f), "utf8"))))
-  .map((e) => `(${[q(e.id), q(e.part), q(e.teil), q(e.type), q(e.level), q(e.topic), j(e.instructions), q(e.text), q(e.meta.audio ? `/audio/exam/${e.id}.m4a` : null), j(e.options), j(e.answers), j(e.meta), q(e.time_limit_sec)].join(",")})`);
+  .map((e) => `(${[q(e.id), q(e.part), q(e.teil), q(e.type), q(e.level), q(e.topic), j(e.instructions), q(e.text), q(null), j(e.options), j(e.answers.length ? e.answers : e.options.map((o) => (o as { answer?: number }).answer ?? null)), j(e.meta), q(e.time_limit_sec)].join(",")})`);
 out.push(`insert into public.exam_tasks (${examCols.join(",")}) values\n${exam.join(",\n")}\non conflict (id) do update set ${examCols.filter((c) => c !== "id").map((c) => `${c} = excluded.${c}`).join(", ")};`);
 
 console.log(out.join("\n\n"));
