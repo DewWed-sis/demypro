@@ -26,7 +26,7 @@ export default function LoginPage() {
     setBusy(true);
     const { error } = await fn();
     setBusy(false);
-    setMsg(error ? { ok: false, text: error.message } : okText ? { ok: true, text: okText } : null);
+    setMsg(error ? { ok: false, text: /rate limit|too many/i.test(error.message) ? t("emailLimit") : error.message } : okText ? { ok: true, text: okText } : null);
   }
 
   const signUp = () =>

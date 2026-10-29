@@ -46,6 +46,14 @@ export default function ProfilePage() {
   const [minutesDraft, setMinutes] = useState<number | null>(null);
   const minutes = minutesDraft ?? profile?.daily_minutes ?? 35;
   const [msg, setMsg] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [pwdMsg, setPwdMsg] = useState("");
+  async function savePassword() {
+    if (pwd.length < 8) return setPwdMsg(t("passwordShort"));
+    const { error } = await supabase.auth.updateUser({ password: pwd });
+    setPwdMsg(error ? `${t("error")}: ${error.message}` : t("passwordSaved"));
+    if (!error) setPwd("");
+  }
   const [reminderDraft, setReminder] = useState<string | null>(null);
   const reminder = reminderDraft ?? profile?.reminder_time?.slice(0, 5) ?? "19:00";
 
@@ -118,6 +126,15 @@ export default function ProfilePage() {
           />
           <GlassButton onClick={saveGoal}>{t("save")}</GlassButton>
           {msg && <span className="ml-3 text-sm text-violet-200">{msg}</span>}
+        </div>
+
+        <div className="space-y-2">
+          <label htmlFor="pwd" className="text-sm text-violet-200">{t("setPassword")}</label>
+          <div className="flex gap-2">
+            <GlassInput id="pwd" type="password" autoComplete="new-password" value={pwd} onChange={(e) => setPwd(e.target.value)} />
+            <GlassButton onClick={savePassword} disabled={!pwd}>{t("save")}</GlassButton>
+          </div>
+          <p className="text-xs text-violet-300">{pwdMsg || t("setPasswordHint")}</p>
         </div>
 
         <div className="space-y-2">
