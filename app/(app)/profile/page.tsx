@@ -131,7 +131,7 @@ export default function ProfilePage() {
         <div className="space-y-2">
           <label htmlFor="pwd" className="text-sm text-violet-200">{t("setPassword")}</label>
           <div className="flex gap-2">
-            <GlassInput id="pwd" type="password" autoComplete="new-password" value={pwd} onChange={(e) => setPwd(e.target.value)} />
+            <GlassInput id="pwd" type="text" autoComplete="off" autoCapitalize="none" autoCorrect="off" spellCheck={false} value={pwd} onChange={(e) => setPwd(e.target.value)} />
             <GlassButton onClick={savePassword} disabled={!pwd}>{t("save")}</GlassButton>
           </div>
           <p className="text-xs text-violet-300">{pwdMsg || t("setPasswordHint")}</p>

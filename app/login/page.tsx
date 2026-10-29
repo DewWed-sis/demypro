@@ -12,7 +12,10 @@ const emailSchema = z.email();
 export default function LoginPage() {
   const { t, session } = useApp();
   const router = useRouter();
-  const [email, setEmail] = useState("");
+  const [rawEmail, setEmail] = useState("");
+  // Телефонная клавиатура добавляет пробел и заглавную букву — нормализуем.
+  const email = rawEmail.trim().toLowerCase();
+  const [show, setShow] = useState(false);
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [busy, setBusy] = useState(false);
@@ -26,7 +29,7 @@ export default function LoginPage() {
     setBusy(true);
     const { error } = await fn();
     setBusy(false);
-    setMsg(error ? { ok: false, text: /rate limit|too many/i.test(error.message) ? t("emailLimit") : error.message } : okText ? { ok: true, text: okText } : null);
+    setMsg(error ? { ok: false, text: /rate limit|too many/i.test(error.message) ? t("emailLimit") : /invalid login/i.test(error.message) ? t("badLogin") : error.message } : okText ? { ok: true, text: okText } : null);
   }
 
   const signUp = () =>
@@ -34,6 +37,8 @@ export default function LoginPage() {
       () => supabase.auth.signUp({ email, password, options: { emailRedirectTo: location.origin } }),
       t("checkMailConfirm"),
     );
+  const reset = () =>
+    run(() => supabase.auth.resetPasswordForEmail(email, { redirectTo: `${location.origin}/profile` }), t("resetSent"));
   const magic = () =>
     run(() => supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin } }), t("checkMail"));
 
@@ -53,8 +58,13 @@ export default function LoginPage() {
           }}
           className="space-y-3"
         >
-          <GlassInput type="email" autoComplete="email" placeholder={t("email")} aria-label={t("email")} value={email} onChange={(e) => setEmail(e.target.value)} required />
-          <GlassInput type="password" autoComplete="current-password" placeholder={t("password")} aria-label={t("password")} value={password} onChange={(e) => setPassword(e.target.value)} minLength={6} />
+          <GlassInput type="email" autoComplete="email" autoCapitalize="none" autoCorrect="off" spellCheck={false} inputMode="email" placeholder={t("email")} aria-label={t("email")} value={rawEmail} onChange={(e) => setEmail(e.target.value)} required />
+          <div className="relative">
+            <GlassInput type={show ? "text" : "password"} autoComplete="current-password" autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder={t("password")} aria-label={t("password")} value={password} onChange={(e) => setPassword(e.target.value)} minLength={6} className="pr-12" />
+            <button type="button" onClick={() => setShow(!show)} aria-label={t("showPassword")} aria-pressed={show} className="absolute inset-y-0 right-3 text-violet-200">
+              {show ? "🙈" : "👁"}
+            </button>
+          </div>
           <GlassButton variant="primary" className="w-full" disabled={busy || password.length < 6}>
             {t("signIn")}
           </GlassButton>
@@ -66,6 +76,9 @@ export default function LoginPage() {
           <GlassButton type="button" onClick={magic} disabled={busy}>
             ✉︎ {t("magicLink")}
           </GlassButton>
+          <button type="button" onClick={reset} disabled={busy} className="text-sm text-violet-200 underline">
+            {t("forgotPassword")}
+          </button>
         </div>
         {msg && (
           <p role="status" className={`text-sm ${msg.ok ? "text-ok" : "text-err"}`}>
