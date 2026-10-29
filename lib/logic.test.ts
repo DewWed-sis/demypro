@@ -101,3 +101,41 @@ describe("diff", () => {
     expect(m.score).toBe(0.75);
   });
 });
+
+describe("readiness", () => {
+  it("среднее по последним 5 попыткам, LiD — доля", async () => {
+    const { readiness, dtzLevel, clozeAnswer } = await import("./readiness");
+    const rows = [0.2, 0.4, 0.6, 0.8, 1, 1].map((r, i) => ({ kind: "hoeren", scores: { ratio: r }, created_at: `2026-01-0${i + 1}` }));
+    const r = readiness([...rows, { kind: "writing", scores: { total: 0.5 }, created_at: "2026-01-01" }], 155);
+    expect(r.hoeren).toBeCloseTo((0.4 + 0.6 + 0.8 + 1 + 1) / 5);
+    expect(r.schreiben).toBe(0.5);
+    expect(r.sprechen).toBe(0);
+    expect(r.lid).toBe(0.5);
+    expect([dtzLevel("hl", 33), dtzLevel("hl", 32), dtzLevel("hl", 19), dtzLevel("schreiben", 15)]).toEqual(["B1", "A2", "<A2", "B1"]);
+    expect(clozeAnswer("Ich bin seit einem Jahr hier.", "Ich bin ___ einem Jahr hier.")).toBe("seit");
+  });
+});
+
+describe("grammar", () => {
+  it("карточки валидны, ответы в пределах вариантов", async () => {
+    const { grammarSchema } = await import("./content-schema");
+    const g = grammarSchema.parse(JSON.parse(readFileSync(join(__dirname, "..", "content", "grammar.json"), "utf8")));
+    expect(g.length).toBeGreaterThanOrEqual(12);
+    for (const x of g) for (const q of x.quiz) expect(q.answer, x.id).toBeLessThan(q.options.length);
+  });
+});
+
+describe("exam tasks", () => {
+  it("Hören 20 + Lesen 25 заданий на вариант (формат g.a.s.t.)", async () => {
+    const { examFileSchema } = await import("./content-schema");
+    const read = (f: string) => examFileSchema.parse(JSON.parse(readFileSync(join(__dirname, "..", "content", "exam", f), "utf8")));
+    for (const [file, perSet] of [["hoeren.json", 20], ["lesen.json", 25]] as const) {
+      const tasks = read(file);
+      for (const satz of new Set(tasks.map((t) => t.meta.satz))) {
+        const qs = tasks.filter((t) => t.meta.satz === satz).flatMap((t) => t.options as { answer: number; choices: string[] }[]);
+        expect(qs.length, `${file} ${satz}`).toBe(perSet);
+        for (const q of qs) expect(q.answer).toBeLessThan(q.choices.length);
+      }
+    }
+  });
+});

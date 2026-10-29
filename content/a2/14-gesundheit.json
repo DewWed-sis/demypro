@@ -1,0 +1,150 @@
+{
+ "level": "A2",
+ "topic": "gesundheit",
+ "lesson": {
+  "id": "a2-gesundheit-1",
+  "title_ru": "Врач и здоровье (A2)",
+  "title_uk": "Лікар і здоров'я (A2)",
+  "sort": 104
+ },
+ "items": [
+  {
+   "id": "a2-ges-01",
+   "de": "Ich hätte gern einen Termin bei Dr. Weber.",
+   "ru": "Я бы хотел(а) записаться к доктору Веберу.",
+   "uk": "Я б хотів(ла) записатися до лікаря Вебера.",
+   "cloze": "Ich ___ gern einen Termin bei Dr. Weber.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "a2-ges-02",
+   "de": "Ich habe seit drei Tagen Fieber.",
+   "ru": "У меня третий день температура.",
+   "uk": "У мене третій день температура.",
+   "cloze": "Ich habe ___ drei Tagen Fieber.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ges-03",
+   "de": "Mir ist schlecht.",
+   "ru": "Меня тошнит.",
+   "uk": "Мене нудить.",
+   "cloze": "Mir ist ___.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ges-04",
+   "de": "Mein Hals tut weh.",
+   "ru": "У меня болит горло.",
+   "uk": "У мене болить горло.",
+   "cloze": "Mein Hals tut ___."
+  },
+  {
+   "id": "a2-ges-05",
+   "de": "Ich bin gegen Penizillin allergisch.",
+   "ru": "У меня аллергия на пенициллин.",
+   "uk": "У мене алергія на пеніцилін.",
+   "cloze": "Ich bin gegen Penizillin ___."
+  },
+  {
+   "id": "a2-ges-06",
+   "de": "Sie müssen dreimal täglich eine Tablette nehmen.",
+   "ru": "Вам нужно принимать одну таблетку три раза в день.",
+   "uk": "Вам треба приймати одну таблетку тричі на день.",
+   "cloze": "Sie müssen dreimal täglich eine Tablette ___.",
+   "tags": [
+    "modal_verbs",
+    "verb_final"
+   ]
+  },
+  {
+   "id": "a2-ges-07",
+   "de": "Ich brauche eine Überweisung zum Facharzt.",
+   "ru": "Мне нужно направление к специалисту.",
+   "uk": "Мені потрібне направлення до фахівця.",
+   "cloze": "Ich brauche eine ___ zum Facharzt."
+  },
+  {
+   "id": "a2-ges-08",
+   "de": "Haben Sie Ihre Versichertenkarte dabei?",
+   "ru": "У вас с собой страховая карточка?",
+   "uk": "У вас із собою страхова картка?",
+   "cloze": "Haben Sie Ihre ___ dabei?"
+  },
+  {
+   "id": "a2-ges-09",
+   "de": "Das Rezept bekommen Sie an der Anmeldung.",
+   "ru": "Рецепт получите на ресепшене.",
+   "uk": "Рецепт отримаєте на реєстрації.",
+   "cloze": "Das ___ bekommen Sie an der Anmeldung.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-ges-10",
+   "de": "Ich muss mich krankschreiben lassen.",
+   "ru": "Мне нужно взять больничный.",
+   "uk": "Мені треба взяти лікарняний.",
+   "cloze": "Ich muss mich ___ lassen."
+  },
+  {
+   "id": "a2-ges-11",
+   "de": "Gute Besserung!",
+   "ru": "Выздоравливай(те)!",
+   "uk": "Одужуй(те)!",
+   "cloze": "Gute ___!"
+  },
+  {
+   "id": "a2-ges-12",
+   "de": "Die Apotheke hat heute Notdienst.",
+   "ru": "Аптека сегодня дежурная.",
+   "uk": "Аптека сьогодні чергова.",
+   "cloze": "Die Apotheke hat heute ___."
+  },
+  {
+   "id": "a2-ges-13",
+   "de": "Ich habe mir den Fuß verletzt.",
+   "ru": "Я повредил(а) ногу.",
+   "uk": "Я пошкодив(ла) ногу.",
+   "cloze": "Ich habe mir den Fuß ___.",
+   "tags": [
+    "reflexive",
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-ges-14",
+   "de": "Wie lange muss ich warten?",
+   "ru": "Сколько мне ждать?",
+   "uk": "Скільки мені чекати?",
+   "cloze": "Wie lange muss ich ___?"
+  },
+  {
+   "id": "a2-ges-15",
+   "de": "Rufen Sie bei Notfällen die 112 an.",
+   "ru": "В экстренных случаях звоните 112.",
+   "uk": "У надзвичайних випадках телефонуйте 112.",
+   "cloze": "Rufen Sie bei ___ die 112 an.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ges-16",
+   "de": "Ich gehe einmal im Jahr zur Vorsorge.",
+   "ru": "Раз в год я хожу на профилактический осмотр.",
+   "uk": "Раз на рік я ходжу на профогляд.",
+   "cloze": "Ich gehe einmal im Jahr zur ___.",
+   "tags": [
+    "preposition"
+   ]
+  }
+ ]
+}

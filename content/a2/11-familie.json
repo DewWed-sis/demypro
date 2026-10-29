@@ -1,0 +1,151 @@
+{
+ "level": "A2",
+ "topic": "familie",
+ "lesson": {
+  "id": "a2-familie-1",
+  "title_ru": "Семья (A2)",
+  "title_uk": "Сім'я (A2)",
+  "sort": 101
+ },
+ "items": [
+  {
+   "id": "a2-fam-01",
+   "de": "Meine Eltern wohnen noch in Odessa.",
+   "ru": "Мои родители ещё живут в Одессе.",
+   "uk": "Мої батьки ще живуть в Одесі.",
+   "cloze": "Meine ___ wohnen noch in Odessa."
+  },
+  {
+   "id": "a2-fam-02",
+   "de": "Wir haben zwei Kinder, einen Sohn und eine Tochter.",
+   "ru": "У нас двое детей, сын и дочь.",
+   "uk": "У нас двоє дітей, син і донька.",
+   "cloze": "Wir haben zwei Kinder, ___ Sohn und eine Tochter.",
+   "tags": [
+    "case_akkusativ"
+   ]
+  },
+  {
+   "id": "a2-fam-03",
+   "de": "Meine Schwester ist älter als ich.",
+   "ru": "Моя сестра старше меня.",
+   "uk": "Моя сестра старша за мене.",
+   "cloze": "Meine Schwester ist ___ als ich."
+  },
+  {
+   "id": "a2-fam-04",
+   "de": "Mein Bruder ist geschieden.",
+   "ru": "Мой брат разведён.",
+   "uk": "Мій брат розлучений.",
+   "cloze": "Mein Bruder ist ___."
+  },
+  {
+   "id": "a2-fam-05",
+   "de": "Am Wochenende besuchen wir meine Schwiegereltern.",
+   "ru": "На выходных мы навещаем родителей мужа/жены.",
+   "uk": "На вихідних ми відвідуємо свекрів/тестів.",
+   "cloze": "Am Wochenende ___ wir meine Schwiegereltern.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-fam-06",
+   "de": "Wir telefonieren jeden Sonntag mit meiner Mutter.",
+   "ru": "Мы каждое воскресенье созваниваемся с мамой.",
+   "uk": "Ми щонеділі телефонуємо мамі.",
+   "cloze": "Wir telefonieren jeden Sonntag ___ meiner Mutter.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-fam-07",
+   "de": "Unsere Tochter ist letztes Jahr in die Schule gekommen.",
+   "ru": "Наша дочь в прошлом году пошла в школу.",
+   "uk": "Наша донька минулого року пішла до школи.",
+   "cloze": "Unsere Tochter ist letztes Jahr in die Schule ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-fam-08",
+   "de": "Mein Mann kümmert sich um die Kinder.",
+   "ru": "Мой муж занимается детьми.",
+   "uk": "Мій чоловік опікується дітьми.",
+   "cloze": "Mein Mann ___ sich um die Kinder.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "a2-fam-09",
+   "de": "Ich habe meinem Sohn ein Fahrrad geschenkt.",
+   "ru": "Я подарил(а) сыну велосипед.",
+   "uk": "Я подарував(ла) синові велосипед.",
+   "cloze": "Ich habe ___ Sohn ein Fahrrad geschenkt.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-fam-10",
+   "de": "Wann hast du Geburtstag?",
+   "ru": "Когда у тебя день рождения?",
+   "uk": "Коли в тебе день народження?",
+   "cloze": "Wann hast du ___?"
+  },
+  {
+   "id": "a2-fam-11",
+   "de": "Herzlichen Glückwunsch zum Geburtstag!",
+   "ru": "С днём рождения!",
+   "uk": "З днем народження!",
+   "cloze": "Herzlichen ___ zum Geburtstag!"
+  },
+  {
+   "id": "a2-fam-12",
+   "de": "Meine Großeltern sind schon gestorben.",
+   "ru": "Мои бабушка и дедушка уже умерли.",
+   "uk": "Мої бабуся й дідусь уже померли.",
+   "cloze": "Meine Großeltern sind schon ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-fam-13",
+   "de": "Wir feiern Weihnachten mit der ganzen Familie.",
+   "ru": "Мы празднуем Рождество всей семьёй.",
+   "uk": "Ми святкуємо Різдво всією родиною.",
+   "cloze": "Wir ___ Weihnachten mit der ganzen Familie."
+  },
+  {
+   "id": "a2-fam-14",
+   "de": "Mein Cousin wohnt in der Nähe von Berlin.",
+   "ru": "Мой двоюродный брат живёт недалеко от Берлина.",
+   "uk": "Мій двоюрідний брат живе неподалік від Берліна.",
+   "cloze": "Mein Cousin wohnt in der ___ von Berlin."
+  },
+  {
+   "id": "a2-fam-15",
+   "de": "Die Kinder streiten sich oft.",
+   "ru": "Дети часто ссорятся.",
+   "uk": "Діти часто сваряться.",
+   "cloze": "Die Kinder ___ sich oft.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "a2-fam-16",
+   "de": "Kannst du heute auf die Kinder aufpassen?",
+   "ru": "Можешь сегодня присмотреть за детьми?",
+   "uk": "Можеш сьогодні доглянути дітей?",
+   "cloze": "Kannst du heute auf die Kinder ___?",
+   "tags": [
+    "preposition"
+   ]
+  }
+ ]
+}

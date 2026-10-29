@@ -1,0 +1,160 @@
+{
+ "level": "B1",
+ "topic": "freizeit",
+ "lesson": {
+  "id": "b1-freizeit-1",
+  "title_ru": "Свободное время (B1)",
+  "title_uk": "Вільний час (B1)",
+  "sort": 208
+ },
+ "items": [
+  {
+   "id": "b1-fre-01",
+   "de": "Seit ich im Chor singe, habe ich viele Freunde gefunden.",
+   "ru": "С тех пор как пою в хоре, я нашёл(ла) много друзей.",
+   "uk": "Відколи співаю в хорі, я знайшов(ла) багато друзів.",
+   "cloze": "___ ich im Chor singe, habe ich viele Freunde gefunden.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-fre-02",
+   "de": "Ich würde gern öfter reisen, wenn ich mehr Geld hätte.",
+   "ru": "Я бы чаще путешествовал(а), если бы было больше денег.",
+   "uk": "Я б частіше подорожував(ла), якби мав(ла) більше грошей.",
+   "cloze": "Ich ___ gern öfter reisen, wenn ich mehr Geld hätte.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-fre-03",
+   "de": "Am liebsten verbringe ich Zeit in der Natur.",
+   "ru": "Больше всего я люблю проводить время на природе.",
+   "uk": "Найбільше я люблю проводити час на природі.",
+   "cloze": "Am liebsten ___ ich Zeit in der Natur.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-fre-04",
+   "de": "Wir haben uns für einen Tanzkurs angemeldet.",
+   "ru": "Мы записались на курс танцев.",
+   "uk": "Ми записалися на курс танців.",
+   "cloze": "Wir haben uns für einen Tanzkurs ___.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-fre-05",
+   "de": "Der Ausflug ist wegen des schlechten Wetters ausgefallen.",
+   "ru": "Экскурсия отменилась из-за плохой погоды.",
+   "uk": "Екскурсія скасувалася через погану погоду.",
+   "cloze": "Der Ausflug ist wegen des schlechten Wetters ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-fre-06",
+   "de": "Ich treibe regelmäßig Sport, um fit zu bleiben.",
+   "ru": "Я регулярно занимаюсь спортом, чтобы быть в форме.",
+   "uk": "Я регулярно займаюся спортом, щоб бути у формі.",
+   "cloze": "Ich treibe ___ Sport, um fit zu bleiben."
+  },
+  {
+   "id": "b1-fre-07",
+   "de": "Hast du Lust, am Wochenende wandern zu gehen?",
+   "ru": "Хочешь пойти в поход на выходных?",
+   "uk": "Хочеш піти в похід на вихідних?",
+   "cloze": "Hast du Lust, am Wochenende ___ zu gehen?"
+  },
+  {
+   "id": "b1-fre-08",
+   "de": "Ich freue mich schon auf den Urlaub.",
+   "ru": "Я уже жду отпуска.",
+   "uk": "Я вже чекаю на відпустку.",
+   "cloze": "Ich freue mich schon ___ den Urlaub.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-fre-09",
+   "de": "Im Urlaub habe ich mich gut erholt.",
+   "ru": "В отпуске я хорошо отдохнул(а).",
+   "uk": "У відпустці я добре відпочив(ла).",
+   "cloze": "Im Urlaub habe ich mich gut ___.",
+   "tags": [
+    "reflexive",
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-fre-10",
+   "de": "Der Film war spannender, als ich gedacht hatte.",
+   "ru": "Фильм был интереснее, чем я думал(а).",
+   "uk": "Фільм був цікавіший, ніж я думав(ла).",
+   "cloze": "Der Film war ___, als ich gedacht hatte."
+  },
+  {
+   "id": "b1-fre-11",
+   "de": "Was hältst du davon, wenn wir grillen?",
+   "ru": "Как ты смотришь на то, чтобы пожарить барбекю?",
+   "uk": "Як ти дивишся на те, щоб посмажити барбекю?",
+   "cloze": "Was ___ du davon, wenn wir grillen?",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-fre-12",
+   "de": "Ich habe keine Zeit für Hobbys, weil ich viel arbeite.",
+   "ru": "У меня нет времени на хобби, потому что я много работаю.",
+   "uk": "У мене немає часу на хобі, бо я багато працюю.",
+   "cloze": "Ich habe keine Zeit für Hobbys, ___ ich viel arbeite.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-fre-13",
+   "de": "Die Karten für das Konzert waren schnell ausverkauft.",
+   "ru": "Билеты на концерт быстро раскупили.",
+   "uk": "Квитки на концерт швидко розкупили.",
+   "cloze": "Die Karten für das Konzert waren schnell ___."
+  },
+  {
+   "id": "b1-fre-14",
+   "de": "Wir haben eine Ferienwohnung an der Nordsee gebucht.",
+   "ru": "Мы забронировали апартаменты на Северном море.",
+   "uk": "Ми забронювали апартаменти на Північному морі.",
+   "cloze": "Wir haben eine Ferienwohnung an der Nordsee ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-fre-15",
+   "de": "Ehrlich gesagt, finde ich Fußball langweilig.",
+   "ru": "Честно говоря, по-моему, футбол скучный.",
+   "uk": "Чесно кажучи, як на мене, футбол нудний.",
+   "cloze": "Ehrlich gesagt, ___ ich Fußball langweilig.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-fre-16",
+   "de": "Lass uns etwas unternehmen!",
+   "ru": "Давай чем-нибудь займёмся!",
+   "uk": "Давай чимось займемося!",
+   "cloze": "Lass uns etwas ___!"
+  }
+ ]
+}

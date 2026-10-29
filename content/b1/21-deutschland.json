@@ -1,0 +1,154 @@
+{
+ "level": "B1",
+ "topic": "deutschland",
+ "lesson": {
+  "id": "b1-deutschland-1",
+  "title_ru": "Германия и культура (B1)",
+  "title_uk": "Німеччина і культура (B1)",
+  "sort": 211
+ },
+ "items": [
+  {
+   "id": "b1-deu-01",
+   "de": "Deutschland ist eine parlamentarische Demokratie.",
+   "ru": "Германия — парламентская демократия.",
+   "uk": "Німеччина — парламентська демократія.",
+   "cloze": "Deutschland ist eine parlamentarische ___."
+  },
+  {
+   "id": "b1-deu-02",
+   "de": "Alle Menschen sind vor dem Gesetz gleich.",
+   "ru": "Все люди равны перед законом.",
+   "uk": "Усі люди рівні перед законом.",
+   "cloze": "Alle Menschen sind vor dem ___ gleich."
+  },
+  {
+   "id": "b1-deu-03",
+   "de": "In Deutschland herrscht Meinungsfreiheit.",
+   "ru": "В Германии свобода мнений.",
+   "uk": "У Німеччині свобода думки.",
+   "cloze": "In Deutschland herrscht ___."
+  },
+  {
+   "id": "b1-deu-04",
+   "de": "Die Mauer ist 1989 gefallen.",
+   "ru": "Стена пала в 1989 году.",
+   "uk": "Стіна впала в 1989 році.",
+   "cloze": "Die Mauer ist 1989 ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-deu-05",
+   "de": "Ab 18 Jahren darf man wählen.",
+   "ru": "С 18 лет можно голосовать.",
+   "uk": "З 18 років можна голосувати.",
+   "cloze": "Ab 18 Jahren darf man ___.",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-deu-06",
+   "de": "Viele Menschen engagieren sich in Vereinen.",
+   "ru": "Многие люди участвуют в объединениях.",
+   "uk": "Багато людей беруть участь в об'єднаннях.",
+   "cloze": "Viele Menschen ___ sich in Vereinen.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-deu-07",
+   "de": "Mich hat überrascht, wie wichtig hier Mülltrennung ist.",
+   "ru": "Меня удивило, насколько важна здесь сортировка мусора.",
+   "uk": "Мене здивувало, наскільки важливе тут сортування сміття.",
+   "cloze": "Mich hat ___, wie wichtig hier Mülltrennung ist.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-deu-08",
+   "de": "Im Vergleich zu meiner Heimat ist hier alles bürokratischer.",
+   "ru": "По сравнению с родиной здесь всё бюрократичнее.",
+   "uk": "Порівняно з батьківщиною тут усе бюрократичніше.",
+   "cloze": "Im ___ zu meiner Heimat ist hier alles bürokratischer."
+  },
+  {
+   "id": "b1-deu-09",
+   "de": "Die Deutschen legen viel Wert auf Pünktlichkeit.",
+   "ru": "Немцы придают большое значение пунктуальности.",
+   "uk": "Німці надають великого значення пунктуальності.",
+   "cloze": "Die Deutschen legen viel ___ auf Pünktlichkeit.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-deu-10",
+   "de": "Religionsfreiheit ist im Grundgesetz garantiert.",
+   "ru": "Свобода вероисповедания гарантирована Основным законом.",
+   "uk": "Свобода віросповідання гарантована Основним законом.",
+   "cloze": "Religionsfreiheit ist im ___ garantiert."
+  },
+  {
+   "id": "b1-deu-11",
+   "de": "Männer und Frauen sind gleichberechtigt.",
+   "ru": "Мужчины и женщины равноправны.",
+   "uk": "Чоловіки й жінки рівноправні.",
+   "cloze": "Männer und Frauen sind ___."
+  },
+  {
+   "id": "b1-deu-12",
+   "de": "Was mir hier gefällt, ist die gute Infrastruktur.",
+   "ru": "Что мне здесь нравится — хорошая инфраструктура.",
+   "uk": "Що мені тут подобається — добра інфраструктура.",
+   "cloze": "Was mir hier ___, ist die gute Infrastruktur.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "b1-deu-13",
+   "de": "Typisch deutsch finde ich das Kaffeetrinken am Sonntagnachmittag.",
+   "ru": "Типично немецким я считаю кофе в воскресенье днём.",
+   "uk": "Типово німецьким я вважаю каву в неділю по обіді.",
+   "cloze": "Typisch deutsch ___ ich das Kaffeetrinken am Sonntagnachmittag.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-deu-14",
+   "de": "Die Integration hat bei mir länger gedauert, als ich dachte.",
+   "ru": "Интеграция у меня заняла больше времени, чем я думал(а).",
+   "uk": "Інтеграція в мене тривала довше, ніж я думав(ла).",
+   "cloze": "Die Integration hat bei mir länger ___, als ich dachte.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-deu-15",
+   "de": "Nordrhein-Westfalen ist das Bundesland mit den meisten Einwohnern.",
+   "ru": "Северный Рейн-Вестфалия — самая населённая земля.",
+   "uk": "Північний Рейн-Вестфалія — найнаселеніша земля.",
+   "cloze": "Nordrhein-Westfalen ist das Bundesland mit den meisten ___.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "b1-deu-16",
+   "de": "Ich finde es gut, dass es hier so viele Angebote für Migranten gibt.",
+   "ru": "Я считаю хорошим, что здесь так много программ для мигрантов.",
+   "uk": "Мені подобається, що тут так багато програм для мігрантів.",
+   "cloze": "Ich finde es gut, dass es hier so viele Angebote für Migranten ___.",
+   "tags": [
+    "verb_final"
+   ]
+  }
+ ]
+}

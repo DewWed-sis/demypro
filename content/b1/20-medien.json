@@ -1,0 +1,151 @@
+{
+ "level": "B1",
+ "topic": "medien",
+ "lesson": {
+  "id": "b1-medien-1",
+  "title_ru": "СМИ и связь (B1)",
+  "title_uk": "ЗМІ та зв'язок (B1)",
+  "sort": 210
+ },
+ "items": [
+  {
+   "id": "b1-med-01",
+   "de": "Ich informiere mich meistens online über Politik.",
+   "ru": "О политике я обычно узнаю онлайн.",
+   "uk": "Про політику я зазвичай дізнаюся онлайн.",
+   "cloze": "Ich ___ mich meistens online über Politik.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-med-02",
+   "de": "Man sollte nicht alles glauben, was in sozialen Netzwerken steht.",
+   "ru": "Не стоит верить всему, что пишут в соцсетях.",
+   "uk": "Не варто вірити всьому, що пишуть у соцмережах.",
+   "cloze": "Man ___ nicht alles glauben, was in sozialen Netzwerken steht.",
+   "tags": [
+    "konjunktiv",
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-med-03",
+   "de": "Meiner Meinung nach verbringen Kinder zu viel Zeit am Handy.",
+   "ru": "По-моему, дети проводят слишком много времени в телефоне.",
+   "uk": "На мою думку, діти проводять забагато часу в телефоні.",
+   "cloze": "Meiner ___ nach verbringen Kinder zu viel Zeit am Handy.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-med-04",
+   "de": "Ich habe mein Datenvolumen schon aufgebraucht.",
+   "ru": "Я уже израсходовал(а) мобильный интернет.",
+   "uk": "Я вже витратив(ла) мобільний інтернет.",
+   "cloze": "Ich habe mein Datenvolumen schon ___."
+  },
+  {
+   "id": "b1-med-05",
+   "de": "Bitte geben Sie Ihre Daten nicht weiter.",
+   "ru": "Пожалуйста, не передавайте свои данные.",
+   "uk": "Будь ласка, не передавайте свої дані.",
+   "cloze": "Bitte geben Sie Ihre Daten nicht ___.",
+   "tags": [
+    "negation"
+   ]
+  },
+  {
+   "id": "b1-med-06",
+   "de": "Die Zeitung berichtet über die Wahlen.",
+   "ru": "Газета пишет о выборах.",
+   "uk": "Газета пише про вибори.",
+   "cloze": "Die Zeitung ___ über die Wahlen.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-med-07",
+   "de": "Ich habe den Rundfunkbeitrag noch nicht bezahlt.",
+   "ru": "Я ещё не оплатил(а) радио-телевизионный сбор.",
+   "uk": "Я ще не сплатив(ла) радіо-телевізійний збір.",
+   "cloze": "Ich habe den ___ noch nicht bezahlt.",
+   "tags": [
+    "negation"
+   ]
+  },
+  {
+   "id": "b1-med-08",
+   "de": "Online-Banking ist praktisch, aber man muss vorsichtig sein.",
+   "ru": "Онлайн-банкинг удобен, но нужно быть осторожным.",
+   "uk": "Онлайн-банкінг зручний, але треба бути обережним.",
+   "cloze": "Online-Banking ist praktisch, aber man muss ___ sein."
+  },
+  {
+   "id": "b1-med-09",
+   "de": "Das ist eine Falschmeldung.",
+   "ru": "Это фейковая новость.",
+   "uk": "Це фейкова новина.",
+   "cloze": "Das ist eine ___."
+  },
+  {
+   "id": "b1-med-10",
+   "de": "Einerseits ist das Internet nützlich, andererseits gefährlich.",
+   "ru": "С одной стороны интернет полезен, с другой — опасен.",
+   "uk": "З одного боку інтернет корисний, з іншого — небезпечний.",
+   "cloze": "Einerseits ist das Internet nützlich, ___ gefährlich."
+  },
+  {
+   "id": "b1-med-11",
+   "de": "Ich habe mich für den Newsletter angemeldet.",
+   "ru": "Я подписался(лась) на рассылку.",
+   "uk": "Я підписався(лася) на розсилку.",
+   "cloze": "Ich habe mich für den Newsletter ___.",
+   "tags": [
+    "reflexive",
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-med-12",
+   "de": "Kannst du mir zeigen, wie man ein Video hochlädt?",
+   "ru": "Можешь показать, как загрузить видео?",
+   "uk": "Можеш показати, як завантажити відео?",
+   "cloze": "Kannst du mir zeigen, wie man ein Video ___?",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-med-13",
+   "de": "Mein Konto wurde gehackt.",
+   "ru": "Мой аккаунт взломали.",
+   "uk": "Мій акаунт зламали.",
+   "cloze": "Mein Konto wurde ___."
+  },
+  {
+   "id": "b1-med-14",
+   "de": "Ich schaue lieber Filme in der Originalsprache.",
+   "ru": "Я предпочитаю смотреть фильмы на языке оригинала.",
+   "uk": "Я волію дивитися фільми мовою оригіналу.",
+   "cloze": "Ich schaue lieber Filme in der ___."
+  },
+  {
+   "id": "b1-med-15",
+   "de": "Die Werbung im Fernsehen nervt mich.",
+   "ru": "Реклама по телевизору меня раздражает.",
+   "uk": "Реклама по телевізору мене дратує.",
+   "cloze": "Die Werbung im Fernsehen ___ mich."
+  },
+  {
+   "id": "b1-med-16",
+   "de": "Ich lese die Nachrichten auf Deutsch, um mein Deutsch zu verbessern.",
+   "ru": "Я читаю новости на немецком, чтобы улучшить немецкий.",
+   "uk": "Я читаю новини німецькою, щоб покращити німецьку.",
+   "cloze": "Ich lese die Nachrichten auf Deutsch, um mein Deutsch zu ___."
+  }
+ ]
+}

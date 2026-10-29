@@ -52,3 +52,19 @@ export const examTaskSchema = z.object({
 });
 export const examFileSchema = z.array(examTaskSchema).min(1);
 export type ExamTaskSeed = z.infer<typeof examTaskSchema>;
+
+// Грамматика (/content/grammar.json) → grammar_points.
+const tri = z.object({ de: z.string(), ru: z.string(), uk: z.string() });
+export const grammarSchema = z.array(
+  z.object({
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    level: z.enum(["A1", "A2", "B1"]),
+    error_types: z.array(z.string()).min(1),
+    title_ru: z.string(),
+    title_uk: z.string(),
+    rule_ru: z.string(),
+    rule_uk: z.string(),
+    examples: z.array(tri).length(3),
+    quiz: z.array(z.object({ q: z.string().includes("___"), options: z.array(z.string()).min(2), answer: z.number().int().min(0) })).min(3),
+  }),
+);

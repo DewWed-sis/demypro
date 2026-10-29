@@ -1,0 +1,137 @@
+{
+ "level": "A2",
+ "topic": "schule",
+ "lesson": {
+  "id": "a2-schule-1",
+  "title_ru": "Школа и дети (A2)",
+  "title_uk": "Школа і діти (A2)",
+  "sort": 109
+ },
+ "items": [
+  {
+   "id": "a2-sch-01",
+   "de": "Mein Sohn geht in die zweite Klasse.",
+   "ru": "Мой сын ходит во второй класс.",
+   "uk": "Мій син ходить у другий клас.",
+   "cloze": "Mein Sohn geht in die zweite ___.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-sch-02",
+   "de": "Morgen ist Elternabend.",
+   "ru": "Завтра родительское собрание.",
+   "uk": "Завтра батьківські збори.",
+   "cloze": "Morgen ist ___."
+  },
+  {
+   "id": "a2-sch-03",
+   "de": "Meine Tochter hat Probleme in Mathe.",
+   "ru": "У дочери проблемы с математикой.",
+   "uk": "У доньки проблеми з математикою.",
+   "cloze": "Meine Tochter hat ___ in Mathe."
+  },
+  {
+   "id": "a2-sch-04",
+   "de": "Kann ich mit der Lehrerin sprechen?",
+   "ru": "Можно поговорить с учительницей?",
+   "uk": "Можна поговорити з учителькою?",
+   "cloze": "Kann ich ___ der Lehrerin sprechen?",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-sch-05",
+   "de": "Mein Kind ist krank und kann heute nicht zur Schule kommen.",
+   "ru": "Мой ребёнок болен и не может сегодня прийти в школу.",
+   "uk": "Моя дитина хвора й не може сьогодні прийти до школи.",
+   "cloze": "Mein Kind ist krank und kann heute nicht ___ Schule kommen.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-sch-06",
+   "de": "Wir suchen einen Kitaplatz.",
+   "ru": "Мы ищем место в детском саду.",
+   "uk": "Ми шукаємо місце в дитсадку.",
+   "cloze": "Wir suchen einen ___."
+  },
+  {
+   "id": "a2-sch-07",
+   "de": "Die Kita öffnet um halb sieben.",
+   "ru": "Детский сад открывается в половине седьмого.",
+   "uk": "Дитсадок відкривається о пів на сьому.",
+   "cloze": "Die Kita öffnet um ___ sieben."
+  },
+  {
+   "id": "a2-sch-08",
+   "de": "Wer holt die Kinder heute ab?",
+   "ru": "Кто сегодня заберёт детей?",
+   "uk": "Хто сьогодні забере дітей?",
+   "cloze": "Wer ___ die Kinder heute ab?"
+  },
+  {
+   "id": "a2-sch-09",
+   "de": "Die Kinder machen ihre Hausaufgaben.",
+   "ru": "Дети делают домашнее задание.",
+   "uk": "Діти роблять домашнє завдання.",
+   "cloze": "Die Kinder machen ihre ___."
+  },
+  {
+   "id": "a2-sch-10",
+   "de": "Bald gibt es Zeugnisse.",
+   "ru": "Скоро табели.",
+   "uk": "Скоро табелі.",
+   "cloze": "Bald gibt es ___."
+  },
+  {
+   "id": "a2-sch-11",
+   "de": "In den Ferien fahren wir weg.",
+   "ru": "На каникулах мы уезжаем.",
+   "uk": "На канікулах ми їдемо.",
+   "cloze": "In den ___ fahren wir weg."
+  },
+  {
+   "id": "a2-sch-12",
+   "de": "Mein Sohn möchte eine Ausbildung machen.",
+   "ru": "Мой сын хочет получить профессию.",
+   "uk": "Мій син хоче здобути професію.",
+   "cloze": "Mein Sohn möchte eine ___ machen."
+  },
+  {
+   "id": "a2-sch-13",
+   "de": "Die Klassenfahrt kostet 150 Euro.",
+   "ru": "Классная поездка стоит 150 евро.",
+   "uk": "Класна поїздка коштує 150 євро.",
+   "cloze": "Die ___ kostet 150 Euro."
+  },
+  {
+   "id": "a2-sch-14",
+   "de": "Bitte unterschreiben Sie die Entschuldigung.",
+   "ru": "Подпишите, пожалуйста, объяснительную.",
+   "uk": "Підпишіть, будь ласка, пояснювальну.",
+   "cloze": "Bitte unterschreiben Sie die ___."
+  },
+  {
+   "id": "a2-sch-15",
+   "de": "Die Schule fängt um acht Uhr an.",
+   "ru": "Школа начинается в восемь.",
+   "uk": "Школа починається о восьмій.",
+   "cloze": "Die Schule ___ um acht Uhr an."
+  },
+  {
+   "id": "a2-sch-16",
+   "de": "Mein Kind hat sich in der Pause gestritten.",
+   "ru": "Мой ребёнок поссорился на перемене.",
+   "uk": "Моя дитина посварилася на перерві.",
+   "cloze": "Mein Kind hat sich in der Pause ___.",
+   "tags": [
+    "reflexive",
+    "tense_perfekt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "level": "B1",
+ "topic": "kennenlernen",
+ "lesson": {
+  "id": "b1-kennenlernen-1",
+  "title_ru": "Знакомство (B1)",
+  "title_uk": "Знайомство (B1)",
+  "sort": 200
+ },
+ "items": [
+  {
+   "id": "b1-ken-01",
+   "de": "Ich lebe seit drei Jahren hier und fühle mich inzwischen wohl.",
+   "ru": "Я живу здесь три года и теперь чувствую себя хорошо.",
+   "uk": "Я живу тут три роки й тепер почуваюся добре.",
+   "cloze": "Ich lebe seit drei Jahren hier und fühle mich ___ wohl.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ken-02",
+   "de": "Als ich nach Deutschland kam, konnte ich kein Wort Deutsch.",
+   "ru": "Когда я приехал(а) в Германию, я не знал(а) ни слова по-немецки.",
+   "uk": "Коли я приїхав(ла) до Німеччини, я не знав(ла) жодного слова німецькою.",
+   "cloze": "___ ich nach Deutschland kam, konnte ich kein Wort Deutsch.",
+   "tags": [
+    "verb_final",
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-ken-03",
+   "de": "Am Anfang war alles sehr schwierig für mich.",
+   "ru": "Сначала всё было очень трудно для меня.",
+   "uk": "Спочатку все було дуже складно для мене.",
+   "cloze": "Am ___ war alles sehr schwierig für mich."
+  },
+  {
+   "id": "b1-ken-04",
+   "de": "Ich habe einen Abschluss als Ingenieurin.",
+   "ru": "У меня диплом инженера.",
+   "uk": "У мене диплом інженерки.",
+   "cloze": "Ich habe einen ___ als Ingenieurin."
+  },
+  {
+   "id": "b1-ken-05",
+   "de": "Mein Ziel ist es, wieder in meinem Beruf zu arbeiten.",
+   "ru": "Моя цель — снова работать по профессии.",
+   "uk": "Моя мета — знову працювати за фахом.",
+   "cloze": "Mein ___ ist es, wieder in meinem Beruf zu arbeiten."
+  },
+  {
+   "id": "b1-ken-06",
+   "de": "Ich bin froh, dass ich hier so nette Leute kennengelernt habe.",
+   "ru": "Я рад(а), что познакомился(лась) здесь с такими милыми людьми.",
+   "uk": "Я радий(а), що познайомився(лася) тут із такими милими людьми.",
+   "cloze": "Ich bin froh, ___ ich hier so nette Leute kennengelernt habe.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ken-07",
+   "de": "Was ich an Deutschland mag, ist die Ordnung.",
+   "ru": "Что мне нравится в Германии — это порядок.",
+   "uk": "Що мені подобається в Німеччині — це порядок.",
+   "cloze": "Was ich an Deutschland ___, ist die Ordnung."
+  },
+  {
+   "id": "b1-ken-08",
+   "de": "Obwohl ich viel lerne, fällt mir die Grammatik schwer.",
+   "ru": "Хотя я много учу, грамматика даётся мне тяжело.",
+   "uk": "Хоча я багато вчу, граматика дається мені важко.",
+   "cloze": "___ ich viel lerne, fällt mir die Grammatik schwer.",
+   "tags": [
+    "verb_final",
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-ken-09",
+   "de": "Ich würde gern meine Sprachkenntnisse verbessern.",
+   "ru": "Я бы хотел(а) улучшить знание языка.",
+   "uk": "Я б хотів(ла) покращити знання мови.",
+   "cloze": "Ich ___ gern meine Sprachkenntnisse verbessern.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ken-10",
+   "de": "In meiner Heimat habe ich zehn Jahre als Lehrerin gearbeitet.",
+   "ru": "На родине я десять лет работала учительницей.",
+   "uk": "На батьківщині я десять років працювала вчителькою.",
+   "cloze": "In meiner ___ habe ich zehn Jahre als Lehrerin gearbeitet.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-ken-11",
+   "de": "Ich engagiere mich ehrenamtlich in einem Verein.",
+   "ru": "Я волонтёрю в одном объединении.",
+   "uk": "Я волонтерю в одному об'єднанні.",
+   "cloze": "Ich engagiere mich ___ in einem Verein.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ken-12",
+   "de": "Darf ich fragen, was Sie beruflich machen?",
+   "ru": "Можно спросить, кем вы работаете?",
+   "uk": "Можна запитати, ким ви працюєте?",
+   "cloze": "Darf ich fragen, was Sie ___ machen?",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ken-13",
+   "de": "Es fällt mir leicht, neue Kontakte zu knüpfen.",
+   "ru": "Мне легко заводить новые знакомства.",
+   "uk": "Мені легко заводити нові знайомства.",
+   "cloze": "Es fällt mir leicht, neue Kontakte zu ___."
+  },
+  {
+   "id": "b1-ken-14",
+   "de": "Ich habe mich schnell an das Leben hier gewöhnt.",
+   "ru": "Я быстро привык(ла) к жизни здесь.",
+   "uk": "Я швидко звик(ла) до життя тут.",
+   "cloze": "Ich habe mich schnell an das Leben hier ___.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-ken-15",
+   "de": "Später möchte ich die deutsche Staatsangehörigkeit beantragen.",
+   "ru": "Позже я хочу подать на немецкое гражданство.",
+   "uk": "Пізніше я хочу подати на німецьке громадянство.",
+   "cloze": "Später möchte ich die deutsche ___ beantragen."
+  },
+  {
+   "id": "b1-ken-16",
+   "de": "Wenn ich Zeit habe, treffe ich mich mit Freunden.",
+   "ru": "Когда у меня есть время, я встречаюсь с друзьями.",
+   "uk": "Коли маю час, я зустрічаюся з друзями.",
+   "cloze": "___ ich Zeit habe, treffe ich mich mit Freunden.",
+   "tags": [
+    "verb_final",
+    "reflexive"
+   ]
+  }
+ ]
+}

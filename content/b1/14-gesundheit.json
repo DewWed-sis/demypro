@@ -1,0 +1,151 @@
+{
+ "level": "B1",
+ "topic": "gesundheit",
+ "lesson": {
+  "id": "b1-gesundheit-1",
+  "title_ru": "Врач и здоровье (B1)",
+  "title_uk": "Лікар і здоров'я (B1)",
+  "sort": 204
+ },
+ "items": [
+  {
+   "id": "b1-ges-01",
+   "de": "Ich leide seit Wochen unter Rückenschmerzen.",
+   "ru": "Я уже несколько недель страдаю от боли в спине.",
+   "uk": "Я вже кілька тижнів страждаю від болю в спині.",
+   "cloze": "Ich leide seit Wochen ___ Rückenschmerzen.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-ges-02",
+   "de": "Der Arzt hat mir Physiotherapie verschrieben.",
+   "ru": "Врач прописал мне физиотерапию.",
+   "uk": "Лікар призначив мені фізіотерапію.",
+   "cloze": "Der Arzt hat mir Physiotherapie ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-ges-03",
+   "de": "Ich soll mich mehr bewegen und gesünder essen.",
+   "ru": "Мне нужно больше двигаться и есть здоровее.",
+   "uk": "Мені треба більше рухатися й їсти здоровіше.",
+   "cloze": "Ich soll mich mehr ___ und gesünder essen.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ges-04",
+   "de": "Die Untersuchung hat ergeben, dass alles in Ordnung ist.",
+   "ru": "Обследование показало, что всё в порядке.",
+   "uk": "Обстеження показало, що все гаразд.",
+   "cloze": "Die Untersuchung hat ___, dass alles in Ordnung ist.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ges-05",
+   "de": "Die Krankenkasse übernimmt die Kosten.",
+   "ru": "Больничная касса берёт на себя расходы.",
+   "uk": "Лікарняна каса бере на себе витрати.",
+   "cloze": "Die Krankenkasse ___ die Kosten."
+  },
+  {
+   "id": "b1-ges-06",
+   "de": "Ich muss vor der Blutabnahme nüchtern sein.",
+   "ru": "Перед анализом крови нужно быть натощак.",
+   "uk": "Перед аналізом крові треба бути натщесерце.",
+   "cloze": "Ich muss vor der Blutabnahme ___ sein."
+  },
+  {
+   "id": "b1-ges-07",
+   "de": "Wegen der Grippe war ich eine Woche krankgeschrieben.",
+   "ru": "Из-за гриппа я неделю был(а) на больничном.",
+   "uk": "Через грип я тиждень був(ла) на лікарняному.",
+   "cloze": "Wegen der Grippe war ich eine Woche ___."
+  },
+  {
+   "id": "b1-ges-08",
+   "de": "Haben Sie Nebenwirkungen bemerkt?",
+   "ru": "Вы заметили побочные эффекты?",
+   "uk": "Ви помітили побічні дії?",
+   "cloze": "Haben Sie ___ bemerkt?"
+  },
+  {
+   "id": "b1-ges-09",
+   "de": "Ich hätte gern eine zweite Meinung.",
+   "ru": "Я бы хотел(а) услышать второе мнение.",
+   "uk": "Я б хотів(ла) почути другу думку.",
+   "cloze": "Ich hätte gern eine zweite ___.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ges-10",
+   "de": "Ich lasse mich gegen Grippe impfen.",
+   "ru": "Я делаю прививку от гриппа.",
+   "uk": "Я роблю щеплення від грипу.",
+   "cloze": "Ich lasse mich gegen Grippe ___.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ges-11",
+   "de": "Nach der Operation muss ich mich schonen.",
+   "ru": "После операции мне нужно поберечься.",
+   "uk": "Після операції мені треба берегти себе.",
+   "cloze": "Nach der Operation muss ich mich ___.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ges-12",
+   "de": "Ich habe ständig Kopfschmerzen, wenn ich am Computer arbeite.",
+   "ru": "У меня постоянно болит голова, когда я работаю за компьютером.",
+   "uk": "У мене постійно болить голова, коли я працюю за комп'ютером.",
+   "cloze": "Ich habe ständig Kopfschmerzen, wenn ich am Computer ___.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ges-13",
+   "de": "Ist das Medikament rezeptpflichtig?",
+   "ru": "Это лекарство по рецепту?",
+   "uk": "Ці ліки за рецептом?",
+   "cloze": "Ist das Medikament ___?"
+  },
+  {
+   "id": "b1-ges-14",
+   "de": "Mein Kind hat einen Ausschlag am ganzen Körper.",
+   "ru": "У моего ребёнка сыпь по всему телу.",
+   "uk": "У моєї дитини висип по всьому тілу.",
+   "cloze": "Mein Kind hat einen ___ am ganzen Körper."
+  },
+  {
+   "id": "b1-ges-15",
+   "de": "Bitte füllen Sie den Anamnesebogen aus.",
+   "ru": "Пожалуйста, заполните анкету о здоровье.",
+   "uk": "Будь ласка, заповніть анкету про здоров'я.",
+   "cloze": "Bitte füllen Sie den ___ aus."
+  },
+  {
+   "id": "b1-ges-16",
+   "de": "Stress kann krank machen.",
+   "ru": "Стресс может вызвать болезнь.",
+   "uk": "Стрес може спричинити хворобу.",
+   "cloze": "Stress kann ___ machen.",
+   "tags": [
+    "modal_verbs"
+   ]
+  }
+ ]
+}

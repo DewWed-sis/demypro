@@ -1,0 +1,152 @@
+{
+ "level": "B1",
+ "topic": "familie",
+ "lesson": {
+  "id": "b1-familie-1",
+  "title_ru": "Семья (B1)",
+  "title_uk": "Сім'я (B1)",
+  "sort": 201
+ },
+ "items": [
+  {
+   "id": "b1-fam-01",
+   "de": "Wir haben vor fünf Jahren geheiratet.",
+   "ru": "Мы поженились пять лет назад.",
+   "uk": "Ми одружилися п'ять років тому.",
+   "cloze": "Wir haben vor fünf Jahren ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-fam-02",
+   "de": "Meine Kinder sind zweisprachig aufgewachsen.",
+   "ru": "Мои дети выросли двуязычными.",
+   "uk": "Мої діти виросли двомовними.",
+   "cloze": "Meine Kinder sind zweisprachig ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-fam-03",
+   "de": "Für mich ist es wichtig, dass die Familie zusammenhält.",
+   "ru": "Для меня важно, чтобы семья держалась вместе.",
+   "uk": "Для мене важливо, щоб родина трималася разом.",
+   "cloze": "Für mich ist es wichtig, dass die Familie ___.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-fam-04",
+   "de": "Wir teilen uns die Hausarbeit.",
+   "ru": "Мы делим домашние дела.",
+   "uk": "Ми ділимо хатні справи.",
+   "cloze": "Wir ___ uns die Hausarbeit.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-fam-05",
+   "de": "Meine Mutter kommt uns oft besuchen.",
+   "ru": "Моя мама часто приезжает к нам в гости.",
+   "uk": "Моя мама часто приїжджає до нас у гості.",
+   "cloze": "Meine Mutter kommt uns oft ___."
+  },
+  {
+   "id": "b1-fam-06",
+   "de": "Seit der Geburt unseres Sohnes schlafen wir wenig.",
+   "ru": "С рождения нашего сына мы мало спим.",
+   "uk": "Відколи народився наш син, ми мало спимо.",
+   "cloze": "Seit der ___ unseres Sohnes schlafen wir wenig."
+  },
+  {
+   "id": "b1-fam-07",
+   "de": "Meine Tochter ist in der Pubertät und manchmal schwierig.",
+   "ru": "Моя дочь в подростковом возрасте и иногда трудная.",
+   "uk": "Моя донька в підлітковому віці й іноді складна.",
+   "cloze": "Meine Tochter ist in der ___ und manchmal schwierig."
+  },
+  {
+   "id": "b1-fam-08",
+   "de": "Wir nehmen Elternzeit, um mehr Zeit mit dem Baby zu haben.",
+   "ru": "Мы берём отпуск по уходу, чтобы больше быть с малышом.",
+   "uk": "Ми беремо відпустку по догляду, щоб більше бути з малям.",
+   "cloze": "Wir nehmen ___, um mehr Zeit mit dem Baby zu haben."
+  },
+  {
+   "id": "b1-fam-09",
+   "de": "Meine Eltern sind stolz auf mich.",
+   "ru": "Мои родители гордятся мной.",
+   "uk": "Мої батьки пишаються мною.",
+   "cloze": "Meine Eltern sind ___ auf mich.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-fam-10",
+   "de": "Ich vermisse meine Familie, die noch in der Ukraine ist.",
+   "ru": "Я скучаю по семье, которая ещё в Украине.",
+   "uk": "Я сумую за родиною, яка ще в Україні.",
+   "cloze": "Ich vermisse meine Familie, ___ noch in der Ukraine ist.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-fam-11",
+   "de": "Bei uns entscheiden wir alles gemeinsam.",
+   "ru": "У нас мы всё решаем вместе.",
+   "uk": "У нас ми все вирішуємо разом.",
+   "cloze": "Bei uns entscheiden wir alles ___."
+  },
+  {
+   "id": "b1-fam-12",
+   "de": "Mein Bruder hat sich von seiner Frau getrennt.",
+   "ru": "Мой брат расстался с женой.",
+   "uk": "Мій брат розлучився з дружиною.",
+   "cloze": "Mein Bruder hat sich von seiner Frau ___.",
+   "tags": [
+    "reflexive",
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "b1-fam-13",
+   "de": "Unsere Kinder sollen beide Sprachen sprechen.",
+   "ru": "Наши дети должны говорить на обоих языках.",
+   "uk": "Наші діти мають розмовляти обома мовами.",
+   "cloze": "Unsere Kinder ___ beide Sprachen sprechen.",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-fam-14",
+   "de": "Am Sonntag frühstücken wir immer ausgiebig.",
+   "ru": "В воскресенье мы всегда долго завтракаем.",
+   "uk": "У неділю ми завжди довго снідаємо.",
+   "cloze": "Am Sonntag frühstücken wir immer ___."
+  },
+  {
+   "id": "b1-fam-15",
+   "de": "Die Großeltern helfen uns bei der Kinderbetreuung.",
+   "ru": "Бабушка с дедушкой помогают нам с детьми.",
+   "uk": "Бабуся й дідусь допомагають нам із дітьми.",
+   "cloze": "Die Großeltern helfen uns bei der ___.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "b1-fam-16",
+   "de": "Wir streiten selten, aber wenn, dann laut.",
+   "ru": "Мы редко ссоримся, но если да — то громко.",
+   "uk": "Ми рідко сваримося, але якщо так — то гучно.",
+   "cloze": "Wir streiten ___, aber wenn, dann laut."
+  }
+ ]
+}

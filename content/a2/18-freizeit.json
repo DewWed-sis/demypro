@@ -1,0 +1,149 @@
+{
+ "level": "A2",
+ "topic": "freizeit",
+ "lesson": {
+  "id": "a2-freizeit-1",
+  "title_ru": "Свободное время (A2)",
+  "title_uk": "Вільний час (A2)",
+  "sort": 108
+ },
+ "items": [
+  {
+   "id": "a2-fre-01",
+   "de": "Hast du am Samstag Zeit?",
+   "ru": "У тебя есть время в субботу?",
+   "uk": "У тебе є час у суботу?",
+   "cloze": "Hast du am Samstag ___?"
+  },
+  {
+   "id": "a2-fre-02",
+   "de": "Wollen wir zusammen ins Kino gehen?",
+   "ru": "Сходим вместе в кино?",
+   "uk": "Підемо разом у кіно?",
+   "cloze": "Wollen wir zusammen ___ Kino gehen?",
+   "tags": [
+    "preposition",
+    "case_akkusativ"
+   ]
+  },
+  {
+   "id": "a2-fre-03",
+   "de": "Ich gehe zweimal pro Woche ins Fitnessstudio.",
+   "ru": "Я хожу в спортзал два раза в неделю.",
+   "uk": "Я ходжу в спортзал двічі на тиждень.",
+   "cloze": "Ich gehe zweimal pro Woche ins ___."
+  },
+  {
+   "id": "a2-fre-04",
+   "de": "Ich interessiere mich für Fotografie.",
+   "ru": "Я интересуюсь фотографией.",
+   "uk": "Я цікавлюся фотографією.",
+   "cloze": "Ich interessiere mich ___ Fotografie.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-fre-05",
+   "de": "Am Wochenende waren wir am See.",
+   "ru": "На выходных мы были на озере.",
+   "uk": "На вихідних ми були на озері.",
+   "cloze": "Am Wochenende ___ wir am See."
+  },
+  {
+   "id": "a2-fre-06",
+   "de": "Das Konzert hat mir sehr gut gefallen.",
+   "ru": "Концерт мне очень понравился.",
+   "uk": "Концерт мені дуже сподобався.",
+   "cloze": "Das Konzert hat mir sehr gut ___.",
+   "tags": [
+    "case_dativ",
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-fre-07",
+   "de": "Ich bin Mitglied in einem Sportverein.",
+   "ru": "Я состою в спортивном клубе.",
+   "uk": "Я член спортивного клубу.",
+   "cloze": "Ich bin ___ in einem Sportverein."
+  },
+  {
+   "id": "a2-fre-08",
+   "de": "Was machst du gern in deiner Freizeit?",
+   "ru": "Что ты любишь делать в свободное время?",
+   "uk": "Що ти любиш робити у вільний час?",
+   "cloze": "Was machst du ___ in deiner Freizeit?"
+  },
+  {
+   "id": "a2-fre-09",
+   "de": "Lass uns lieber zu Hause bleiben.",
+   "ru": "Давай лучше останемся дома.",
+   "uk": "Давай краще залишимося вдома.",
+   "cloze": "Lass uns ___ zu Hause bleiben."
+  },
+  {
+   "id": "a2-fre-10",
+   "de": "Wir machen einen Ausflug in die Berge.",
+   "ru": "Мы едем на экскурсию в горы.",
+   "uk": "Ми їдемо на екскурсію в гори.",
+   "cloze": "Wir machen einen ___ in die Berge."
+  },
+  {
+   "id": "a2-fre-11",
+   "de": "Ich habe keine Lust auf Fernsehen.",
+   "ru": "Мне не хочется смотреть телевизор.",
+   "uk": "Мені не хочеться дивитися телевізор.",
+   "cloze": "Ich habe keine ___ auf Fernsehen.",
+   "tags": [
+    "negation"
+   ]
+  },
+  {
+   "id": "a2-fre-12",
+   "de": "Treffen wir uns um acht vor dem Kino?",
+   "ru": "Встретимся в восемь у кинотеатра?",
+   "uk": "Зустрінемося о восьмій біля кінотеатру?",
+   "cloze": "Treffen wir uns um acht ___ dem Kino?",
+   "tags": [
+    "preposition",
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-fre-13",
+   "de": "Im Sommer fahren wir an die Ostsee.",
+   "ru": "Летом мы едем на Балтийское море.",
+   "uk": "Улітку ми їдемо на Балтійське море.",
+   "cloze": "Im Sommer fahren wir an die ___.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-fre-14",
+   "de": "Ich lese gerade ein spannendes Buch.",
+   "ru": "Я сейчас читаю увлекательную книгу.",
+   "uk": "Я зараз читаю захопливу книжку.",
+   "cloze": "Ich lese gerade ein ___ Buch.",
+   "tags": [
+    "adjective_ending"
+   ]
+  },
+  {
+   "id": "a2-fre-15",
+   "de": "Hast du Lust, mitzukommen?",
+   "ru": "Хочешь пойти с нами?",
+   "uk": "Хочеш піти з нами?",
+   "cloze": "Hast du Lust, ___?"
+  },
+  {
+   "id": "a2-fre-16",
+   "de": "Leider kann ich heute nicht, vielleicht nächstes Mal.",
+   "ru": "К сожалению, сегодня не могу, может, в следующий раз.",
+   "uk": "На жаль, сьогодні не можу, може, наступного разу.",
+   "cloze": "___ kann ich heute nicht, vielleicht nächstes Mal."
+  }
+ ]
+}

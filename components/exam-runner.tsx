@@ -142,9 +142,19 @@ function TeilView({
 const LIMITS = { hoeren: 25 * 60, lesen: 45 * 60 };
 
 /** Hören/Lesen: тренировка по частям или полный вариант с таймером и итогом. */
-export function ExamRunner({ part, tasks, onDone }: { part: "hoeren" | "lesen"; tasks: ExamTask[]; onDone?: (ratio: number) => void }) {
+export function ExamRunner({
+  part,
+  tasks,
+  fixed,
+  onDone,
+}: {
+  part: "hoeren" | "lesen";
+  tasks: ExamTask[];
+  fixed?: ExamTask[]; // сразу полный вариант без меню (пробный экзамен)
+  onDone?: (correct: number, total: number) => void;
+}) {
   const { t } = useApp();
-  const [mode, setMode] = useState<null | { training: boolean; list: ExamTask[] }>(null);
+  const [mode, setMode] = useState<null | { training: boolean; list: ExamTask[] }>(fixed ? { training: false, list: fixed } : null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [step, setStep] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -161,7 +171,7 @@ export function ExamRunner({ part, tasks, onDone }: { part: "hoeren" | "lesen"; 
       setFinished(true);
       const ratio = total ? correct / total : 0;
       saveAttempt({ kind: part, part, prompt: { tasks: mode.list.map((x) => x.id), training: mode.training }, scores: { correct, total, ratio } }).catch(() => {});
-      onDone?.(ratio);
+      onDone?.(correct, total);
     };
   });
 
@@ -251,7 +261,7 @@ export function ExamRunner({ part, tasks, onDone }: { part: "hoeren" | "lesen"; 
           )}
         </div>
       )}
-      {finished && <GlassButton className="w-full" onClick={() => setMode(null)}>{t("backToday")}</GlassButton>}
+      {finished && !fixed && <GlassButton className="w-full" onClick={() => setMode(null)}>{t("backToday")}</GlassButton>}
     </div>
   );
 }

@@ -1,128 +1,876 @@
 [
-  { "id": "l-a-1", "part": "lesen", "teil": 1, "type": "mc", "level": "A2", "topic": "aemter",
-    "instructions": { "de": "Sie sind im Einkaufszentrum und suchen etwas. In welches Stockwerk (a, b oder c) gehen Sie?", "ru": "Вы в торговом центре и что-то ищете. На какой этаж (a, b, c) вы пойдёте?", "uk": "Ви в торговому центрі й щось шукаєте. На який поверх (a, b, c) ви підете?" },
-    "text": "Einkaufszentrum „Ruhrpark“ – Wegweiser\n\n3. OG  Fitnessstudio · Kinderbetreuung „Kleine Strolche“ · Friseur · Nagelstudio\n2. OG  Elektronik & Handys · Reparaturservice für Smartphones · Möbel & Küchen · Lampen\n1. OG  Damenmode · Herrenmode · Kindermode · Schuhe · Änderungsschneiderei\nEG  Supermarkt · Bäckerei · Apotheke · Post & Paketshop · Geldautomaten · Information\nUG  Parkhaus · Fahrradständer · Autowaschanlage · Getränkemarkt",
-    "options": [
-      { "q": "Ihr Handydisplay ist kaputt.", "choices": ["1. OG", "2. OG", "anderes Stockwerk"], "answer": 1, "trap_ru": "«Reparaturservice für Smartphones» — 2. OG.", "trap_uk": "«Reparaturservice für Smartphones» — 2. OG." },
-      { "q": "Ihre neue Hose ist zu lang.", "choices": ["1. OG", "3. OG", "anderes Stockwerk"], "answer": 0, "trap_ru": "Укоротить брюки = Änderungsschneiderei (ателье) — 1. OG. Слова «Hose» в списке нет.", "trap_uk": "Укоротити штани = Änderungsschneiderei (ательє) — 1. OG. Слова «Hose» у списку немає." },
-      { "q": "Sie möchten einen Kasten Wasser kaufen.", "choices": ["EG", "2. OG", "anderes Stockwerk"], "answer": 2, "trap_ru": "Напитки ящиками — Getränkemarkt в UG, а не супермаркет на EG.", "trap_uk": "Напої ящиками — Getränkemarkt в UG, а не супермаркет на EG." },
-      { "q": "Ihr Kind soll eine Stunde betreut werden, während Sie einkaufen.", "choices": ["1. OG", "3. OG", "anderes Stockwerk"], "answer": 1, "trap_ru": "«Kindermode» на 1. OG — это одежда. Присмотр — Kinderbetreuung, 3. OG.", "trap_uk": "«Kindermode» на 1. OG — це одяг. Догляд — Kinderbetreuung, 3. OG." },
-      { "q": "Sie brauchen Bargeld.", "choices": ["EG", "UG", "anderes Stockwerk"], "answer": 0, "trap_ru": "Bargeld = наличные → Geldautomaten на EG.", "trap_uk": "Bargeld = готівка → Geldautomaten на EG." }
-    ] },
-  { "id": "l-a-2", "part": "lesen", "teil": 2, "type": "zuordnung", "level": "B1", "topic": null,
-    "instructions": { "de": "Lesen Sie die Situationen und die Anzeigen a–h. Welche Anzeige passt? Für eine Situation gibt es keine Lösung: Markieren Sie X.", "ru": "Прочитайте ситуации и объявления a–h. Какое объявление подходит? Для одной ситуации ответа нет — отметьте X.", "uk": "Прочитайте ситуації й оголошення a–h. Яке оголошення підходить? Для однієї ситуації відповіді немає — позначте X." },
-    "meta": { "ads": [
-      { "k": "a", "t": "Sprachcafé im Stadtteilzentrum: Jeden Mittwoch 18–20 Uhr Deutsch sprechen mit Ehrenamtlichen. Kostenlos, ohne Anmeldung." },
-      { "k": "b", "t": "Gebrauchte Kinderfahrräder, 16–24 Zoll, geprüft und günstig. Fahrradwerkstatt „Rad & Tat“, Mo–Fr 10–18 Uhr." },
-      { "k": "c", "t": "Intensivkurs Deutsch B1, vormittags, 5x pro Woche, Prüfung DTZ im Kurs. Anmeldung bei der VHS bis 15.3." },
-      { "k": "d", "t": "Wir suchen Aushilfen für unsere Bäckerei, nur samstags 6–12 Uhr. Gute Bezahlung. Bäckerei Sommer." },
-      { "k": "e", "t": "Schwimmkurs für Frauen, sonntags 9 Uhr, nur weibliche Trainerinnen. Hallenbad Mitte." },
-      { "k": "f", "t": "Nachhilfe in Mathe und Deutsch für Schüler der Klassen 5–10. Studenten helfen, 12 € pro Stunde." },
-      { "k": "g", "t": "Kostenlose Mieterberatung: Probleme mit der Nebenkostenabrechnung? Dienstag 14–17 Uhr, Mieterverein." },
-      { "k": "h", "t": "Fahrschule Kaya: Führerscheinkurse auch auf Russisch und Türkisch. Neuer Kurs ab 1.4." }
-    ] },
-    "options": [
-      { "q": "Sie möchten am Abend mit anderen Leuten Deutsch üben.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 0, "trap_ru": "Курс B1 (c) — утром. «Sprachcafé» — вечером, разговорная практика.", "trap_uk": "Курс B1 (c) — зранку. «Sprachcafé» — увечері, розмовна практика." },
-      { "q": "Ihre Vermieterin will 400 Euro Nachzahlung für Heizung. Sie finden das zu viel.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 6, "trap_ru": "Nachzahlung за отопление = проблема с Nebenkostenabrechnung → консультация для жильцов.", "trap_uk": "Доплата за опалення = проблема з Nebenkostenabrechnung → консультація для мешканців." },
-      { "q": "Sie suchen einen Job am Wochenende.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 3, "trap_ru": "«Nur samstags» = выходные.", "trap_uk": "«Nur samstags» = вихідні." },
-      { "q": "Ihr Sohn (8) möchte schwimmen lernen.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 8, "trap_ru": "Курс плавания только для женщин — для мальчика не подходит. Ответ X.", "trap_uk": "Курс плавання лише для жінок — хлопчикові не підходить. Відповідь X." },
-      { "q": "Ihre Tochter braucht Hilfe in Mathe für die 7. Klasse.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 5, "trap_ru": "Классы 5–10, математика — подходит f.", "trap_uk": "Класи 5–10, математика — підходить f." }
-    ] },
-  { "id": "l-a-3", "part": "lesen", "teil": 3, "type": "rf-mc", "level": "B1", "topic": null,
-    "instructions": { "de": "Lesen Sie die drei Texte. Zu jedem Text gibt es zwei Aufgaben.", "ru": "Прочитайте три текста. К каждому два задания.", "uk": "Прочитайте три тексти. До кожного два завдання." },
-    "meta": { "texts": [
-      "Neue Öffnungszeiten im Bürgerbüro\nAb dem 1. Mai ist das Bürgerbüro montags geschlossen. Dafür können Sie dienstags und donnerstags bis 19 Uhr kommen. Für Pässe und Personalausweise brauchen Sie weiterhin einen Termin, den Sie online oder telefonisch vereinbaren. Ummeldungen sind ohne Termin möglich, aber rechnen Sie mit Wartezeiten.",
-      "Liebe Eltern,\nam Freitag, 12. Juni, findet unser Schulfest statt. Der Unterricht endet an diesem Tag schon um 11 Uhr. Kinder, die nicht abgeholt werden können, werden bis 13 Uhr in der Schule betreut. Wir freuen uns über Kuchen- und Salatspenden. Bitte tragen Sie sich in die Liste im Sekretariat ein.\nIhre Schulleitung",
-      "Hausordnung – Wichtig!\nIn letzter Zeit stehen oft Fahrräder und Kinderwagen im Treppenhaus. Das ist aus Brandschutzgründen nicht erlaubt. Bitte benutzen Sie den Fahrradkeller. Kinderwagen dürfen im Eingangsbereich unter der Treppe stehen. Ab dem 1. Juli werden Fahrräder im Treppenhaus vom Hausmeister entfernt.\nIhre Hausverwaltung"
-    ] },
-    "options": [
-      { "q": "Das Bürgerbüro hat ab Mai an zwei Tagen länger geöffnet.", "choices": ["richtig", "falsch"], "answer": 0, "seg": 0, "trap_ru": "Вторник и четверг до 19 — это два дня.", "trap_uk": "Вівторок і четвер до 19 — це два дні." },
-      { "q": "Wer sich ummelden will,", "choices": ["muss einen Termin machen.", "kann ohne Termin kommen.", "muss online einen Antrag stellen."], "answer": 1, "seg": 0, "trap_ru": "Термин нужен для паспорта, а не для Ummeldung.", "trap_uk": "Термін потрібен для паспорта, а не для Ummeldung." },
-      { "q": "Am 12. Juni gibt es keinen Unterricht.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 1, "trap_ru": "Уроки есть, но заканчиваются в 11.", "trap_uk": "Уроки є, але закінчуються об 11." },
-      { "q": "Die Eltern sollen", "choices": ["die Kinder um 11 Uhr abholen.", "sich eintragen, wenn sie Essen mitbringen.", "Geld für das Fest bezahlen."], "answer": 1, "seg": 1, "trap_ru": "Забирать в 11 не обязательно — есть присмотр до 13.", "trap_uk": "Забирати об 11 не обов'язково — є догляд до 13." },
-      { "q": "Kinderwagen dürfen im Treppenhaus stehen.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 2, "trap_ru": "Только «im Eingangsbereich unter der Treppe» — не на лестнице.", "trap_uk": "Лише «im Eingangsbereich unter der Treppe» — не на сходах." },
-      { "q": "Ab Juli", "choices": ["gibt es einen neuen Fahrradkeller.", "nimmt der Hausmeister Fahrräder aus dem Treppenhaus weg.", "kostet der Fahrradkeller Geld."], "answer": 1, "seg": 2, "trap_ru": "«Entfernt» = убирает. Подвал уже есть.", "trap_uk": "«Entfernt» = прибирає. Підвал уже є." }
-    ] },
-  { "id": "l-a-4", "part": "lesen", "teil": 4, "type": "rf", "level": "B1", "topic": "gesundheit",
-    "instructions": { "de": "Lesen Sie den Text. Sind die Aussagen richtig oder falsch?", "ru": "Прочитайте текст. Утверждения верны или неверны?", "uk": "Прочитайте текст. Твердження правильні чи неправильні?" },
-    "text": "Ihre Gesundheitskarte – das Wichtigste in Kürze\n\nMit der elektronischen Gesundheitskarte (eGK) gehen Sie zum Arzt, zum Zahnarzt und ins Krankenhaus. Bitte bringen Sie sie bei jedem ersten Besuch im Quartal mit. Haben Sie die Karte vergessen, können Sie sie innerhalb von zehn Tagen nachreichen; sonst kann die Praxis Ihnen die Behandlung privat in Rechnung stellen.\n\nKinder bis 18 Jahre bekommen eine eigene Karte. Sie sind kostenlos über die Eltern mitversichert, wenn sie kein eigenes Einkommen haben.\n\nBei Verlust melden Sie sich bitte sofort bei uns. Eine neue Karte schicken wir Ihnen innerhalb von zwei Wochen zu. Dafür brauchen wir ein aktuelles Foto, das Sie bequem in unserer App hochladen können.",
-    "options": [
-      { "q": "Man muss die Karte bei jedem Arztbesuch zeigen.", "choices": ["richtig", "falsch"], "answer": 1, "trap_ru": "Только при первом визите в квартал, не каждый раз.", "trap_uk": "Лише під час першого візиту в кварталі, не щоразу." },
-      { "q": "Kinder ohne eigenes Einkommen zahlen keinen Beitrag.", "choices": ["richtig", "falsch"], "answer": 0, "trap_ru": "«Kostenlos mitversichert» = страховка бесплатная.", "trap_uk": "«Kostenlos mitversichert» = страховка безкоштовна." },
-      { "q": "Für eine neue Karte muss man in die Geschäftsstelle gehen.", "choices": ["richtig", "falsch"], "answer": 1, "trap_ru": "Фото загружается в приложении, карту присылают по почте.", "trap_uk": "Фото завантажується в застосунку, картку надсилають поштою." }
-    ] },
-  { "id": "l-a-5", "part": "lesen", "teil": 5, "type": "cloze", "level": "B1", "topic": "wohnen",
-    "instructions": { "de": "Lesen Sie den Brief. Welches Wort (a, b oder c) passt in die Lücke?", "ru": "Прочитайте письмо. Какое слово (a, b, c) подходит в пропуск?", "uk": "Прочитайте лист. Яке слово (a, b, c) підходить у пропуск?" },
-    "text": "Sehr geehrte Frau Krause,\n\nich wohne seit März (1) ___ Ihrem Haus in der Lindenstraße 8. Leider muss ich Ihnen mitteilen, (2) ___ das Fenster im Schlafzimmer nicht mehr richtig schließt. Es zieht stark, (3) ___ das Zimmer wird nicht mehr warm. Könnten Sie bitte einen Handwerker (4) ___? Ich bin montags und mittwochs ab 15 Uhr zu Hause. (5) ___ Sie Fragen haben, erreichen Sie mich unter 0176 223344.\n\nVielen Dank im (6) ___.\nMit freundlichen Grüßen\nNatalia Bondar",
-    "options": [
-      { "q": "(1)", "choices": ["in", "an", "bei"], "answer": 0, "trap_ru": "wohnen in + Dativ: in Ihrem Haus.", "trap_uk": "wohnen in + Dativ: in Ihrem Haus." },
-      { "q": "(2)", "choices": ["ob", "dass", "weil"], "answer": 1, "trap_ru": "mitteilen, dass … — сообщить, что. Глагол в конец: «nicht mehr richtig schließt».", "trap_uk": "mitteilen, dass … — повідомити, що. Дієслово в кінець: «nicht mehr richtig schließt»." },
-      { "q": "(3)", "choices": ["deshalb", "und", "obwohl"], "answer": 1, "trap_ru": "После «deshalb» был бы глагол сразу (deshalb wird das Zimmer). Здесь порядок прямой → und.", "trap_uk": "Після «deshalb» було б дієслово одразу (deshalb wird das Zimmer). Тут прямий порядок → und." },
-      { "q": "(4)", "choices": ["schicken", "geschickt", "schickt"], "answer": 0, "trap_ru": "Модальный глагол (könnten) + инфинитив в конце.", "trap_uk": "Модальне дієслово (könnten) + інфінітив у кінці." },
-      { "q": "(5)", "choices": ["Wenn", "Ob", "Wann"], "answer": 0, "trap_ru": "Условие «если» = wenn. «Wann» — вопрос «когда».", "trap_uk": "Умова «якщо» = wenn. «Wann» — питання «коли»." },
-      { "q": "(6)", "choices": ["Vorher", "Voraus", "Vorab"], "answer": 1, "trap_ru": "Устойчивое выражение: Vielen Dank im Voraus.", "trap_uk": "Стала фраза: Vielen Dank im Voraus." }
-    ] },
-  { "id": "l-b-1", "part": "lesen", "teil": 1, "type": "mc", "level": "A2", "topic": "gesundheit",
-    "instructions": { "de": "Sie sind im Krankenhaus und suchen Informationen. In welches Stockwerk (a, b oder c) gehen Sie?", "ru": "Вы в больнице и ищете информацию. На какой этаж вы пойдёте?", "uk": "Ви в лікарні й шукаєте інформацію. На який поверх ви підете?" },
-    "text": "St.-Marien-Krankenhaus – Orientierung\n\n4. OG  Kinderklinik · Geburtsstation · Elternzimmer\n3. OG  Innere Medizin · Kardiologie (Herz) · Diabetesberatung\n2. OG  Chirurgie · Orthopädie (Knochen und Gelenke) · Physiotherapie\n1. OG  Radiologie (Röntgen, MRT) · Labor · Blutspende\nEG  Notaufnahme · Patientenaufnahme · Cafeteria · Kiosk · Seelsorge\nUG  Verwaltung · Patientenakten · Fundbüro",
-    "options": [
-      { "q": "Ihre Freundin hat gerade ein Baby bekommen. Sie möchten sie besuchen.", "choices": ["3. OG", "4. OG", "anderes Stockwerk"], "answer": 1, "trap_ru": "Ребёнок только родился → Geburtsstation (роддом), 4. OG.", "trap_uk": "Дитина щойно народилася → Geburtsstation (пологове), 4. OG." },
-      { "q": "Ihr Knie soll geröntgt werden.", "choices": ["1. OG", "2. OG", "anderes Stockwerk"], "answer": 0, "trap_ru": "Колено — ортопедия (2. OG), но рентген делают в Radiologie, 1. OG.", "trap_uk": "Коліно — ортопедія (2. OG), але рентген роблять у Radiologie, 1. OG." },
-      { "q": "Sie haben gestern Ihre Brille im Krankenhaus verloren.", "choices": ["EG", "UG", "anderes Stockwerk"], "answer": 1, "trap_ru": "Потерянные вещи — Fundbüro в UG.", "trap_uk": "Загублені речі — Fundbüro в UG." },
-      { "q": "Sie möchten etwas essen.", "choices": ["EG", "1. OG", "anderes Stockwerk"], "answer": 0, "trap_ru": "Cafeteria на EG.", "trap_uk": "Cafeteria на EG." },
-      { "q": "Ihr Vater hat Diabetes und braucht Tipps für die Ernährung.", "choices": ["2. OG", "4. OG", "anderes Stockwerk"], "answer": 2, "trap_ru": "Diabetesberatung на 3. OG — среди вариантов его нет, значит «anderes Stockwerk».", "trap_uk": "Diabetesberatung на 3. OG — серед варіантів його немає, отже «anderes Stockwerk»." }
-    ] },
-  { "id": "l-b-2", "part": "lesen", "teil": 2, "type": "zuordnung", "level": "B1", "topic": null,
-    "instructions": { "de": "Lesen Sie die Situationen und die Anzeigen a–h. Welche Anzeige passt? Für eine Situation gibt es keine Lösung: X.", "ru": "Ситуации и объявления a–h. Для одной ситуации ответа нет — X.", "uk": "Ситуації й оголошення a–h. Для однієї ситуації відповіді немає — X." },
-    "meta": { "ads": [
-      { "k": "a", "t": "Umzugshilfe: Zwei starke Männer mit Transporter. Auch am Wochenende. 35 €/Stunde. Tel. 0157 889900." },
-      { "k": "b", "t": "Computerkurs für Anfänger 50+: E-Mails schreiben, im Internet suchen, Online-Banking. Di + Do 10 Uhr, VHS." },
-      { "k": "c", "t": "Verkaufe Waschmaschine, 3 Jahre alt, sehr guter Zustand, 120 €. Nur Abholung." },
-      { "k": "d", "t": "Kinderchor sucht Sängerinnen und Sänger von 6 bis 12 Jahren. Probe freitags 16 Uhr, Musikschule." },
-      { "k": "e", "t": "Elektriker gesucht! Vollzeit, unbefristet, Führerschein Klasse B erforderlich. Elektro Hansen GmbH." },
-      { "k": "f", "t": "Beratung für Bewerbungen: Wir prüfen Ihren Lebenslauf und üben Vorstellungsgespräche. Kostenlos für Arbeitssuchende, Jobcenter Mitte." },
-      { "k": "g", "t": "Flohmarkt für Kindersachen, Samstag 9–14 Uhr, Turnhalle der Grundschule am Park. Standgebühr 5 €." },
-      { "k": "h", "t": "Deutsch-Ukrainischer Verein: Hilfe beim Ausfüllen von Formularen, jeden Montag 17–19 Uhr." }
-    ] },
-    "options": [
-      { "q": "Sie möchten die gebrauchte Kleidung Ihrer Kinder verkaufen.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 6, "trap_ru": "Flohmarkt für Kindersachen — можно взять стенд за 5 €.", "trap_uk": "Flohmarkt für Kindersachen — можна взяти стенд за 5 €." },
-      { "q": "Ihre Mutter (62) möchte lernen, wie man E-Mails schreibt.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 1, "trap_ru": "«50+» — для неё подходит.", "trap_uk": "«50+» — їй підходить." },
-      { "q": "Sie verstehen einen Brief von der Krankenkasse nicht und brauchen Hilfe beim Formular.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 7, "trap_ru": "«Hilfe beim Ausfüllen von Formularen» — h.", "trap_uk": "«Hilfe beim Ausfüllen von Formularen» — h." },
-      { "q": "Sie möchten eine gebrauchte Spülmaschine kaufen.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 8, "trap_ru": "Продают стиральную машину (Waschmaschine), а не посудомойку (Spülmaschine). Ответ X.", "trap_uk": "Продають пральну машину (Waschmaschine), а не посудомийну (Spülmaschine). Відповідь X." },
-      { "q": "Sie haben bald ein Vorstellungsgespräch und sind nervös.", "choices": ["a","b","c","d","e","f","g","h","X"], "answer": 5, "trap_ru": "Объявление e — вакансия, а не подготовка к собеседованию.", "trap_uk": "Оголошення e — вакансія, а не підготовка до співбесіди." }
-    ] },
-  { "id": "l-b-3", "part": "lesen", "teil": 3, "type": "rf-mc", "level": "B1", "topic": null,
-    "instructions": { "de": "Lesen Sie die drei Texte. Zu jedem Text gibt es zwei Aufgaben.", "ru": "Три текста, по два задания.", "uk": "Три тексти, по два завдання." },
-    "meta": { "texts": [
-      "Von: Stadtbücherei\nBetreff: Erinnerung\nLiebe Leserin, lieber Leser,\ndie Leihfrist für das Buch „Deutsch im Alltag“ ist am 3. Oktober abgelaufen. Bitte geben Sie es so bald wie möglich zurück. Ab dem 10. Oktober kostet jeder Tag 50 Cent. Sie können die Leihfrist auch online verlängern, wenn das Buch nicht reserviert ist.",
-      "Zeitungsmeldung: Mehr Fahrradwege in Bielefeld\nDie Stadt baut in den nächsten zwei Jahren 15 Kilometer neue Radwege. Besonders auf dem Weg zu Schulen sollen Kinder sicherer fahren können. Autofahrer müssen sich auf Baustellen einstellen. Kritik kommt von Geschäftsleuten in der Innenstadt: Sie fürchten, dass Parkplätze verschwinden.",
-      "Liebe Kolleginnen und Kollegen,\nab Montag ist unsere Kantine wegen Renovierung drei Wochen geschlossen. In dieser Zeit stellen wir einen Foodtruck auf den Parkplatz, von 11:30 bis 14 Uhr. Die Preise bleiben gleich. Kaffee gibt es weiter am Automaten im 2. Stock.\nIhre Personalabteilung"
-    ] },
-    "options": [
-      { "q": "Man muss schon jetzt für jeden Tag 50 Cent bezahlen.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 0, "trap_ru": "Штраф только с 10 октября.", "trap_uk": "Штраф лише з 10 жовтня." },
-      { "q": "Man kann das Buch online verlängern,", "choices": ["immer.", "wenn niemand anderes es bestellt hat.", "nur bis zum 3. Oktober."], "answer": 1, "seg": 0, "trap_ru": "«Wenn das Buch nicht reserviert ist» = если никто не заказал.", "trap_uk": "«Wenn das Buch nicht reserviert ist» = якщо ніхто не замовив." },
-      { "q": "Die neuen Radwege sollen vor allem Schulkindern helfen.", "choices": ["richtig", "falsch"], "answer": 0, "seg": 1, "trap_ru": "«Besonders auf dem Weg zu Schulen» = в первую очередь школьникам.", "trap_uk": "«Besonders auf dem Weg zu Schulen» = насамперед школярам." },
-      { "q": "Die Geschäftsleute", "choices": ["finden die Radwege gut.", "haben Angst, dass es weniger Parkplätze gibt.", "bauen selbst Radwege."], "answer": 1, "seg": 1, "trap_ru": "«Fürchten» = боятся — синоним к «Angst haben».", "trap_uk": "«Fürchten» = бояться — синонім до «Angst haben»." },
-      { "q": "Das Essen im Foodtruck ist teurer.", "choices": ["richtig", "falsch"], "answer": 1, "seg": 2, "trap_ru": "«Die Preise bleiben gleich».", "trap_uk": "«Die Preise bleiben gleich»." },
-      { "q": "Während der Renovierung gibt es Kaffee", "choices": ["im Foodtruck.", "am Automaten.", "nicht mehr."], "answer": 1, "seg": 2, "trap_ru": "Кофе — в автомате на 2 этаже.", "trap_uk": "Кава — в автоматі на 2 поверсі." }
-    ] },
-  { "id": "l-b-4", "part": "lesen", "teil": 4, "type": "rf", "level": "B1", "topic": "schule",
-    "instructions": { "de": "Lesen Sie den Text. Sind die Aussagen richtig oder falsch?", "ru": "Утверждения верны или неверны?", "uk": "Твердження правильні чи неправильні?" },
-    "text": "Offene Ganztagsschule (OGS) – Informationen für Eltern\n\nDie OGS betreut Ihr Kind nach dem Unterricht bis 16 Uhr. Es gibt ein warmes Mittagessen, Hausaufgabenzeit und Freizeitangebote wie Sport, Musik und Basteln.\n\nDie Anmeldung gilt immer für ein ganzes Schuljahr. Eine Kündigung während des Schuljahres ist nur bei Umzug möglich.\n\nDer Elternbeitrag richtet sich nach dem Einkommen. Familien, die Bürgergeld bekommen, zahlen keinen Beitrag, nur das Essensgeld von 60 Euro im Monat. Auch das Essensgeld kann über das Bildungs- und Teilhabepaket übernommen werden.\n\nIn den Ferien ist die OGS nur in den ersten drei Wochen der Sommerferien geöffnet.",
-    "options": [
-      { "q": "Man kann sein Kind jederzeit von der OGS abmelden.", "choices": ["richtig", "falsch"], "answer": 1, "trap_ru": "Только при переезде.", "trap_uk": "Лише в разі переїзду." },
-      { "q": "Alle Familien zahlen gleich viel.", "choices": ["richtig", "falsch"], "answer": 1, "trap_ru": "«Richtet sich nach dem Einkommen» = зависит от дохода.", "trap_uk": "«Richtet sich nach dem Einkommen» = залежить від доходу." },
-      { "q": "In den Herbstferien ist die OGS geschlossen.", "choices": ["richtig", "falsch"], "answer": 0, "trap_ru": "Открыто только 3 недели летних каникул — значит, осенью закрыто.", "trap_uk": "Відкрито лише 3 тижні літніх канікул — отже, восени зачинено." }
-    ] },
-  { "id": "l-b-5", "part": "lesen", "teil": 5, "type": "cloze", "level": "B1", "topic": "arbeit",
-    "instructions": { "de": "Lesen Sie die E-Mail. Welches Wort (a, b oder c) passt in die Lücke?", "ru": "Какое слово подходит в пропуск?", "uk": "Яке слово підходить у пропуск?" },
-    "text": "Sehr geehrter Herr Wagner,\n\nvielen Dank (1) ___ Ihre Einladung zum Vorstellungsgespräch am Dienstag. Leider kann ich an diesem Tag nicht kommen, (2) ___ ich an dem Tag meine Deutschprüfung habe. Wäre es möglich, das Gespräch (3) ___ Donnerstag zu verschieben? Ich (4) ___ mich sehr freuen, wenn das klappt. Meine Zeugnisse (5) ___ ich Ihnen gern vorher per E-Mail. Bitte geben Sie mir Bescheid, (6) ___ der neue Termin für Sie passt.\n\nMit freundlichen Grüßen\nOleksandr Hrytsenko",
-    "options": [
-      { "q": "(1)", "choices": ["für", "über", "von"], "answer": 0, "trap_ru": "danken für / Dank für + Akkusativ.", "trap_uk": "danken für / Dank für + Akkusativ." },
-      { "q": "(2)", "choices": ["denn", "weil", "deshalb"], "answer": 1, "trap_ru": "Глагол стоит в конце («habe») → придаточное с weil. После denn был бы прямой порядок.", "trap_uk": "Дієслово в кінці («habe») → підрядне з weil. Після denn був би прямий порядок." },
-      { "q": "(3)", "choices": ["am", "auf", "im"], "answer": 1, "trap_ru": "verschieben auf + Akk.: auf Donnerstag.", "trap_uk": "verschieben auf + Akk.: auf Donnerstag." },
-      { "q": "(4)", "choices": ["werde", "würde", "wurde"], "answer": 1, "trap_ru": "Вежливое Konjunktiv II: ich würde mich freuen.", "trap_uk": "Ввічливий Konjunktiv II: ich würde mich freuen." },
-      { "q": "(5)", "choices": ["schicke", "schickt", "geschickt"], "answer": 0, "trap_ru": "ich schicke — 1-е лицо.", "trap_uk": "ich schicke — 1-ша особа." },
-      { "q": "(6)", "choices": ["dass", "ob", "wenn"], "answer": 1, "trap_ru": "Косвенный вопрос «подходит ли» = ob.", "trap_uk": "Непряме питання «чи підходить» = ob." }
-    ] }
+ {
+  "id": "l-a-1",
+  "part": "lesen",
+  "teil": 1,
+  "type": "mc",
+  "level": "A2",
+  "topic": "aemter",
+  "instructions": {
+   "de": "Sie sind im Einkaufszentrum und suchen etwas. In welches Stockwerk (a, b oder c) gehen Sie?",
+   "ru": "Вы в торговом центре и что-то ищете. На какой этаж (a, b, c) вы пойдёте?",
+   "uk": "Ви в торговому центрі й щось шукаєте. На який поверх (a, b, c) ви підете?"
+  },
+  "text": "Einkaufszentrum „Ruhrpark“ – Wegweiser\n\n3. OG  Fitnessstudio · Kinderbetreuung „Kleine Strolche“ · Friseur · Nagelstudio\n2. OG  Elektronik & Handys · Reparaturservice für Smartphones · Möbel & Küchen · Lampen\n1. OG  Damenmode · Herrenmode · Kindermode · Schuhe · Änderungsschneiderei\nEG  Supermarkt · Bäckerei · Apotheke · Post & Paketshop · Geldautomaten · Information\nUG  Parkhaus · Fahrradständer · Autowaschanlage · Getränkemarkt",
+  "options": [
+   {
+    "q": "Ihr Handydisplay ist kaputt.",
+    "choices": [
+     "1. OG",
+     "2. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 1,
+    "trap_ru": "«Reparaturservice für Smartphones» — 2. OG.",
+    "trap_uk": "«Reparaturservice für Smartphones» — 2. OG."
+   },
+   {
+    "q": "Ihre neue Hose ist zu lang.",
+    "choices": [
+     "1. OG",
+     "3. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 0,
+    "trap_ru": "Укоротить брюки = Änderungsschneiderei (ателье) — 1. OG. Слова «Hose» в списке нет.",
+    "trap_uk": "Укоротити штани = Änderungsschneiderei (ательє) — 1. OG. Слова «Hose» у списку немає."
+   },
+   {
+    "q": "Sie möchten einen Kasten Wasser kaufen.",
+    "choices": [
+     "EG",
+     "2. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 2,
+    "trap_ru": "Напитки ящиками — Getränkemarkt в UG, а не супермаркет на EG.",
+    "trap_uk": "Напої ящиками — Getränkemarkt в UG, а не супермаркет на EG."
+   },
+   {
+    "q": "Ihr Kind soll eine Stunde betreut werden, während Sie einkaufen.",
+    "choices": [
+     "1. OG",
+     "3. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 1,
+    "trap_ru": "«Kindermode» на 1. OG — это одежда. Присмотр — Kinderbetreuung, 3. OG.",
+    "trap_uk": "«Kindermode» на 1. OG — це одяг. Догляд — Kinderbetreuung, 3. OG."
+   },
+   {
+    "q": "Sie brauchen Bargeld.",
+    "choices": [
+     "EG",
+     "UG",
+     "anderes Stockwerk"
+    ],
+    "answer": 0,
+    "trap_ru": "Bargeld = наличные → Geldautomaten на EG.",
+    "trap_uk": "Bargeld = готівка → Geldautomaten на EG."
+   }
+  ],
+  "meta": {
+   "satz": "A"
+  }
+ },
+ {
+  "id": "l-a-2",
+  "part": "lesen",
+  "teil": 2,
+  "type": "zuordnung",
+  "level": "B1",
+  "topic": null,
+  "instructions": {
+   "de": "Lesen Sie die Situationen und die Anzeigen a–h. Welche Anzeige passt? Für eine Situation gibt es keine Lösung: Markieren Sie X.",
+   "ru": "Прочитайте ситуации и объявления a–h. Какое объявление подходит? Для одной ситуации ответа нет — отметьте X.",
+   "uk": "Прочитайте ситуації й оголошення a–h. Яке оголошення підходить? Для однієї ситуації відповіді немає — позначте X."
+  },
+  "meta": {
+   "satz": "A",
+   "ads": [
+    {
+     "k": "a",
+     "t": "Sprachcafé im Stadtteilzentrum: Jeden Mittwoch 18–20 Uhr Deutsch sprechen mit Ehrenamtlichen. Kostenlos, ohne Anmeldung."
+    },
+    {
+     "k": "b",
+     "t": "Gebrauchte Kinderfahrräder, 16–24 Zoll, geprüft und günstig. Fahrradwerkstatt „Rad & Tat“, Mo–Fr 10–18 Uhr."
+    },
+    {
+     "k": "c",
+     "t": "Intensivkurs Deutsch B1, vormittags, 5x pro Woche, Prüfung DTZ im Kurs. Anmeldung bei der VHS bis 15.3."
+    },
+    {
+     "k": "d",
+     "t": "Wir suchen Aushilfen für unsere Bäckerei, nur samstags 6–12 Uhr. Gute Bezahlung. Bäckerei Sommer."
+    },
+    {
+     "k": "e",
+     "t": "Schwimmkurs für Frauen, sonntags 9 Uhr, nur weibliche Trainerinnen. Hallenbad Mitte."
+    },
+    {
+     "k": "f",
+     "t": "Nachhilfe in Mathe und Deutsch für Schüler der Klassen 5–10. Studenten helfen, 12 € pro Stunde."
+    },
+    {
+     "k": "g",
+     "t": "Kostenlose Mieterberatung: Probleme mit der Nebenkostenabrechnung? Dienstag 14–17 Uhr, Mieterverein."
+    },
+    {
+     "k": "h",
+     "t": "Fahrschule Kaya: Führerscheinkurse auch auf Russisch und Türkisch. Neuer Kurs ab 1.4."
+    }
+   ]
+  },
+  "options": [
+   {
+    "q": "Sie möchten am Abend mit anderen Leuten Deutsch üben.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 0,
+    "trap_ru": "Курс B1 (c) — утром. «Sprachcafé» — вечером, разговорная практика.",
+    "trap_uk": "Курс B1 (c) — зранку. «Sprachcafé» — увечері, розмовна практика."
+   },
+   {
+    "q": "Ihre Vermieterin will 400 Euro Nachzahlung für Heizung. Sie finden das zu viel.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 6,
+    "trap_ru": "Nachzahlung за отопление = проблема с Nebenkostenabrechnung → консультация для жильцов.",
+    "trap_uk": "Доплата за опалення = проблема з Nebenkostenabrechnung → консультація для мешканців."
+   },
+   {
+    "q": "Sie suchen einen Job am Wochenende.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 3,
+    "trap_ru": "«Nur samstags» = выходные.",
+    "trap_uk": "«Nur samstags» = вихідні."
+   },
+   {
+    "q": "Ihr Sohn (8) möchte schwimmen lernen.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 8,
+    "trap_ru": "Курс плавания только для женщин — для мальчика не подходит. Ответ X.",
+    "trap_uk": "Курс плавання лише для жінок — хлопчикові не підходить. Відповідь X."
+   },
+   {
+    "q": "Ihre Tochter braucht Hilfe in Mathe für die 7. Klasse.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 5,
+    "trap_ru": "Классы 5–10, математика — подходит f.",
+    "trap_uk": "Класи 5–10, математика — підходить f."
+   }
+  ]
+ },
+ {
+  "id": "l-a-3",
+  "part": "lesen",
+  "teil": 3,
+  "type": "rf-mc",
+  "level": "B1",
+  "topic": null,
+  "instructions": {
+   "de": "Lesen Sie die drei Texte. Zu jedem Text gibt es zwei Aufgaben.",
+   "ru": "Прочитайте три текста. К каждому два задания.",
+   "uk": "Прочитайте три тексти. До кожного два завдання."
+  },
+  "meta": {
+   "satz": "A",
+   "texts": [
+    "Neue Öffnungszeiten im Bürgerbüro\nAb dem 1. Mai ist das Bürgerbüro montags geschlossen. Dafür können Sie dienstags und donnerstags bis 19 Uhr kommen. Für Pässe und Personalausweise brauchen Sie weiterhin einen Termin, den Sie online oder telefonisch vereinbaren. Ummeldungen sind ohne Termin möglich, aber rechnen Sie mit Wartezeiten.",
+    "Liebe Eltern,\nam Freitag, 12. Juni, findet unser Schulfest statt. Der Unterricht endet an diesem Tag schon um 11 Uhr. Kinder, die nicht abgeholt werden können, werden bis 13 Uhr in der Schule betreut. Wir freuen uns über Kuchen- und Salatspenden. Bitte tragen Sie sich in die Liste im Sekretariat ein.\nIhre Schulleitung",
+    "Hausordnung – Wichtig!\nIn letzter Zeit stehen oft Fahrräder und Kinderwagen im Treppenhaus. Das ist aus Brandschutzgründen nicht erlaubt. Bitte benutzen Sie den Fahrradkeller. Kinderwagen dürfen im Eingangsbereich unter der Treppe stehen. Ab dem 1. Juli werden Fahrräder im Treppenhaus vom Hausmeister entfernt.\nIhre Hausverwaltung"
+   ]
+  },
+  "options": [
+   {
+    "q": "Das Bürgerbüro hat ab Mai an zwei Tagen länger geöffnet.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 0,
+    "seg": 0,
+    "trap_ru": "Вторник и четверг до 19 — это два дня.",
+    "trap_uk": "Вівторок і четвер до 19 — це два дні."
+   },
+   {
+    "q": "Wer sich ummelden will,",
+    "choices": [
+     "muss einen Termin machen.",
+     "kann ohne Termin kommen.",
+     "muss online einen Antrag stellen."
+    ],
+    "answer": 1,
+    "seg": 0,
+    "trap_ru": "Термин нужен для паспорта, а не для Ummeldung.",
+    "trap_uk": "Термін потрібен для паспорта, а не для Ummeldung."
+   },
+   {
+    "q": "Am 12. Juni gibt es keinen Unterricht.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "seg": 1,
+    "trap_ru": "Уроки есть, но заканчиваются в 11.",
+    "trap_uk": "Уроки є, але закінчуються об 11."
+   },
+   {
+    "q": "Die Eltern sollen",
+    "choices": [
+     "die Kinder um 11 Uhr abholen.",
+     "sich eintragen, wenn sie Essen mitbringen.",
+     "Geld für das Fest bezahlen."
+    ],
+    "answer": 1,
+    "seg": 1,
+    "trap_ru": "Забирать в 11 не обязательно — есть присмотр до 13.",
+    "trap_uk": "Забирати об 11 не обов'язково — є догляд до 13."
+   },
+   {
+    "q": "Kinderwagen dürfen im Treppenhaus stehen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "seg": 2,
+    "trap_ru": "Только «im Eingangsbereich unter der Treppe» — не на лестнице.",
+    "trap_uk": "Лише «im Eingangsbereich unter der Treppe» — не на сходах."
+   },
+   {
+    "q": "Ab Juli",
+    "choices": [
+     "gibt es einen neuen Fahrradkeller.",
+     "nimmt der Hausmeister Fahrräder aus dem Treppenhaus weg.",
+     "kostet der Fahrradkeller Geld."
+    ],
+    "answer": 1,
+    "seg": 2,
+    "trap_ru": "«Entfernt» = убирает. Подвал уже есть.",
+    "trap_uk": "«Entfernt» = прибирає. Підвал уже є."
+   }
+  ]
+ },
+ {
+  "id": "l-a-4",
+  "part": "lesen",
+  "teil": 4,
+  "type": "rf",
+  "level": "B1",
+  "topic": "gesundheit",
+  "instructions": {
+   "de": "Lesen Sie den Text. Sind die Aussagen richtig oder falsch?",
+   "ru": "Прочитайте текст. Утверждения верны или неверны?",
+   "uk": "Прочитайте текст. Твердження правильні чи неправильні?"
+  },
+  "text": "Ihre Gesundheitskarte – das Wichtigste in Kürze\n\nMit der elektronischen Gesundheitskarte (eGK) gehen Sie zum Arzt, zum Zahnarzt und ins Krankenhaus. Bitte bringen Sie sie bei jedem ersten Besuch im Quartal mit. Haben Sie die Karte vergessen, können Sie sie innerhalb von zehn Tagen nachreichen; sonst kann die Praxis Ihnen die Behandlung privat in Rechnung stellen.\n\nKinder bis 18 Jahre bekommen eine eigene Karte. Sie sind kostenlos über die Eltern mitversichert, wenn sie kein eigenes Einkommen haben.\n\nBei Verlust melden Sie sich bitte sofort bei uns. Eine neue Karte schicken wir Ihnen innerhalb von zwei Wochen zu. Dafür brauchen wir ein aktuelles Foto, das Sie bequem in unserer App hochladen können.",
+  "options": [
+   {
+    "q": "Man muss die Karte bei jedem Arztbesuch zeigen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "trap_ru": "Только при первом визите в квартал, не каждый раз.",
+    "trap_uk": "Лише під час першого візиту в кварталі, не щоразу."
+   },
+   {
+    "q": "Kinder ohne eigenes Einkommen zahlen keinen Beitrag.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 0,
+    "trap_ru": "«Kostenlos mitversichert» = страховка бесплатная.",
+    "trap_uk": "«Kostenlos mitversichert» = страховка безкоштовна."
+   },
+   {
+    "q": "Für eine neue Karte muss man in die Geschäftsstelle gehen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "trap_ru": "Фото загружается в приложении, карту присылают по почте.",
+    "trap_uk": "Фото завантажується в застосунку, картку надсилають поштою."
+   }
+  ],
+  "meta": {
+   "satz": "A"
+  }
+ },
+ {
+  "id": "l-a-5",
+  "part": "lesen",
+  "teil": 5,
+  "type": "cloze",
+  "level": "B1",
+  "topic": "wohnen",
+  "instructions": {
+   "de": "Lesen Sie den Brief. Welches Wort (a, b oder c) passt in die Lücke?",
+   "ru": "Прочитайте письмо. Какое слово (a, b, c) подходит в пропуск?",
+   "uk": "Прочитайте лист. Яке слово (a, b, c) підходить у пропуск?"
+  },
+  "text": "Sehr geehrte Frau Krause,\n\nich wohne seit März (1) ___ Ihrem Haus in der Lindenstraße 8. Leider muss ich Ihnen mitteilen, (2) ___ das Fenster im Schlafzimmer nicht mehr richtig schließt. Es zieht stark, (3) ___ das Zimmer wird nicht mehr warm. Könnten Sie bitte einen Handwerker (4) ___? Ich bin montags und mittwochs ab 15 Uhr zu Hause. (5) ___ Sie Fragen haben, erreichen Sie mich unter 0176 223344.\n\nVielen Dank im (6) ___.\nMit freundlichen Grüßen\nNatalia Bondar",
+  "options": [
+   {
+    "q": "(1)",
+    "choices": [
+     "in",
+     "an",
+     "bei"
+    ],
+    "answer": 0,
+    "trap_ru": "wohnen in + Dativ: in Ihrem Haus.",
+    "trap_uk": "wohnen in + Dativ: in Ihrem Haus."
+   },
+   {
+    "q": "(2)",
+    "choices": [
+     "ob",
+     "dass",
+     "weil"
+    ],
+    "answer": 1,
+    "trap_ru": "mitteilen, dass … — сообщить, что. Глагол в конец: «nicht mehr richtig schließt».",
+    "trap_uk": "mitteilen, dass … — повідомити, що. Дієслово в кінець: «nicht mehr richtig schließt»."
+   },
+   {
+    "q": "(3)",
+    "choices": [
+     "deshalb",
+     "und",
+     "obwohl"
+    ],
+    "answer": 1,
+    "trap_ru": "После «deshalb» был бы глагол сразу (deshalb wird das Zimmer). Здесь порядок прямой → und.",
+    "trap_uk": "Після «deshalb» було б дієслово одразу (deshalb wird das Zimmer). Тут прямий порядок → und."
+   },
+   {
+    "q": "(4)",
+    "choices": [
+     "schicken",
+     "geschickt",
+     "schickt"
+    ],
+    "answer": 0,
+    "trap_ru": "Модальный глагол (könnten) + инфинитив в конце.",
+    "trap_uk": "Модальне дієслово (könnten) + інфінітив у кінці."
+   },
+   {
+    "q": "(5)",
+    "choices": [
+     "Wenn",
+     "Ob",
+     "Wann"
+    ],
+    "answer": 0,
+    "trap_ru": "Условие «если» = wenn. «Wann» — вопрос «когда».",
+    "trap_uk": "Умова «якщо» = wenn. «Wann» — питання «коли»."
+   },
+   {
+    "q": "(6)",
+    "choices": [
+     "Vorher",
+     "Voraus",
+     "Vorab"
+    ],
+    "answer": 1,
+    "trap_ru": "Устойчивое выражение: Vielen Dank im Voraus.",
+    "trap_uk": "Стала фраза: Vielen Dank im Voraus."
+   }
+  ],
+  "meta": {
+   "satz": "A"
+  }
+ },
+ {
+  "id": "l-b-1",
+  "part": "lesen",
+  "teil": 1,
+  "type": "mc",
+  "level": "A2",
+  "topic": "gesundheit",
+  "instructions": {
+   "de": "Sie sind im Krankenhaus und suchen Informationen. In welches Stockwerk (a, b oder c) gehen Sie?",
+   "ru": "Вы в больнице и ищете информацию. На какой этаж вы пойдёте?",
+   "uk": "Ви в лікарні й шукаєте інформацію. На який поверх ви підете?"
+  },
+  "text": "St.-Marien-Krankenhaus – Orientierung\n\n4. OG  Kinderklinik · Geburtsstation · Elternzimmer\n3. OG  Innere Medizin · Kardiologie (Herz) · Diabetesberatung\n2. OG  Chirurgie · Orthopädie (Knochen und Gelenke) · Physiotherapie\n1. OG  Radiologie (Röntgen, MRT) · Labor · Blutspende\nEG  Notaufnahme · Patientenaufnahme · Cafeteria · Kiosk · Seelsorge\nUG  Verwaltung · Patientenakten · Fundbüro",
+  "options": [
+   {
+    "q": "Ihre Freundin hat gerade ein Baby bekommen. Sie möchten sie besuchen.",
+    "choices": [
+     "3. OG",
+     "4. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 1,
+    "trap_ru": "Ребёнок только родился → Geburtsstation (роддом), 4. OG.",
+    "trap_uk": "Дитина щойно народилася → Geburtsstation (пологове), 4. OG."
+   },
+   {
+    "q": "Ihr Knie soll geröntgt werden.",
+    "choices": [
+     "1. OG",
+     "2. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 0,
+    "trap_ru": "Колено — ортопедия (2. OG), но рентген делают в Radiologie, 1. OG.",
+    "trap_uk": "Коліно — ортопедія (2. OG), але рентген роблять у Radiologie, 1. OG."
+   },
+   {
+    "q": "Sie haben gestern Ihre Brille im Krankenhaus verloren.",
+    "choices": [
+     "EG",
+     "UG",
+     "anderes Stockwerk"
+    ],
+    "answer": 1,
+    "trap_ru": "Потерянные вещи — Fundbüro в UG.",
+    "trap_uk": "Загублені речі — Fundbüro в UG."
+   },
+   {
+    "q": "Sie möchten etwas essen.",
+    "choices": [
+     "EG",
+     "1. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 0,
+    "trap_ru": "Cafeteria на EG.",
+    "trap_uk": "Cafeteria на EG."
+   },
+   {
+    "q": "Ihr Vater hat Diabetes und braucht Tipps für die Ernährung.",
+    "choices": [
+     "2. OG",
+     "4. OG",
+     "anderes Stockwerk"
+    ],
+    "answer": 2,
+    "trap_ru": "Diabetesberatung на 3. OG — среди вариантов его нет, значит «anderes Stockwerk».",
+    "trap_uk": "Diabetesberatung на 3. OG — серед варіантів його немає, отже «anderes Stockwerk»."
+   }
+  ],
+  "meta": {
+   "satz": "B"
+  }
+ },
+ {
+  "id": "l-b-2",
+  "part": "lesen",
+  "teil": 2,
+  "type": "zuordnung",
+  "level": "B1",
+  "topic": null,
+  "instructions": {
+   "de": "Lesen Sie die Situationen und die Anzeigen a–h. Welche Anzeige passt? Für eine Situation gibt es keine Lösung: X.",
+   "ru": "Ситуации и объявления a–h. Для одной ситуации ответа нет — X.",
+   "uk": "Ситуації й оголошення a–h. Для однієї ситуації відповіді немає — X."
+  },
+  "meta": {
+   "satz": "B",
+   "ads": [
+    {
+     "k": "a",
+     "t": "Umzugshilfe: Zwei starke Männer mit Transporter. Auch am Wochenende. 35 €/Stunde. Tel. 0157 889900."
+    },
+    {
+     "k": "b",
+     "t": "Computerkurs für Anfänger 50+: E-Mails schreiben, im Internet suchen, Online-Banking. Di + Do 10 Uhr, VHS."
+    },
+    {
+     "k": "c",
+     "t": "Verkaufe Waschmaschine, 3 Jahre alt, sehr guter Zustand, 120 €. Nur Abholung."
+    },
+    {
+     "k": "d",
+     "t": "Kinderchor sucht Sängerinnen und Sänger von 6 bis 12 Jahren. Probe freitags 16 Uhr, Musikschule."
+    },
+    {
+     "k": "e",
+     "t": "Elektriker gesucht! Vollzeit, unbefristet, Führerschein Klasse B erforderlich. Elektro Hansen GmbH."
+    },
+    {
+     "k": "f",
+     "t": "Beratung für Bewerbungen: Wir prüfen Ihren Lebenslauf und üben Vorstellungsgespräche. Kostenlos für Arbeitssuchende, Jobcenter Mitte."
+    },
+    {
+     "k": "g",
+     "t": "Flohmarkt für Kindersachen, Samstag 9–14 Uhr, Turnhalle der Grundschule am Park. Standgebühr 5 €."
+    },
+    {
+     "k": "h",
+     "t": "Deutsch-Ukrainischer Verein: Hilfe beim Ausfüllen von Formularen, jeden Montag 17–19 Uhr."
+    }
+   ]
+  },
+  "options": [
+   {
+    "q": "Sie möchten die gebrauchte Kleidung Ihrer Kinder verkaufen.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 6,
+    "trap_ru": "Flohmarkt für Kindersachen — можно взять стенд за 5 €.",
+    "trap_uk": "Flohmarkt für Kindersachen — можна взяти стенд за 5 €."
+   },
+   {
+    "q": "Ihre Mutter (62) möchte lernen, wie man E-Mails schreibt.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 1,
+    "trap_ru": "«50+» — для неё подходит.",
+    "trap_uk": "«50+» — їй підходить."
+   },
+   {
+    "q": "Sie verstehen einen Brief von der Krankenkasse nicht und brauchen Hilfe beim Formular.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 7,
+    "trap_ru": "«Hilfe beim Ausfüllen von Formularen» — h.",
+    "trap_uk": "«Hilfe beim Ausfüllen von Formularen» — h."
+   },
+   {
+    "q": "Sie möchten eine gebrauchte Spülmaschine kaufen.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 8,
+    "trap_ru": "Продают стиральную машину (Waschmaschine), а не посудомойку (Spülmaschine). Ответ X.",
+    "trap_uk": "Продають пральну машину (Waschmaschine), а не посудомийну (Spülmaschine). Відповідь X."
+   },
+   {
+    "q": "Sie haben bald ein Vorstellungsgespräch und sind nervös.",
+    "choices": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "X"
+    ],
+    "answer": 5,
+    "trap_ru": "Объявление e — вакансия, а не подготовка к собеседованию.",
+    "trap_uk": "Оголошення e — вакансія, а не підготовка до співбесіди."
+   }
+  ]
+ },
+ {
+  "id": "l-b-3",
+  "part": "lesen",
+  "teil": 3,
+  "type": "rf-mc",
+  "level": "B1",
+  "topic": null,
+  "instructions": {
+   "de": "Lesen Sie die drei Texte. Zu jedem Text gibt es zwei Aufgaben.",
+   "ru": "Три текста, по два задания.",
+   "uk": "Три тексти, по два завдання."
+  },
+  "meta": {
+   "satz": "B",
+   "texts": [
+    "Von: Stadtbücherei\nBetreff: Erinnerung\nLiebe Leserin, lieber Leser,\ndie Leihfrist für das Buch „Deutsch im Alltag“ ist am 3. Oktober abgelaufen. Bitte geben Sie es so bald wie möglich zurück. Ab dem 10. Oktober kostet jeder Tag 50 Cent. Sie können die Leihfrist auch online verlängern, wenn das Buch nicht reserviert ist.",
+    "Zeitungsmeldung: Mehr Fahrradwege in Bielefeld\nDie Stadt baut in den nächsten zwei Jahren 15 Kilometer neue Radwege. Besonders auf dem Weg zu Schulen sollen Kinder sicherer fahren können. Autofahrer müssen sich auf Baustellen einstellen. Kritik kommt von Geschäftsleuten in der Innenstadt: Sie fürchten, dass Parkplätze verschwinden.",
+    "Liebe Kolleginnen und Kollegen,\nab Montag ist unsere Kantine wegen Renovierung drei Wochen geschlossen. In dieser Zeit stellen wir einen Foodtruck auf den Parkplatz, von 11:30 bis 14 Uhr. Die Preise bleiben gleich. Kaffee gibt es weiter am Automaten im 2. Stock.\nIhre Personalabteilung"
+   ]
+  },
+  "options": [
+   {
+    "q": "Man muss schon jetzt für jeden Tag 50 Cent bezahlen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "seg": 0,
+    "trap_ru": "Штраф только с 10 октября.",
+    "trap_uk": "Штраф лише з 10 жовтня."
+   },
+   {
+    "q": "Man kann das Buch online verlängern,",
+    "choices": [
+     "immer.",
+     "wenn niemand anderes es bestellt hat.",
+     "nur bis zum 3. Oktober."
+    ],
+    "answer": 1,
+    "seg": 0,
+    "trap_ru": "«Wenn das Buch nicht reserviert ist» = если никто не заказал.",
+    "trap_uk": "«Wenn das Buch nicht reserviert ist» = якщо ніхто не замовив."
+   },
+   {
+    "q": "Die neuen Radwege sollen vor allem Schulkindern helfen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 0,
+    "seg": 1,
+    "trap_ru": "«Besonders auf dem Weg zu Schulen» = в первую очередь школьникам.",
+    "trap_uk": "«Besonders auf dem Weg zu Schulen» = насамперед школярам."
+   },
+   {
+    "q": "Die Geschäftsleute",
+    "choices": [
+     "finden die Radwege gut.",
+     "haben Angst, dass es weniger Parkplätze gibt.",
+     "bauen selbst Radwege."
+    ],
+    "answer": 1,
+    "seg": 1,
+    "trap_ru": "«Fürchten» = боятся — синоним к «Angst haben».",
+    "trap_uk": "«Fürchten» = бояться — синонім до «Angst haben»."
+   },
+   {
+    "q": "Das Essen im Foodtruck ist teurer.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "seg": 2,
+    "trap_ru": "«Die Preise bleiben gleich».",
+    "trap_uk": "«Die Preise bleiben gleich»."
+   },
+   {
+    "q": "Während der Renovierung gibt es Kaffee",
+    "choices": [
+     "im Foodtruck.",
+     "am Automaten.",
+     "nicht mehr."
+    ],
+    "answer": 1,
+    "seg": 2,
+    "trap_ru": "Кофе — в автомате на 2 этаже.",
+    "trap_uk": "Кава — в автоматі на 2 поверсі."
+   }
+  ]
+ },
+ {
+  "id": "l-b-4",
+  "part": "lesen",
+  "teil": 4,
+  "type": "rf",
+  "level": "B1",
+  "topic": "schule",
+  "instructions": {
+   "de": "Lesen Sie den Text. Sind die Aussagen richtig oder falsch?",
+   "ru": "Утверждения верны или неверны?",
+   "uk": "Твердження правильні чи неправильні?"
+  },
+  "text": "Offene Ganztagsschule (OGS) – Informationen für Eltern\n\nDie OGS betreut Ihr Kind nach dem Unterricht bis 16 Uhr. Es gibt ein warmes Mittagessen, Hausaufgabenzeit und Freizeitangebote wie Sport, Musik und Basteln.\n\nDie Anmeldung gilt immer für ein ganzes Schuljahr. Eine Kündigung während des Schuljahres ist nur bei Umzug möglich.\n\nDer Elternbeitrag richtet sich nach dem Einkommen. Familien, die Bürgergeld bekommen, zahlen keinen Beitrag, nur das Essensgeld von 60 Euro im Monat. Auch das Essensgeld kann über das Bildungs- und Teilhabepaket übernommen werden.\n\nIn den Ferien ist die OGS nur in den ersten drei Wochen der Sommerferien geöffnet.",
+  "options": [
+   {
+    "q": "Man kann sein Kind jederzeit von der OGS abmelden.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "trap_ru": "Только при переезде.",
+    "trap_uk": "Лише в разі переїзду."
+   },
+   {
+    "q": "Alle Familien zahlen gleich viel.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 1,
+    "trap_ru": "«Richtet sich nach dem Einkommen» = зависит от дохода.",
+    "trap_uk": "«Richtet sich nach dem Einkommen» = залежить від доходу."
+   },
+   {
+    "q": "In den Herbstferien ist die OGS geschlossen.",
+    "choices": [
+     "richtig",
+     "falsch"
+    ],
+    "answer": 0,
+    "trap_ru": "Открыто только 3 недели летних каникул — значит, осенью закрыто.",
+    "trap_uk": "Відкрито лише 3 тижні літніх канікул — отже, восени зачинено."
+   }
+  ],
+  "meta": {
+   "satz": "B"
+  }
+ },
+ {
+  "id": "l-b-5",
+  "part": "lesen",
+  "teil": 5,
+  "type": "cloze",
+  "level": "B1",
+  "topic": "arbeit",
+  "instructions": {
+   "de": "Lesen Sie die E-Mail. Welches Wort (a, b oder c) passt in die Lücke?",
+   "ru": "Какое слово подходит в пропуск?",
+   "uk": "Яке слово підходить у пропуск?"
+  },
+  "text": "Sehr geehrter Herr Wagner,\n\nvielen Dank (1) ___ Ihre Einladung zum Vorstellungsgespräch am Dienstag. Leider kann ich an diesem Tag nicht kommen, (2) ___ ich an dem Tag meine Deutschprüfung habe. Wäre es möglich, das Gespräch (3) ___ Donnerstag zu verschieben? Ich (4) ___ mich sehr freuen, wenn das klappt. Meine Zeugnisse (5) ___ ich Ihnen gern vorher per E-Mail. Bitte geben Sie mir Bescheid, (6) ___ der neue Termin für Sie passt.\n\nMit freundlichen Grüßen\nOleksandr Hrytsenko",
+  "options": [
+   {
+    "q": "(1)",
+    "choices": [
+     "für",
+     "über",
+     "von"
+    ],
+    "answer": 0,
+    "trap_ru": "danken für / Dank für + Akkusativ.",
+    "trap_uk": "danken für / Dank für + Akkusativ."
+   },
+   {
+    "q": "(2)",
+    "choices": [
+     "denn",
+     "weil",
+     "deshalb"
+    ],
+    "answer": 1,
+    "trap_ru": "Глагол стоит в конце («habe») → придаточное с weil. После denn был бы прямой порядок.",
+    "trap_uk": "Дієслово в кінці («habe») → підрядне з weil. Після denn був би прямий порядок."
+   },
+   {
+    "q": "(3)",
+    "choices": [
+     "am",
+     "auf",
+     "im"
+    ],
+    "answer": 1,
+    "trap_ru": "verschieben auf + Akk.: auf Donnerstag.",
+    "trap_uk": "verschieben auf + Akk.: auf Donnerstag."
+   },
+   {
+    "q": "(4)",
+    "choices": [
+     "werde",
+     "würde",
+     "wurde"
+    ],
+    "answer": 1,
+    "trap_ru": "Вежливое Konjunktiv II: ich würde mich freuen.",
+    "trap_uk": "Ввічливий Konjunktiv II: ich würde mich freuen."
+   },
+   {
+    "q": "(5)",
+    "choices": [
+     "schicke",
+     "schickt",
+     "geschickt"
+    ],
+    "answer": 0,
+    "trap_ru": "ich schicke — 1-е лицо.",
+    "trap_uk": "ich schicke — 1-ша особа."
+   },
+   {
+    "q": "(6)",
+    "choices": [
+     "dass",
+     "ob",
+     "wenn"
+    ],
+    "answer": 1,
+    "trap_ru": "Косвенный вопрос «подходит ли» = ob.",
+    "trap_uk": "Непряме питання «чи підходить» = ob."
+   }
+  ],
+  "meta": {
+   "satz": "B"
+  }
+ }
 ]

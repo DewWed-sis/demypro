@@ -43,7 +43,7 @@ export default function ErrorsPage() {
             <div className="flex items-center justify-between">
               <h2 className="font-medium">{type.replace(/_/g, " ")}</h2>
               {g && (
-                <Link href={`/learn/grammar/${g.id}`} className="text-sm text-violet-200 underline">
+                <Link href={`/learn/grammar?id=${g.id}`} className="text-sm text-violet-200 underline">
                   {t("grammarCard")} →
                 </Link>
               )}

@@ -1,0 +1,143 @@
+{
+ "level": "A2",
+ "topic": "wohnen",
+ "lesson": {
+  "id": "a2-wohnen-1",
+  "title_ru": "Жильё (A2)",
+  "title_uk": "Житло (A2)",
+  "sort": 102
+ },
+ "items": [
+  {
+   "id": "a2-woh-01",
+   "de": "Wir suchen eine Dreizimmerwohnung mit Balkon.",
+   "ru": "Мы ищем трёхкомнатную квартиру с балконом.",
+   "uk": "Ми шукаємо трикімнатну квартиру з балконом.",
+   "cloze": "Wir suchen eine ___ mit Balkon."
+  },
+  {
+   "id": "a2-woh-02",
+   "de": "Wie hoch ist die Kaltmiete?",
+   "ru": "Какая аренда без коммунальных?",
+   "uk": "Яка оренда без комунальних?",
+   "cloze": "Wie hoch ist die ___?"
+  },
+  {
+   "id": "a2-woh-03",
+   "de": "Die Nebenkosten sind nicht inklusive.",
+   "ru": "Коммунальные расходы не включены.",
+   "uk": "Комунальні витрати не включені.",
+   "cloze": "Die ___ sind nicht inklusive."
+  },
+  {
+   "id": "a2-woh-04",
+   "de": "Wann kann ich die Wohnung besichtigen?",
+   "ru": "Когда я могу посмотреть квартиру?",
+   "uk": "Коли я можу подивитися квартиру?",
+   "cloze": "Wann kann ich die Wohnung ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-woh-05",
+   "de": "Die Kaution beträgt drei Monatsmieten.",
+   "ru": "Залог — три месячные платы.",
+   "uk": "Застава — три місячні оплати.",
+   "cloze": "Die ___ beträgt drei Monatsmieten."
+  },
+  {
+   "id": "a2-woh-06",
+   "de": "Im Bad tropft der Wasserhahn.",
+   "ru": "В ванной капает кран.",
+   "uk": "У ванній капає кран.",
+   "cloze": "Im Bad ___ der Wasserhahn.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-woh-07",
+   "de": "Der Hausmeister kommt morgen vorbei.",
+   "ru": "Завхоз зайдёт завтра.",
+   "uk": "Завгосп зайде завтра.",
+   "cloze": "Der Hausmeister kommt morgen ___."
+  },
+  {
+   "id": "a2-woh-08",
+   "de": "Bitte trennen Sie den Müll.",
+   "ru": "Пожалуйста, сортируйте мусор.",
+   "uk": "Будь ласка, сортуйте сміття.",
+   "cloze": "Bitte ___ Sie den Müll."
+  },
+  {
+   "id": "a2-woh-09",
+   "de": "Der gelbe Sack ist für Verpackungen.",
+   "ru": "Жёлтый мешок — для упаковки.",
+   "uk": "Жовтий мішок — для упаковок.",
+   "cloze": "Der gelbe Sack ist für ___."
+  },
+  {
+   "id": "a2-woh-10",
+   "de": "Ab 22 Uhr ist Nachtruhe.",
+   "ru": "С 22 часов — ночная тишина.",
+   "uk": "З 22 години — нічна тиша.",
+   "cloze": "Ab 22 Uhr ist ___."
+  },
+  {
+   "id": "a2-woh-11",
+   "de": "Wir sind letzten Monat umgezogen.",
+   "ru": "Мы переехали в прошлом месяце.",
+   "uk": "Ми переїхали минулого місяця.",
+   "cloze": "Wir sind letzten Monat ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-woh-12",
+   "de": "Ich muss mich beim Bürgeramt ummelden.",
+   "ru": "Мне нужно перерегистрироваться в бюргерамте.",
+   "uk": "Мені треба перереєструватися в бюргерамті.",
+   "cloze": "Ich muss mich beim Bürgeramt ___.",
+   "tags": [
+    "reflexive",
+    "verb_final"
+   ]
+  },
+  {
+   "id": "a2-woh-13",
+   "de": "Die Heizung funktioniert nicht richtig.",
+   "ru": "Отопление работает неправильно.",
+   "uk": "Опалення працює неправильно.",
+   "cloze": "Die Heizung ___ nicht richtig."
+  },
+  {
+   "id": "a2-woh-14",
+   "de": "Darf ich hier mein Fahrrad abstellen?",
+   "ru": "Можно мне здесь поставить велосипед?",
+   "uk": "Можна мені тут поставити велосипед?",
+   "cloze": "Darf ich hier mein Fahrrad ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-woh-15",
+   "de": "Die Wohnung liegt im dritten Stock, es gibt keinen Aufzug.",
+   "ru": "Квартира на четвёртом этаже, лифта нет.",
+   "uk": "Квартира на четвертому поверсі, ліфта немає.",
+   "cloze": "Die Wohnung liegt im dritten Stock, es gibt keinen ___.",
+   "tags": [
+    "negation"
+   ]
+  },
+  {
+   "id": "a2-woh-16",
+   "de": "Unsere Nachbarn sind sehr hilfsbereit.",
+   "ru": "Наши соседи очень отзывчивые.",
+   "uk": "Наші сусіди дуже чуйні.",
+   "cloze": "Unsere Nachbarn sind sehr ___."
+  }
+ ]
+}

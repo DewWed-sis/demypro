@@ -1,0 +1,140 @@
+{
+ "level": "A2",
+ "topic": "medien",
+ "lesson": {
+  "id": "a2-medien-1",
+  "title_ru": "СМИ и связь (A2)",
+  "title_uk": "ЗМІ та зв'язок (A2)",
+  "sort": 110
+ },
+ "items": [
+  {
+   "id": "a2-med-01",
+   "de": "Ich habe dir eine Nachricht geschickt.",
+   "ru": "Я отправил(а) тебе сообщение.",
+   "uk": "Я надіслав(ла) тобі повідомлення.",
+   "cloze": "Ich habe dir eine Nachricht ___.",
+   "tags": [
+    "tense_perfekt",
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-med-02",
+   "de": "Mein Handy-Akku ist leer.",
+   "ru": "У меня сел телефон.",
+   "uk": "У мене розрядився телефон.",
+   "cloze": "Mein Handy-Akku ist ___."
+  },
+  {
+   "id": "a2-med-03",
+   "de": "Kannst du mir den Link schicken?",
+   "ru": "Можешь прислать мне ссылку?",
+   "uk": "Можеш надіслати мені посилання?",
+   "cloze": "Kannst du mir den ___ schicken?"
+  },
+  {
+   "id": "a2-med-04",
+   "de": "Wie ist dein WLAN-Passwort?",
+   "ru": "Какой у тебя пароль от Wi-Fi?",
+   "uk": "Який у тебе пароль від Wi-Fi?",
+   "cloze": "Wie ist dein WLAN-___?"
+  },
+  {
+   "id": "a2-med-05",
+   "de": "Ich lese die Nachrichten auf dem Handy.",
+   "ru": "Я читаю новости в телефоне.",
+   "uk": "Я читаю новини в телефоні.",
+   "cloze": "Ich lese die ___ auf dem Handy."
+  },
+  {
+   "id": "a2-med-06",
+   "de": "Ich habe meinen Handyvertrag gekündigt.",
+   "ru": "Я расторг(ла) договор на мобильную связь.",
+   "uk": "Я розірвав(ла) договір на мобільний зв'язок.",
+   "cloze": "Ich habe meinen Handyvertrag ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-med-07",
+   "de": "Der Drucker funktioniert nicht.",
+   "ru": "Принтер не работает.",
+   "uk": "Принтер не працює.",
+   "cloze": "Der ___ funktioniert nicht."
+  },
+  {
+   "id": "a2-med-08",
+   "de": "Rufen Sie mich bitte zurück.",
+   "ru": "Перезвоните мне, пожалуйста.",
+   "uk": "Передзвоніть мені, будь ласка.",
+   "cloze": "Rufen Sie mich bitte ___."
+  },
+  {
+   "id": "a2-med-09",
+   "de": "Ich höre morgens Radio.",
+   "ru": "Утром я слушаю радио.",
+   "uk": "Зранку я слухаю радіо.",
+   "cloze": "Ich höre morgens ___.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-med-10",
+   "de": "Hast du die E-Mail bekommen?",
+   "ru": "Ты получил(а) e-mail?",
+   "uk": "Ти отримав(ла) e-mail?",
+   "cloze": "Hast du die E-Mail ___?",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-med-11",
+   "de": "Die Verbindung ist schlecht, ich höre dich kaum.",
+   "ru": "Связь плохая, я тебя едва слышу.",
+   "uk": "Зв'язок поганий, я тебе ледь чую.",
+   "cloze": "Die ___ ist schlecht, ich höre dich kaum."
+  },
+  {
+   "id": "a2-med-12",
+   "de": "Ich lade die App herunter.",
+   "ru": "Я скачиваю приложение.",
+   "uk": "Я завантажую застосунок.",
+   "cloze": "Ich lade die App ___."
+  },
+  {
+   "id": "a2-med-13",
+   "de": "Meine Kinder sehen zu viel fern.",
+   "ru": "Мои дети слишком много смотрят телевизор.",
+   "uk": "Мої діти забагато дивляться телевізор.",
+   "cloze": "Meine Kinder sehen zu viel ___."
+  },
+  {
+   "id": "a2-med-14",
+   "de": "Glaub nicht alles, was im Internet steht.",
+   "ru": "Не верь всему, что пишут в интернете.",
+   "uk": "Не вір усьому, що пишуть в інтернеті.",
+   "cloze": "Glaub nicht alles, was im Internet ___.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "a2-med-15",
+   "de": "Kannst du das bitte ausdrucken?",
+   "ru": "Можешь это распечатать?",
+   "uk": "Можеш це роздрукувати?",
+   "cloze": "Kannst du das bitte ___?"
+  },
+  {
+   "id": "a2-med-16",
+   "de": "Wir machen einen Videoanruf.",
+   "ru": "Мы созвонимся по видео.",
+   "uk": "Ми зателефонуємо по відео.",
+   "cloze": "Wir machen einen ___."
+  }
+ ]
+}

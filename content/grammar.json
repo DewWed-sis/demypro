@@ -1,0 +1,226 @@
+[
+ { "id": "g-v2", "level": "A1", "error_types": ["word_order_v2"],
+   "title_ru": "Глагол на втором месте (V2)", "title_uk": "Дієслово на другому місці (V2)",
+   "rule_ru": "В главном предложении спрягаемый глагол всегда второй. Если в начале стоит время или место, подлежащее уходит за глагол: «Morgen gehe ich…», а не «Morgen ich gehe…». Типичная ошибка русскоязычных — ставить подлежащее перед глаголом, как в русском.",
+   "rule_uk": "У головному реченні дієслово, що відмінюється, завжди друге. Якщо на початку час чи місце, підмет іде після дієслова: «Morgen gehe ich…», а не «Morgen ich gehe…». Типова помилка — ставити підмет перед дієсловом, як в українській.",
+   "examples": [
+     { "de": "Morgen gehe ich zum Arzt.", "ru": "Завтра я иду к врачу.", "uk": "Завтра я йду до лікаря." },
+     { "de": "In Köln wohnt meine Schwester.", "ru": "В Кёльне живёт моя сестра.", "uk": "У Кельні живе моя сестра." },
+     { "de": "Deshalb lerne ich jeden Tag Deutsch.", "ru": "Поэтому я каждый день учу немецкий.", "uk": "Тому я щодня вчу німецьку." }
+   ],
+   "quiz": [
+     { "q": "Heute ___ ich keine Zeit.", "options": ["habe", "ich habe", "haben"], "answer": 0 },
+     { "q": "Am Wochenende ___ ins Kino.", "options": ["wir gehen", "gehen wir", "gehen"], "answer": 1 },
+     { "q": "Deshalb ___ zu spät.", "options": ["ich komme", "komme ich", "kommen ich"], "answer": 1 }
+   ] },
+ { "id": "g-verb-final", "level": "A2", "error_types": ["verb_final"],
+   "title_ru": "Глагол в конце придаточного", "title_uk": "Дієслово в кінці підрядного",
+   "rule_ru": "После weil, dass, wenn, ob, obwohl, als и относительных местоимений спрягаемый глагол уходит в самый конец. Модальный глагол — тоже в конец, после инфинитива: «…, weil ich arbeiten muss».",
+   "rule_uk": "Після weil, dass, wenn, ob, obwohl, als і відносних займенників дієслово, що відмінюється, іде в самий кінець. Модальне — теж у кінець, після інфінітива: «…, weil ich arbeiten muss».",
+   "examples": [
+     { "de": "Ich komme nicht, weil ich krank bin.", "ru": "Я не приду, потому что болею.", "uk": "Я не прийду, бо хворію." },
+     { "de": "Ich weiß, dass du morgen arbeiten musst.", "ru": "Я знаю, что тебе завтра нужно работать.", "uk": "Я знаю, що тобі завтра треба працювати." },
+     { "de": "Wenn es regnet, bleiben wir zu Hause.", "ru": "Если пойдёт дождь, останемся дома.", "uk": "Якщо буде дощ, залишимося вдома." }
+   ],
+   "quiz": [
+     { "q": "Ich lerne Deutsch, weil ich hier ___.", "options": ["arbeiten will", "will arbeiten", "arbeite will"], "answer": 0 },
+     { "q": "Sie sagt, dass sie heute keine Zeit ___.", "options": ["hat", "hat sie", "haben"], "answer": 0 },
+     { "q": "Wenn du Zeit ___, ruf mich an.", "options": ["hast", "du hast", "hast du"], "answer": 0 }
+   ] },
+ { "id": "g-articles", "level": "A1", "error_types": ["article_gender", "plural"],
+   "title_ru": "Артикли der / die / das", "title_uk": "Артиклі der / die / das",
+   "rule_ru": "Род в немецком часто не совпадает с русским: das Mädchen, die Sonne, der Löffel. Учи слово сразу с артиклем и мн. числом. Подсказки: -ung, -heit, -keit, -schaft, -ion → die; -chen, -lein → das; дни недели и месяцы → der.",
+   "rule_uk": "Рід у німецькій часто не збігається з українським: das Mädchen, die Sonne, der Löffel. Вчи слово одразу з артиклем і множиною. Підказки: -ung, -heit, -keit, -schaft, -ion → die; -chen, -lein → das; дні тижня й місяці → der.",
+   "examples": [
+     { "de": "die Wohnung – die Wohnungen", "ru": "квартира – квартиры", "uk": "квартира – квартири" },
+     { "de": "das Brötchen – die Brötchen", "ru": "булочка – булочки", "uk": "булочка – булочки" },
+     { "de": "der Montag, der Mai", "ru": "понедельник, май", "uk": "понеділок, травень" }
+   ],
+   "quiz": [
+     { "q": "___ Zeitung liegt auf dem Tisch.", "options": ["Der", "Die", "Das"], "answer": 1 },
+     { "q": "___ Mädchen spielt im Park.", "options": ["Der", "Die", "Das"], "answer": 2 },
+     { "q": "___ Termin ist am Montag.", "options": ["Der", "Die", "Das"], "answer": 0 }
+   ] },
+ { "id": "g-dativ-prep", "level": "A2", "error_types": ["case_dativ", "preposition"],
+   "title_ru": "Предлоги с Dativ", "title_uk": "Прийменники з Dativ",
+   "rule_ru": "aus, bei, mit, nach, seit, von, zu — всегда Dativ: mit dem Bus, bei der Arbeit, seit einem Jahr. Слияния: zu + dem = zum, zu + der = zur, bei + dem = beim, von + dem = vom.",
+   "rule_uk": "aus, bei, mit, nach, seit, von, zu — завжди Dativ: mit dem Bus, bei der Arbeit, seit einem Jahr. Злиття: zu + dem = zum, zu + der = zur, bei + dem = beim, von + dem = vom.",
+   "examples": [
+     { "de": "Ich fahre mit dem Bus zur Arbeit.", "ru": "Я езжу на работу на автобусе.", "uk": "Я їжджу на роботу автобусом." },
+     { "de": "Seit einem Monat wohne ich in Essen.", "ru": "Уже месяц я живу в Эссене.", "uk": "Уже місяць я живу в Ессені." },
+     { "de": "Ich komme gerade vom Arzt.", "ru": "Я как раз от врача.", "uk": "Я саме від лікаря." }
+   ],
+   "quiz": [
+     { "q": "Ich wohne seit ___ Jahr hier.", "options": ["ein", "einem", "einen"], "answer": 1 },
+     { "q": "Sie geht ___ Ärztin.", "options": ["zu die", "zur", "zum"], "answer": 1 },
+     { "q": "Wir sprechen mit ___ Lehrer.", "options": ["den", "dem", "der"], "answer": 1 }
+   ] },
+ { "id": "g-akkusativ", "level": "A1", "error_types": ["case_akkusativ"],
+   "title_ru": "Akkusativ: einen, keinen, den", "title_uk": "Akkusativ: einen, keinen, den",
+   "rule_ru": "Прямое дополнение (кого? что?) стоит в Akkusativ. Меняется только мужской род: der → den, ein → einen, kein → keinen. Предлоги für, ohne, gegen, durch, um — всегда Akkusativ. «Es gibt» + Akkusativ.",
+   "rule_uk": "Прямий додаток (кого? що?) стоїть в Akkusativ. Змінюється лише чоловічий рід: der → den, ein → einen, kein → keinen. Прийменники für, ohne, gegen, durch, um — завжди Akkusativ. «Es gibt» + Akkusativ.",
+   "examples": [
+     { "de": "Ich brauche einen Termin.", "ru": "Мне нужна запись.", "uk": "Мені потрібен запис." },
+     { "de": "Hier gibt es keinen Aufzug.", "ru": "Здесь нет лифта.", "uk": "Тут немає ліфта." },
+     { "de": "Das Geschenk ist für den Kollegen.", "ru": "Подарок для коллеги.", "uk": "Подарунок для колеги." }
+   ],
+   "quiz": [
+     { "q": "Ich suche ___ Job.", "options": ["ein", "einen", "einem"], "answer": 1 },
+     { "q": "Wir haben ___ Auto.", "options": ["kein", "keinen", "keine"], "answer": 0 },
+     { "q": "Das ist für ___ Vater.", "options": ["mein", "meinen", "meinem"], "answer": 1 }
+   ] },
+ { "id": "g-wechsel", "level": "A2", "error_types": ["preposition", "case_dativ", "case_akkusativ"],
+   "title_ru": "Wo? – Dativ, Wohin? – Akkusativ", "title_uk": "Wo? – Dativ, Wohin? – Akkusativ",
+   "rule_ru": "in, an, auf, über, unter, vor, hinter, neben, zwischen: где? (место) → Dativ, куда? (движение) → Akkusativ. «Ich bin im Park» (wo), «Ich gehe in den Park» (wohin).",
+   "rule_uk": "in, an, auf, über, unter, vor, hinter, neben, zwischen: де? (місце) → Dativ, куди? (рух) → Akkusativ. «Ich bin im Park» (wo), «Ich gehe in den Park» (wohin).",
+   "examples": [
+     { "de": "Das Buch liegt auf dem Tisch.", "ru": "Книга лежит на столе.", "uk": "Книжка лежить на столі." },
+     { "de": "Ich lege das Buch auf den Tisch.", "ru": "Я кладу книгу на стол.", "uk": "Я кладу книжку на стіл." },
+     { "de": "Wir fahren am Wochenende an die Ostsee.", "ru": "На выходных мы едем на Балтику.", "uk": "На вихідних ми їдемо на Балтику." }
+   ],
+   "quiz": [
+     { "q": "Ich hänge das Bild an ___ Wand.", "options": ["der", "die", "dem"], "answer": 1 },
+     { "q": "Die Kinder spielen in ___ Garten.", "options": ["den", "dem", "der"], "answer": 1 },
+     { "q": "Er geht in ___ Küche.", "options": ["die", "der", "den"], "answer": 0 }
+   ] },
+ { "id": "g-perfekt", "level": "A2", "error_types": ["tense_perfekt"],
+   "title_ru": "Perfekt: haben или sein", "title_uk": "Perfekt: haben чи sein",
+   "rule_ru": "Прошедшее в разговоре — Perfekt: haben/sein на 2-м месте + Partizip II в конце. sein — с глаголами движения и смены состояния (gehen, fahren, kommen, aufstehen, einschlafen) и с sein/bleiben/passieren. Остальные — haben.",
+   "rule_uk": "Минулий час у розмові — Perfekt: haben/sein на 2-му місці + Partizip II у кінці. sein — з дієсловами руху та зміни стану (gehen, fahren, kommen, aufstehen, einschlafen) і з sein/bleiben/passieren. Решта — haben.",
+   "examples": [
+     { "de": "Ich bin gestern nach Köln gefahren.", "ru": "Вчера я ездил(а) в Кёльн.", "uk": "Учора я їздив(ла) до Кельна." },
+     { "de": "Wir haben lange gewartet.", "ru": "Мы долго ждали.", "uk": "Ми довго чекали." },
+     { "de": "Was ist passiert?", "ru": "Что случилось?", "uk": "Що сталося?" }
+   ],
+   "quiz": [
+     { "q": "Ich ___ um sechs aufgestanden.", "options": ["habe", "bin", "war"], "answer": 1 },
+     { "q": "Sie ___ einen Brief geschrieben.", "options": ["hat", "ist", "wird"], "answer": 0 },
+     { "q": "Wir sind zu Hause ___.", "options": ["geblieben", "gebleibt", "bleiben"], "answer": 0 }
+   ] },
+ { "id": "g-modal-praet", "level": "B1", "error_types": ["modal_verbs", "tense_perfekt"],
+   "title_ru": "Präteritum модальных и sein/haben", "title_uk": "Präteritum модальних і sein/haben",
+   "rule_ru": "В прошедшем модальные глаголы обычно в Präteritum, без Perfekt: ich konnte, musste, wollte, durfte, sollte. Так же war и hatte: «Ich war krank», а не «Ich bin krank gewesen» (можно, но звучит тяжелее).",
+   "rule_uk": "У минулому модальні дієслова зазвичай у Präteritum, без Perfekt: ich konnte, musste, wollte, durfte, sollte. Так само war і hatte: «Ich war krank», а не «Ich bin krank gewesen» (можна, але звучить важче).",
+   "examples": [
+     { "de": "Ich konnte gestern nicht kommen.", "ru": "Я вчера не смог(ла) прийти.", "uk": "Я вчора не зміг(ла) прийти." },
+     { "de": "Wir mussten lange warten.", "ru": "Нам пришлось долго ждать.", "uk": "Нам довелося довго чекати." },
+     { "de": "Als Kind wollte ich Ärztin werden.", "ru": "В детстве я хотела стать врачом.", "uk": "У дитинстві я хотіла стати лікаркою." }
+   ],
+   "quiz": [
+     { "q": "Letzte Woche ___ ich viel arbeiten.", "options": ["muss", "musste", "habe gemusst"], "answer": 1 },
+     { "q": "Er ___ gestern keine Zeit.", "options": ["hatte", "hat gehabt", "hätte"], "answer": 0 },
+     { "q": "Wir ___ nicht schlafen.", "options": ["konnten", "können", "gekonnt"], "answer": 0 }
+   ] },
+ { "id": "g-konjunktiv", "level": "B1", "error_types": ["konjunktiv"],
+   "title_ru": "Konjunktiv II вежливости", "title_uk": "Konjunktiv II ввічливості",
+   "rule_ru": "Вежливые просьбы и желания: ich hätte gern…, ich würde gern…, könnten Sie…?, wäre es möglich…? В письме formell это почти обязательно. «Ich will» звучит грубо — лучше «ich möchte» или «ich hätte gern».",
+   "rule_uk": "Ввічливі прохання й побажання: ich hätte gern…, ich würde gern…, könnten Sie…?, wäre es möglich…? У листі formell це майже обов'язково. «Ich will» звучить грубо — краще «ich möchte» або «ich hätte gern».",
+   "examples": [
+     { "de": "Könnten Sie mir bitte helfen?", "ru": "Не могли бы вы мне помочь?", "uk": "Чи не могли б ви мені допомогти?" },
+     { "de": "Ich hätte gern einen Termin.", "ru": "Я бы хотел(а) записаться.", "uk": "Я б хотів(ла) записатися." },
+     { "de": "Wäre es möglich, den Termin zu verschieben?", "ru": "Можно ли перенести встречу?", "uk": "Чи можна перенести зустріч?" }
+   ],
+   "quiz": [
+     { "q": "___ Sie mir bitte das Formular schicken?", "options": ["Können", "Könnten", "Konnten"], "answer": 1 },
+     { "q": "Ich ___ gern ein Glas Wasser.", "options": ["hätte", "hatte", "habe gehabt"], "answer": 0 },
+     { "q": "Es ___ schön, wenn du kommst.", "options": ["wäre", "war", "ist gewesen"], "answer": 0 }
+   ] },
+ { "id": "g-relativ", "level": "B1", "error_types": ["verb_final", "article_gender"],
+   "title_ru": "Относительные предложения", "title_uk": "Відносні речення",
+   "rule_ru": "Относительное местоимение = артикль слова, к которому относится (der, die, das, мн. die), а падеж — по роли внутри придаточного. Глагол в конце: «der Mann, den ich kenne», «die Frau, der ich helfe».",
+   "rule_uk": "Відносний займенник = артикль слова, до якого він належить (der, die, das, мн. die), а відмінок — за роллю всередині підрядного. Дієслово в кінці: «der Mann, den ich kenne», «die Frau, der ich helfe».",
+   "examples": [
+     { "de": "Das ist die Wohnung, die wir mieten wollen.", "ru": "Это квартира, которую мы хотим снять.", "uk": "Це квартира, яку ми хочемо винайняти." },
+     { "de": "Der Kollege, mit dem ich arbeite, ist nett.", "ru": "Коллега, с которым я работаю, милый.", "uk": "Колега, з яким я працюю, милий." },
+     { "de": "Das Kind, das dort spielt, ist mein Sohn.", "ru": "Ребёнок, который там играет, — мой сын.", "uk": "Дитина, яка там грається, — мій син." }
+   ],
+   "quiz": [
+     { "q": "Der Mann, ___ ich gestern getroffen habe, heißt Paul.", "options": ["der", "den", "dem"], "answer": 1 },
+     { "q": "Die Frau, ___ dort wohnt, ist Ärztin.", "options": ["die", "der", "das"], "answer": 0 },
+     { "q": "Das Auto, ___ ich fahre, ist alt.", "options": ["das", "den", "dem"], "answer": 0 }
+   ] },
+ { "id": "g-passiv", "level": "B1", "error_types": ["verb_conjugation"],
+   "title_ru": "Пассив в инструкциях и объявлениях", "title_uk": "Пасив в інструкціях і оголошеннях",
+   "rule_ru": "werden + Partizip II: «Die Miete wird überwiesen» — важно действие, а не кто его делает. Прошедшее: wurde + Partizip II. С модальным: muss … abgegeben werden. Часто в письмах ведомств и инструкциях.",
+   "rule_uk": "werden + Partizip II: «Die Miete wird überwiesen» — важлива дія, а не хто її виконує. Минулий: wurde + Partizip II. З модальним: muss … abgegeben werden. Часто в листах установ та інструкціях.",
+   "examples": [
+     { "de": "Der Müll wird am Montag abgeholt.", "ru": "Мусор вывозят в понедельник.", "uk": "Сміття вивозять у понеділок." },
+     { "de": "Der Antrag wurde bewilligt.", "ru": "Заявление одобрено.", "uk": "Заяву схвалено." },
+     { "de": "Das Formular muss unterschrieben werden.", "ru": "Бланк нужно подписать.", "uk": "Бланк треба підписати." }
+   ],
+   "quiz": [
+     { "q": "Die Wohnung ___ renoviert.", "options": ["wird", "hat", "ist"], "answer": 0 },
+     { "q": "Das Paket wurde gestern ___.", "options": ["geliefert", "liefern", "liefert"], "answer": 0 },
+     { "q": "Die Unterlagen müssen bis Freitag abgegeben ___.", "options": ["werden", "wird", "worden"], "answer": 0 }
+   ] },
+ { "id": "g-reflexiv", "level": "A2", "error_types": ["reflexive"],
+   "title_ru": "Возвратные глаголы", "title_uk": "Зворотні дієслова",
+   "rule_ru": "sich + глагол: ich freue mich, du freust dich, er/sie freut sich, wir freuen uns, ihr freut euch, sie/Sie freuen sich. Не все русские «-ся» возвратны в немецком (lernen — учиться) и наоборот (sich erholen — отдыхать).",
+   "rule_uk": "sich + дієслово: ich freue mich, du freust dich, er/sie freut sich, wir freuen uns, ihr freut euch, sie/Sie freuen sich. Не всі українські «-ся» зворотні в німецькій (lernen — вчитися) і навпаки (sich erholen — відпочивати).",
+   "examples": [
+     { "de": "Ich freue mich auf das Wochenende.", "ru": "Я жду выходных.", "uk": "Я чекаю на вихідні." },
+     { "de": "Wir treffen uns um acht.", "ru": "Встречаемся в восемь.", "uk": "Зустрічаємося о восьмій." },
+     { "de": "Hast du dich gut erholt?", "ru": "Ты хорошо отдохнул(а)?", "uk": "Ти добре відпочив(ла)?" }
+   ],
+   "quiz": [
+     { "q": "Wir interessieren ___ für Musik.", "options": ["sich", "uns", "euch"], "answer": 1 },
+     { "q": "Du musst ___ beeilen!", "options": ["dich", "dir", "sich"], "answer": 0 },
+     { "q": "Er hat ___ beim Chef beschwert.", "options": ["ihn", "sich", "mich"], "answer": 1 }
+   ] },
+ { "id": "g-verb-prep", "level": "B1", "error_types": ["preposition"],
+   "title_ru": "Глаголы с предлогами", "title_uk": "Дієслова з прийменниками",
+   "rule_ru": "Предлог учится вместе с глаголом: warten auf + Akk., denken an + Akk., sich freuen auf/über, sich kümmern um, sich interessieren für, teilnehmen an + Dat., sprechen mit + Dat. über + Akk. Вопрос о вещи: worauf? woran? — ответ darauf, daran.",
+   "rule_uk": "Прийменник вчиться разом із дієсловом: warten auf + Akk., denken an + Akk., sich freuen auf/über, sich kümmern um, sich interessieren für, teilnehmen an + Dat., sprechen mit + Dat. über + Akk. Питання про річ: worauf? woran? — відповідь darauf, daran.",
+   "examples": [
+     { "de": "Ich warte auf den Bus.", "ru": "Я жду автобус.", "uk": "Я чекаю на автобус." },
+     { "de": "Denk bitte an den Termin!", "ru": "Не забудь про встречу!", "uk": "Не забудь про зустріч!" },
+     { "de": "Ich nehme an einem Kurs teil.", "ru": "Я посещаю курс.", "uk": "Я відвідую курс." }
+   ],
+   "quiz": [
+     { "q": "Ich kümmere mich ___ die Kinder.", "options": ["für", "um", "auf"], "answer": 1 },
+     { "q": "Sie freut sich ___ den Urlaub.", "options": ["auf", "an", "für"], "answer": 0 },
+     { "q": "Wir sprechen ___ das Problem.", "options": ["von", "über", "um"], "answer": 1 }
+   ] },
+ { "id": "g-negation", "level": "A1", "error_types": ["negation"],
+   "title_ru": "nicht или kein", "title_uk": "nicht чи kein",
+   "rule_ru": "kein — отрицает существительное с ein или без артикля: «Ich habe kein Auto», «Ich habe keine Zeit». nicht — всё остальное: глагол, прилагательное, слово с определённым артиклем: «Das Auto ist nicht neu», «Ich finde den Schlüssel nicht».",
+   "rule_uk": "kein — заперечує іменник з ein або без артикля: «Ich habe kein Auto», «Ich habe keine Zeit». nicht — усе інше: дієслово, прикметник, слово з означеним артиклем: «Das Auto ist nicht neu», «Ich finde den Schlüssel nicht».",
+   "examples": [
+     { "de": "Ich habe heute keine Zeit.", "ru": "У меня сегодня нет времени.", "uk": "У мене сьогодні немає часу." },
+     { "de": "Das ist nicht mein Handy.", "ru": "Это не мой телефон.", "uk": "Це не мій телефон." },
+     { "de": "Er kommt heute nicht.", "ru": "Он сегодня не придёт.", "uk": "Він сьогодні не прийде." }
+   ],
+   "quiz": [
+     { "q": "Ich habe ___ Hunger.", "options": ["nicht", "keinen", "kein"], "answer": 1 },
+     { "q": "Das Essen ist ___ warm.", "options": ["nicht", "kein", "keine"], "answer": 0 },
+     { "q": "Wir haben ___ Kinder.", "options": ["nicht", "keine", "kein"], "answer": 1 }
+   ] },
+ { "id": "g-adj", "level": "B1", "error_types": ["adjective_ending"],
+   "title_ru": "Окончания прилагательных — минимум", "title_uk": "Закінчення прикметників — мінімум",
+   "rule_ru": "После der/die/das почти всегда -e (ед. ч., Nom.) или -en (всё остальное): der neue Job, mit dem neuen Job. После ein сигнал рода переходит к прилагательному: ein neuer Job, ein neues Auto. Без артикля — как у der/das: guter Kaffee, frisches Brot.",
+   "rule_uk": "Після der/die/das майже завжди -e (одн., Nom.) або -en (усе інше): der neue Job, mit dem neuen Job. Після ein сигнал роду переходить до прикметника: ein neuer Job, ein neues Auto. Без артикля — як у der/das: guter Kaffee, frisches Brot.",
+   "examples": [
+     { "de": "Ich suche eine günstige Wohnung.", "ru": "Я ищу недорогую квартиру.", "uk": "Я шукаю недорогу квартиру." },
+     { "de": "Wir haben einen neuen Nachbarn.", "ru": "У нас новый сосед.", "uk": "У нас новий сусід." },
+     { "de": "Mit freundlichen Grüßen", "ru": "С уважением", "uk": "З повагою" }
+   ],
+   "quiz": [
+     { "q": "Das ist ein gut___ Angebot.", "options": ["es", "er", "en"], "answer": 0 },
+     { "q": "Ich wohne in einer klein___ Wohnung.", "options": ["e", "en", "er"], "answer": 1 },
+     { "q": "Der neu___ Kollege ist nett.", "options": ["e", "en", "er"], "answer": 0 }
+   ] },
+ { "id": "g-conj", "level": "B1", "error_types": ["word_order_v2", "verb_final"],
+   "title_ru": "Связки: deshalb, trotzdem, denn, weil", "title_uk": "Зв'язки: deshalb, trotzdem, denn, weil",
+   "rule_ru": "Три группы: und, aber, oder, denn, sondern — порядок не меняется. deshalb, trotzdem, dann, danach, außerdem — глагол сразу после них (V2). weil, dass, obwohl, wenn — глагол в конец. Это главный критерий «связности» на DTZ.",
+   "rule_uk": "Три групи: und, aber, oder, denn, sondern — порядок не змінюється. deshalb, trotzdem, dann, danach, außerdem — дієслово одразу після них (V2). weil, dass, obwohl, wenn — дієслово в кінець. Це головний критерій «зв'язності» на DTZ.",
+   "examples": [
+     { "de": "Ich bin krank, deshalb bleibe ich zu Hause.", "ru": "Я болею, поэтому остаюсь дома.", "uk": "Я хворію, тому залишаюся вдома." },
+     { "de": "Ich bin krank, denn ich habe Fieber.", "ru": "Я болею, ведь у меня температура.", "uk": "Я хворію, адже в мене температура." },
+     { "de": "Obwohl ich müde bin, gehe ich zum Kurs.", "ru": "Хотя я устал(а), я иду на курс.", "uk": "Хоча я втомився(лася), я йду на курс." }
+   ],
+   "quiz": [
+     { "q": "Es regnet, trotzdem ___ spazieren.", "options": ["wir gehen", "gehen wir", "wir gehen spazieren"], "answer": 1 },
+     { "q": "Ich komme nicht, denn ich ___ arbeiten.", "options": ["muss", "arbeiten muss", "muss ich"], "answer": 0 },
+     { "q": "Er lernt viel, weil er die Prüfung bestehen ___.", "options": ["will", "will er", "wollen"], "answer": 0 }
+   ] }
+]

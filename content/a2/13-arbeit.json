@@ -1,0 +1,146 @@
+{
+ "level": "A2",
+ "topic": "arbeit",
+ "lesson": {
+  "id": "a2-arbeit-1",
+  "title_ru": "Работа (A2)",
+  "title_uk": "Робота (A2)",
+  "sort": 103
+ },
+ "items": [
+  {
+   "id": "a2-arb-01",
+   "de": "Ich arbeite in Teilzeit, 25 Stunden pro Woche.",
+   "ru": "Я работаю неполный день, 25 часов в неделю.",
+   "uk": "Я працюю неповний день, 25 годин на тиждень.",
+   "cloze": "Ich arbeite in ___, 25 Stunden pro Woche."
+  },
+  {
+   "id": "a2-arb-02",
+   "de": "Ich habe eine Bewerbung geschrieben.",
+   "ru": "Я написал(а) заявку на работу.",
+   "uk": "Я написав(ла) заявку на роботу.",
+   "cloze": "Ich habe eine ___ geschrieben.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-arb-03",
+   "de": "Morgen habe ich ein Vorstellungsgespräch.",
+   "ru": "Завтра у меня собеседование.",
+   "uk": "Завтра в мене співбесіда.",
+   "cloze": "Morgen habe ich ein ___.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-arb-04",
+   "de": "Ich arbeite im Schichtdienst.",
+   "ru": "Я работаю посменно.",
+   "uk": "Я працюю позмінно.",
+   "cloze": "Ich arbeite im ___."
+  },
+  {
+   "id": "a2-arb-05",
+   "de": "Diese Woche habe ich Frühschicht.",
+   "ru": "На этой неделе у меня утренняя смена.",
+   "uk": "Цього тижня в мене ранкова зміна.",
+   "cloze": "Diese Woche habe ich ___.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-arb-06",
+   "de": "Ich bin heute krank und kann nicht kommen.",
+   "ru": "Я сегодня болен(на) и не могу прийти.",
+   "uk": "Я сьогодні хворий(а) й не можу прийти.",
+   "cloze": "Ich bin heute ___ und kann nicht kommen."
+  },
+  {
+   "id": "a2-arb-07",
+   "de": "Ich schicke Ihnen die Krankmeldung.",
+   "ru": "Я пришлю вам больничный.",
+   "uk": "Я надішлю вам лікарняний.",
+   "cloze": "Ich schicke Ihnen die ___.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-arb-08",
+   "de": "Wie viele Urlaubstage habe ich?",
+   "ru": "Сколько у меня дней отпуска?",
+   "uk": "Скільки в мене днів відпустки?",
+   "cloze": "Wie viele ___ habe ich?"
+  },
+  {
+   "id": "a2-arb-09",
+   "de": "Mein Arbeitsvertrag ist befristet.",
+   "ru": "Мой трудовой договор срочный.",
+   "uk": "Мій трудовий договір строковий.",
+   "cloze": "Mein Arbeitsvertrag ist ___."
+  },
+  {
+   "id": "a2-arb-10",
+   "de": "Die Probezeit dauert sechs Monate.",
+   "ru": "Испытательный срок — шесть месяцев.",
+   "uk": "Випробувальний термін — шість місяців.",
+   "cloze": "Die ___ dauert sechs Monate."
+  },
+  {
+   "id": "a2-arb-11",
+   "de": "Können wir die Schicht tauschen?",
+   "ru": "Можем поменяться сменами?",
+   "uk": "Можемо помінятися змінами?",
+   "cloze": "Können wir die Schicht ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-arb-12",
+   "de": "Ich mache um zwölf Mittagspause.",
+   "ru": "Я ухожу на обед в двенадцать.",
+   "uk": "Я йду на обід о дванадцятій.",
+   "cloze": "Ich mache um zwölf ___."
+  },
+  {
+   "id": "a2-arb-13",
+   "de": "Mein Kollege hat mir geholfen.",
+   "ru": "Мой коллега мне помог.",
+   "uk": "Мій колега мені допоміг.",
+   "cloze": "Mein Kollege hat mir ___.",
+   "tags": [
+    "case_dativ",
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-arb-14",
+   "de": "Ich verdiene 14 Euro brutto pro Stunde.",
+   "ru": "Я зарабатываю 14 евро брутто в час.",
+   "uk": "Я заробляю 14 євро брутто за годину.",
+   "cloze": "Ich ___ 14 Euro brutto pro Stunde."
+  },
+  {
+   "id": "a2-arb-15",
+   "de": "Meine Ausbildung wird hier nicht anerkannt.",
+   "ru": "Моё образование здесь не признаётся.",
+   "uk": "Мою освіту тут не визнають.",
+   "cloze": "Meine Ausbildung wird hier nicht ___."
+  },
+  {
+   "id": "a2-arb-16",
+   "de": "Ich suche einen Minijob am Wochenende.",
+   "ru": "Я ищу мини-работу на выходные.",
+   "uk": "Я шукаю міні-роботу на вихідні.",
+   "cloze": "Ich suche einen ___ am Wochenende.",
+   "tags": [
+    "case_akkusativ"
+   ]
+  }
+ ]
+}

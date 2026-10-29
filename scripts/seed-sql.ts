@@ -1,7 +1,7 @@
 // npm run seed: генерирует supabase/seed.sql из /content. Запуск — в SQL Editor (без service-ключа) или supabase db reset.
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { examFileSchema, fileSchema } from "../lib/content-schema";
+import { examFileSchema, fileSchema, grammarSchema } from "../lib/content-schema";
 import { lidRows } from "../lib/lid-source";
 
 const q = (v: unknown): string =>
@@ -41,5 +41,12 @@ const exam = readdirSync(examDir)
   .flatMap((f) => examFileSchema.parse(JSON.parse(readFileSync(join(examDir, f), "utf8"))))
   .map((e) => `(${[q(e.id), q(e.part), q(e.teil), q(e.type), q(e.level), q(e.topic), j(e.instructions), q(e.text), q(null), j(e.options), j(e.answers.length ? e.answers : e.options.map((o) => (o as { answer?: number }).answer ?? null)), j(e.meta), q(e.time_limit_sec)].join(",")})`);
 out.push(`insert into public.exam_tasks (${examCols.join(",")}) values\n${exam.join(",\n")}\non conflict (id) do update set ${examCols.filter((c) => c !== "id").map((c) => `${c} = excluded.${c}`).join(", ")};`);
+
+// Грамматика
+const gCols = ["id", "level_id", "title_ru", "title_uk", "rule_ru", "rule_uk", "examples", "quiz", "error_types", "sort"] as const;
+const grammar = grammarSchema
+  .parse(JSON.parse(readFileSync(join(root, "grammar.json"), "utf8")))
+  .map((g, i) => `(${[q(g.id), q(g.level), q(g.title_ru), q(g.title_uk), q(g.rule_ru), q(g.rule_uk), j(g.examples), j(g.quiz), q(g.error_types), q(i)].join(",")})`);
+out.push(`insert into public.grammar_points (${gCols.join(",")}) values\n${grammar.join(",\n")}\non conflict (id) do update set ${gCols.filter((c) => c !== "id").map((c) => `${c} = excluded.${c}`).join(", ")};`);
 
 console.log(out.join("\n\n"));

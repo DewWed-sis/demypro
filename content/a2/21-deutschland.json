@@ -1,0 +1,127 @@
+{
+ "level": "A2",
+ "topic": "deutschland",
+ "lesson": {
+  "id": "a2-deutschland-1",
+  "title_ru": "Германия и культура (A2)",
+  "title_uk": "Німеччина і культура (A2)",
+  "sort": 111
+ },
+ "items": [
+  {
+   "id": "a2-deu-01",
+   "de": "In Deutschland gibt es sechzehn Bundesländer.",
+   "ru": "В Германии шестнадцать федеральных земель.",
+   "uk": "У Німеччині шістнадцять федеральних земель.",
+   "cloze": "In Deutschland gibt es sechzehn ___."
+  },
+  {
+   "id": "a2-deu-02",
+   "de": "Zu Ostern suchen die Kinder Eier.",
+   "ru": "На Пасху дети ищут яйца.",
+   "uk": "На Великдень діти шукають яйця.",
+   "cloze": "Zu ___ suchen die Kinder Eier."
+  },
+  {
+   "id": "a2-deu-03",
+   "de": "An Silvester gibt es ein Feuerwerk.",
+   "ru": "В новогоднюю ночь — фейерверк.",
+   "uk": "У новорічну ніч — феєрверк.",
+   "cloze": "An Silvester gibt es ein ___."
+  },
+  {
+   "id": "a2-deu-04",
+   "de": "Am 3. Oktober ist der Tag der Deutschen Einheit.",
+   "ru": "3 октября — День германского единства.",
+   "uk": "3 жовтня — День німецької єдності.",
+   "cloze": "Am 3. Oktober ist der Tag der Deutschen ___."
+  },
+  {
+   "id": "a2-deu-05",
+   "de": "Die Deutschen sind sehr pünktlich.",
+   "ru": "Немцы очень пунктуальны.",
+   "uk": "Німці дуже пунктуальні.",
+   "cloze": "Die Deutschen sind sehr ___."
+  },
+  {
+   "id": "a2-deu-06",
+   "de": "Bei uns ist das ganz anders.",
+   "ru": "У нас это совсем по-другому.",
+   "uk": "У нас це зовсім інакше.",
+   "cloze": "Bei uns ist das ganz ___."
+  },
+  {
+   "id": "a2-deu-07",
+   "de": "Im Dezember gehen wir auf den Weihnachtsmarkt.",
+   "ru": "В декабре мы идём на рождественскую ярмарку.",
+   "uk": "У грудні ми йдемо на різдвяний ярмарок.",
+   "cloze": "Im Dezember gehen wir auf den ___.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-deu-08",
+   "de": "Sonntags sind die Geschäfte geschlossen.",
+   "ru": "По воскресеньям магазины закрыты.",
+   "uk": "У неділю магазини зачинені.",
+   "cloze": "Sonntags sind die Geschäfte ___."
+  },
+  {
+   "id": "a2-deu-09",
+   "de": "Am Rhein gibt es viele Burgen.",
+   "ru": "На Рейне много замков.",
+   "uk": "На Рейні багато замків.",
+   "cloze": "Am Rhein gibt es viele ___."
+  },
+  {
+   "id": "a2-deu-10",
+   "de": "Der Karneval ist im Rheinland sehr beliebt.",
+   "ru": "Карнавал в Рейнской области очень популярен.",
+   "uk": "Карнавал у Рейнській області дуже популярний.",
+   "cloze": "Der Karneval ist im Rheinland sehr ___."
+  },
+  {
+   "id": "a2-deu-11",
+   "de": "Hier trennt man den Müll sehr genau.",
+   "ru": "Здесь очень тщательно сортируют мусор.",
+   "uk": "Тут дуже ретельно сортують сміття.",
+   "cloze": "Hier ___ man den Müll sehr genau."
+  },
+  {
+   "id": "a2-deu-12",
+   "de": "Ich finde die Natur hier wunderschön.",
+   "ru": "Я считаю, что природа здесь прекрасная.",
+   "uk": "Я вважаю, що природа тут чудова.",
+   "cloze": "Ich finde die Natur hier ___."
+  },
+  {
+   "id": "a2-deu-13",
+   "de": "Am Wochenende machen viele Leute einen Spaziergang.",
+   "ru": "На выходных многие гуляют.",
+   "uk": "На вихідних багато людей гуляють.",
+   "cloze": "Am Wochenende machen viele Leute einen ___."
+  },
+  {
+   "id": "a2-deu-14",
+   "de": "Berlin ist die Hauptstadt von Deutschland.",
+   "ru": "Берлин — столица Германии.",
+   "uk": "Берлін — столиця Німеччини.",
+   "cloze": "Berlin ist die ___ von Deutschland."
+  },
+  {
+   "id": "a2-deu-15",
+   "de": "Wie feiert man bei euch Neujahr?",
+   "ru": "Как у вас празднуют Новый год?",
+   "uk": "Як у вас святкують Новий рік?",
+   "cloze": "Wie ___ man bei euch Neujahr?"
+  },
+  {
+   "id": "a2-deu-16",
+   "de": "Ich vermisse manchmal meine Heimat.",
+   "ru": "Иногда я скучаю по родине.",
+   "uk": "Іноді я сумую за батьківщиною.",
+   "cloze": "Ich ___ manchmal meine Heimat."
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "level": "B1",
+ "topic": "arbeit",
+ "lesson": {
+  "id": "b1-arbeit-1",
+  "title_ru": "Работа (B1)",
+  "title_uk": "Робота (B1)",
+  "sort": 203
+ },
+ "items": [
+  {
+   "id": "b1-arb-01",
+   "de": "Hiermit bewerbe ich mich um die Stelle als Pflegekraft.",
+   "ru": "Настоящим подаю заявку на должность сиделки/медработника.",
+   "uk": "Цим подаю заявку на посаду доглядальниці/медпрацівника.",
+   "cloze": "Hiermit ___ ich mich um die Stelle als Pflegekraft.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-arb-02",
+   "de": "Ich habe Erfahrung im Umgang mit Kunden.",
+   "ru": "У меня есть опыт работы с клиентами.",
+   "uk": "У мене є досвід роботи з клієнтами.",
+   "cloze": "Ich habe ___ im Umgang mit Kunden."
+  },
+  {
+   "id": "b1-arb-03",
+   "de": "Ich bin zuverlässig und arbeite gern im Team.",
+   "ru": "Я надёжный(ая) и люблю работать в команде.",
+   "uk": "Я надійний(а) й люблю працювати в команді.",
+   "cloze": "Ich bin ___ und arbeite gern im Team."
+  },
+  {
+   "id": "b1-arb-04",
+   "de": "Welche Aufgaben hätte ich in dieser Position?",
+   "ru": "Какие задачи у меня были бы на этой должности?",
+   "uk": "Які завдання я мав(ла) б на цій посаді?",
+   "cloze": "Welche Aufgaben ___ ich in dieser Position?",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-arb-05",
+   "de": "Ich möchte mich beruflich weiterbilden.",
+   "ru": "Я хочу повысить квалификацию.",
+   "uk": "Я хочу підвищити кваліфікацію.",
+   "cloze": "Ich möchte mich beruflich ___.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-arb-06",
+   "de": "Mein Chef hat mir eine Gehaltserhöhung versprochen.",
+   "ru": "Шеф пообещал мне повышение зарплаты.",
+   "uk": "Шеф пообіцяв мені підвищення зарплати.",
+   "cloze": "Mein Chef hat mir eine ___ versprochen.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-arb-07",
+   "de": "Überstunden werden bei uns ausbezahlt.",
+   "ru": "Сверхурочные у нас оплачиваются.",
+   "uk": "Понаднормові в нас оплачуються.",
+   "cloze": "___ werden bei uns ausbezahlt."
+  },
+  {
+   "id": "b1-arb-08",
+   "de": "Ich habe meine Stelle gekündigt, weil ich umziehe.",
+   "ru": "Я уволился(лась), потому что переезжаю.",
+   "uk": "Я звільнився(лася), бо переїжджаю.",
+   "cloze": "Ich habe meine Stelle gekündigt, ___ ich umziehe.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-arb-09",
+   "de": "Die Arbeitszeiten sind flexibel.",
+   "ru": "Рабочее время гибкое.",
+   "uk": "Робочий час гнучкий.",
+   "cloze": "Die Arbeitszeiten sind ___."
+  },
+  {
+   "id": "b1-arb-10",
+   "de": "Wir haben eine Besprechung um zehn.",
+   "ru": "У нас совещание в десять.",
+   "uk": "У нас нарада о десятій.",
+   "cloze": "Wir haben eine ___ um zehn."
+  },
+  {
+   "id": "b1-arb-11",
+   "de": "Könnten Sie mir das bitte noch einmal erklären?",
+   "ru": "Не могли бы вы ещё раз мне это объяснить?",
+   "uk": "Чи не могли б ви ще раз мені це пояснити?",
+   "cloze": "Könnten Sie mir das bitte noch einmal ___?",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-arb-12",
+   "de": "Das Arbeitsklima in unserem Team ist sehr gut.",
+   "ru": "Атмосфера в нашей команде очень хорошая.",
+   "uk": "Атмосфера в нашій команді дуже добра.",
+   "cloze": "Das ___ in unserem Team ist sehr gut."
+  },
+  {
+   "id": "b1-arb-13",
+   "de": "Ich muss die Unterlagen bis Freitag einreichen.",
+   "ru": "Мне нужно подать документы до пятницы.",
+   "uk": "Мені треба подати документи до п'ятниці.",
+   "cloze": "Ich muss die Unterlagen bis Freitag ___.",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-arb-14",
+   "de": "Ich bin arbeitslos gemeldet und suche eine neue Stelle.",
+   "ru": "Я зарегистрирован(а) как безработный(ая) и ищу новое место.",
+   "uk": "Я зареєстрований(а) як безробітний(а) й шукаю нове місце.",
+   "cloze": "Ich bin ___ gemeldet und suche eine neue Stelle."
+  },
+  {
+   "id": "b1-arb-15",
+   "de": "Mein Lebenslauf ist lückenlos.",
+   "ru": "Моё резюме без пробелов.",
+   "uk": "Моє резюме без прогалин.",
+   "cloze": "Mein Lebenslauf ist ___."
+  },
+  {
+   "id": "b1-arb-16",
+   "de": "Nach der Probezeit wurde ich fest angestellt.",
+   "ru": "После испытательного срока меня взяли на постоянную работу.",
+   "uk": "Після випробувального терміну мене взяли на постійну роботу.",
+   "cloze": "Nach der Probezeit wurde ich fest ___."
+  }
+ ]
+}

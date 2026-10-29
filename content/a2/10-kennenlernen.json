@@ -1,0 +1,151 @@
+{
+ "level": "A2",
+ "topic": "kennenlernen",
+ "lesson": {
+  "id": "a2-kennenlernen-1",
+  "title_ru": "Знакомство (A2)",
+  "title_uk": "Знайомство (A2)",
+  "sort": 100
+ },
+ "items": [
+  {
+   "id": "a2-ken-01",
+   "de": "Wie lange wohnen Sie schon hier?",
+   "ru": "Как долго вы уже здесь живёте?",
+   "uk": "Як довго ви вже тут живете?",
+   "cloze": "Wie lange wohnen Sie ___ hier?"
+  },
+  {
+   "id": "a2-ken-02",
+   "de": "Ich bin vor zwei Jahren nach Deutschland gekommen.",
+   "ru": "Я приехал(а) в Германию два года назад.",
+   "uk": "Я приїхав(ла) до Німеччини два роки тому.",
+   "cloze": "Ich bin vor zwei Jahren nach Deutschland ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-ken-03",
+   "de": "Früher habe ich in Charkiw gewohnt.",
+   "ru": "Раньше я жил(а) в Харькове.",
+   "uk": "Раніше я жив(ла) у Харкові.",
+   "cloze": "Früher habe ich in Charkiw ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-ken-04",
+   "de": "Ich mache gerade einen Integrationskurs.",
+   "ru": "Сейчас я прохожу интеграционный курс.",
+   "uk": "Зараз я проходжу інтеграційний курс.",
+   "cloze": "Ich mache ___ einen Integrationskurs."
+  },
+  {
+   "id": "a2-ken-05",
+   "de": "Mein Deutsch ist noch nicht so gut, aber ich lerne jeden Tag.",
+   "ru": "Мой немецкий пока не очень, но я учу каждый день.",
+   "uk": "Моя німецька ще не дуже, але я вчу щодня.",
+   "cloze": "Mein Deutsch ist noch nicht so gut, ___ ich lerne jeden Tag."
+  },
+  {
+   "id": "a2-ken-06",
+   "de": "Können Sie bitte etwas langsamer sprechen?",
+   "ru": "Говорите, пожалуйста, чуть медленнее.",
+   "uk": "Говоріть, будь ласка, трохи повільніше.",
+   "cloze": "Können Sie bitte etwas ___ sprechen?"
+  },
+  {
+   "id": "a2-ken-07",
+   "de": "Wie schreibt man das?",
+   "ru": "Как это пишется?",
+   "uk": "Як це пишеться?",
+   "cloze": "Wie ___ man das?"
+  },
+  {
+   "id": "a2-ken-08",
+   "de": "Ich komme ursprünglich aus der Ukraine.",
+   "ru": "Я родом из Украины.",
+   "uk": "Я родом з України.",
+   "cloze": "Ich komme ___ aus der Ukraine.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ken-09",
+   "de": "In meiner Freizeit koche ich gern.",
+   "ru": "В свободное время я люблю готовить.",
+   "uk": "У вільний час я люблю готувати.",
+   "cloze": "In meiner Freizeit ___ ich gern.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-ken-10",
+   "de": "Ich habe als Buchhalterin gearbeitet.",
+   "ru": "Я работала бухгалтером.",
+   "uk": "Я працювала бухгалтеркою.",
+   "cloze": "Ich habe ___ Buchhalterin gearbeitet."
+  },
+  {
+   "id": "a2-ken-11",
+   "de": "Hier in Deutschland suche ich gerade Arbeit.",
+   "ru": "Здесь, в Германии, я сейчас ищу работу.",
+   "uk": "Тут, у Німеччині, я зараз шукаю роботу.",
+   "cloze": "Hier in Deutschland ___ ich gerade Arbeit.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "a2-ken-12",
+   "de": "Freut mich, Sie kennenzulernen.",
+   "ru": "Рад(а) с вами познакомиться.",
+   "uk": "Радий(а) з вами познайомитися.",
+   "cloze": "Freut mich, Sie ___."
+  },
+  {
+   "id": "a2-ken-13",
+   "de": "Sollen wir uns duzen?",
+   "ru": "Давай на «ты»?",
+   "uk": "Може, перейдемо на «ти»?",
+   "cloze": "Sollen wir uns ___?",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "a2-ken-14",
+   "de": "Woher kennt ihr euch?",
+   "ru": "Откуда вы друг друга знаете?",
+   "uk": "Звідки ви одне одного знаєте?",
+   "cloze": "Woher ___ ihr euch?",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "a2-ken-15",
+   "de": "Ich bin hier, weil meine Familie hier lebt.",
+   "ru": "Я здесь, потому что здесь живёт моя семья.",
+   "uk": "Я тут, бо тут живе моя родина.",
+   "cloze": "Ich bin hier, weil meine Familie hier ___.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "a2-ken-16",
+   "de": "Ich möchte später als Erzieherin arbeiten.",
+   "ru": "Позже я хочу работать воспитательницей.",
+   "uk": "Пізніше я хочу працювати вихователькою.",
+   "cloze": "Ich möchte später als Erzieherin ___.",
+   "tags": [
+    "modal_verbs"
+   ]
+  }
+ ]
+}

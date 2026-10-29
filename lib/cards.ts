@@ -77,12 +77,14 @@ export async function loadDue(limit = 60): Promise<QueueEntry[]> {
 }
 
 /** Новые карточки: следующие по порядку курса, которых ещё нет у пользователя. */
-export async function loadNew(limit: number, lessonId?: string): Promise<QueueEntry[]> {
+export async function loadNew(limit: number, lessonId?: string, fromLevel: "A1" | "A2" | "B1" = "A1"): Promise<QueueEntry[]> {
   // ponytail: тянем все id карточек пользователя (сотни-тысячи) — заменить на RPC с NOT EXISTS, если станет медленно.
   const { data: own } = await supabase.from("user_cards").select("item_id").eq("item_type", "content");
   const seen = new Set((own ?? []).map((c) => c.item_id));
   let q = supabase.from("content_items").select(ITEM_COLS).neq("kind", "letter").order("sort").limit(limit + seen.size);
+  // Входной тест позволяет пропустить знакомый уровень: новые карточки — начиная с уровня профиля.
   if (lessonId) q = q.eq("lesson_id", lessonId);
+  else q = q.in("level_id", ["A1", "A2", "B1"].slice(["A1", "A2", "B1"].indexOf(fromLevel)));
   const { data, error } = await q;
   if (error) throw error;
   return (data as Item[])

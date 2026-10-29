@@ -1,0 +1,142 @@
+{
+ "level": "A2",
+ "topic": "aemter",
+ "lesson": {
+  "id": "a2-aemter-1",
+  "title_ru": "Ведомства (A2)",
+  "title_uk": "Установи (A2)",
+  "sort": 106
+ },
+ "items": [
+  {
+   "id": "a2-amt-01",
+   "de": "Ich möchte einen Termin beim Bürgeramt machen.",
+   "ru": "Я хочу записаться в бюргерамт.",
+   "uk": "Я хочу записатися до бюргерамту.",
+   "cloze": "Ich möchte einen ___ beim Bürgeramt machen."
+  },
+  {
+   "id": "a2-amt-02",
+   "de": "Welche Unterlagen muss ich mitbringen?",
+   "ru": "Какие документы мне нужно принести?",
+   "uk": "Які документи мені треба принести?",
+   "cloze": "Welche ___ muss ich mitbringen?",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "a2-amt-03",
+   "de": "Ich brauche eine Meldebescheinigung.",
+   "ru": "Мне нужна справка о регистрации.",
+   "uk": "Мені потрібна довідка про реєстрацію.",
+   "cloze": "Ich brauche eine ___."
+  },
+  {
+   "id": "a2-amt-04",
+   "de": "Mein Aufenthaltstitel läuft bald ab.",
+   "ru": "Мой вид на жительство скоро истекает.",
+   "uk": "Моя посвідка на проживання скоро закінчується.",
+   "cloze": "Mein ___ läuft bald ab."
+  },
+  {
+   "id": "a2-amt-05",
+   "de": "Wo muss ich unterschreiben?",
+   "ru": "Где мне нужно подписать?",
+   "uk": "Де мені треба підписати?",
+   "cloze": "Wo muss ich ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-amt-06",
+   "de": "Können Sie mir beim Ausfüllen helfen?",
+   "ru": "Можете помочь мне заполнить?",
+   "uk": "Можете допомогти мені заповнити?",
+   "cloze": "Können Sie mir beim ___ helfen?",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-amt-07",
+   "de": "Ich habe einen Brief vom Jobcenter bekommen.",
+   "ru": "Я получил(а) письмо из джобцентра.",
+   "uk": "Я отримав(ла) лист від джобцентру.",
+   "cloze": "Ich habe einen Brief vom Jobcenter ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-amt-08",
+   "de": "Bis wann muss ich den Antrag abgeben?",
+   "ru": "До какого числа нужно подать заявление?",
+   "uk": "До якого числа треба подати заяву?",
+   "cloze": "Bis wann muss ich den ___ abgeben?"
+  },
+  {
+   "id": "a2-amt-09",
+   "de": "Ich ziehe eine Wartenummer.",
+   "ru": "Я беру талончик.",
+   "uk": "Я беру талончик.",
+   "cloze": "Ich ziehe eine ___."
+  },
+  {
+   "id": "a2-amt-10",
+   "de": "Die Frist endet am 30. Juni.",
+   "ru": "Срок истекает 30 июня.",
+   "uk": "Термін закінчується 30 червня.",
+   "cloze": "Die ___ endet am 30. Juni."
+  },
+  {
+   "id": "a2-amt-11",
+   "de": "Ich brauche einen Dolmetscher.",
+   "ru": "Мне нужен переводчик.",
+   "uk": "Мені потрібен перекладач.",
+   "cloze": "Ich brauche einen ___.",
+   "tags": [
+    "case_akkusativ"
+   ]
+  },
+  {
+   "id": "a2-amt-12",
+   "de": "Bitte schicken Sie mir eine Kopie.",
+   "ru": "Пожалуйста, пришлите мне копию.",
+   "uk": "Будь ласка, надішліть мені копію.",
+   "cloze": "Bitte schicken Sie mir eine ___."
+  },
+  {
+   "id": "a2-amt-13",
+   "de": "Das Formular gibt es auch online.",
+   "ru": "Бланк есть и онлайн.",
+   "uk": "Бланк є й онлайн.",
+   "cloze": "Das ___ gibt es auch online."
+  },
+  {
+   "id": "a2-amt-14",
+   "de": "Ich warte noch auf die Antwort.",
+   "ru": "Я ещё жду ответа.",
+   "uk": "Я ще чекаю на відповідь.",
+   "cloze": "Ich warte noch ___ die Antwort.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-amt-15",
+   "de": "Für Kindergeld ist die Familienkasse zuständig.",
+   "ru": "За детские пособия отвечает Familienkasse.",
+   "uk": "За дитячі виплати відповідає Familienkasse.",
+   "cloze": "Für Kindergeld ist die Familienkasse ___."
+  },
+  {
+   "id": "a2-amt-16",
+   "de": "Ich möchte meinen Pass verlängern.",
+   "ru": "Я хочу продлить паспорт.",
+   "uk": "Я хочу продовжити паспорт.",
+   "cloze": "Ich möchte meinen Pass ___."
+  }
+ ]
+}

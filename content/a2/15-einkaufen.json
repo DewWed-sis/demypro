@@ -1,0 +1,139 @@
+{
+ "level": "A2",
+ "topic": "einkaufen",
+ "lesson": {
+  "id": "a2-einkaufen-1",
+  "title_ru": "Покупки (A2)",
+  "title_uk": "Покупки (A2)",
+  "sort": 105
+ },
+ "items": [
+  {
+   "id": "a2-ein-01",
+   "de": "Haben Sie das auch eine Nummer größer?",
+   "ru": "У вас есть это на размер больше?",
+   "uk": "У вас є це на розмір більше?",
+   "cloze": "Haben Sie das auch eine Nummer ___?"
+  },
+  {
+   "id": "a2-ein-02",
+   "de": "Kann ich das anprobieren?",
+   "ru": "Можно примерить?",
+   "uk": "Можна приміряти?",
+   "cloze": "Kann ich das ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-ein-03",
+   "de": "Wo sind die Umkleidekabinen?",
+   "ru": "Где примерочные?",
+   "uk": "Де примірочні?",
+   "cloze": "Wo sind die ___?"
+  },
+  {
+   "id": "a2-ein-04",
+   "de": "Die Hose passt mir nicht.",
+   "ru": "Брюки мне не подходят.",
+   "uk": "Штани мені не пасують.",
+   "cloze": "Die Hose ___ mir nicht.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ein-05",
+   "de": "Ich möchte das umtauschen.",
+   "ru": "Я хочу это обменять.",
+   "uk": "Я хочу це обміняти.",
+   "cloze": "Ich möchte das ___."
+  },
+  {
+   "id": "a2-ein-06",
+   "de": "Hier ist der Kassenbon.",
+   "ru": "Вот чек.",
+   "uk": "Ось чек.",
+   "cloze": "Hier ist der ___."
+  },
+  {
+   "id": "a2-ein-07",
+   "de": "Kann ich mit Karte bezahlen?",
+   "ru": "Можно оплатить картой?",
+   "uk": "Можна оплатити карткою?",
+   "cloze": "Kann ich mit ___ bezahlen?"
+  },
+  {
+   "id": "a2-ein-08",
+   "de": "Das ist im Angebot.",
+   "ru": "Это по акции.",
+   "uk": "Це за акцією.",
+   "cloze": "Das ist im ___."
+  },
+  {
+   "id": "a2-ein-09",
+   "de": "Brauchen Sie eine Tüte?",
+   "ru": "Вам нужен пакет?",
+   "uk": "Вам потрібен пакет?",
+   "cloze": "Brauchen Sie eine ___?"
+  },
+  {
+   "id": "a2-ein-10",
+   "de": "Ich hätte gern 300 Gramm Käse, bitte.",
+   "ru": "Мне, пожалуйста, 300 грамм сыра.",
+   "uk": "Мені, будь ласка, 300 грамів сиру.",
+   "cloze": "Ich hätte gern 300 ___ Käse, bitte.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "a2-ein-11",
+   "de": "Darf es noch etwas sein?",
+   "ru": "Что-нибудь ещё?",
+   "uk": "Щось іще?",
+   "cloze": "Darf es ___ etwas sein?"
+  },
+  {
+   "id": "a2-ein-12",
+   "de": "Das ist mir zu teuer.",
+   "ru": "Это для меня слишком дорого.",
+   "uk": "Це для мене задорого.",
+   "cloze": "Das ist mir zu ___.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ein-13",
+   "de": "Ich habe das online bestellt, aber es ist nicht angekommen.",
+   "ru": "Я заказал(а) онлайн, но оно не пришло.",
+   "uk": "Я замовив(ла) онлайн, але воно не прийшло.",
+   "cloze": "Ich habe das online bestellt, aber es ist nicht ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-ein-14",
+   "de": "Das Paket liegt in der Packstation.",
+   "ru": "Посылка в постамате.",
+   "uk": "Посилка в поштоматі.",
+   "cloze": "Das Paket liegt in der ___."
+  },
+  {
+   "id": "a2-ein-15",
+   "de": "Wo finde ich die Milchprodukte?",
+   "ru": "Где молочные продукты?",
+   "uk": "Де молочні продукти?",
+   "cloze": "Wo ___ ich die Milchprodukte?"
+  },
+  {
+   "id": "a2-ein-16",
+   "de": "Der Laden hat sonntags geschlossen.",
+   "ru": "Магазин по воскресеньям закрыт.",
+   "uk": "Магазин у неділю зачинений.",
+   "cloze": "Der Laden hat ___ geschlossen."
+  }
+ ]
+}

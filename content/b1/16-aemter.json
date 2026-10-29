@@ -1,0 +1,136 @@
+{
+ "level": "B1",
+ "topic": "aemter",
+ "lesson": {
+  "id": "b1-aemter-1",
+  "title_ru": "Ведомства (B1)",
+  "title_uk": "Установи (B1)",
+  "sort": 206
+ },
+ "items": [
+  {
+   "id": "b1-amt-01",
+   "de": "Ich möchte einen Antrag auf Kindergeld stellen.",
+   "ru": "Я хочу подать заявление на детское пособие.",
+   "uk": "Я хочу подати заяву на дитячу виплату.",
+   "cloze": "Ich möchte einen ___ auf Kindergeld stellen.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-amt-02",
+   "de": "Bitte reichen Sie die fehlenden Unterlagen nach.",
+   "ru": "Пожалуйста, донесите недостающие документы.",
+   "uk": "Будь ласка, донесіть відсутні документи.",
+   "cloze": "Bitte reichen Sie die ___ Unterlagen nach.",
+   "tags": [
+    "adjective_ending"
+   ]
+  },
+  {
+   "id": "b1-amt-03",
+   "de": "Gegen den Bescheid kann man Widerspruch einlegen.",
+   "ru": "На решение можно подать возражение.",
+   "uk": "На рішення можна подати заперечення.",
+   "cloze": "Gegen den Bescheid kann man ___ einlegen."
+  },
+  {
+   "id": "b1-amt-04",
+   "de": "Der Antrag wurde bewilligt.",
+   "ru": "Заявление одобрено.",
+   "uk": "Заяву схвалено.",
+   "cloze": "Der Antrag wurde ___."
+  },
+  {
+   "id": "b1-amt-05",
+   "de": "Die Bearbeitung dauert etwa vier Wochen.",
+   "ru": "Рассмотрение длится около четырёх недель.",
+   "uk": "Розгляд триває близько чотирьох тижнів.",
+   "cloze": "Die ___ dauert etwa vier Wochen."
+  },
+  {
+   "id": "b1-amt-06",
+   "de": "Ich brauche eine beglaubigte Übersetzung meines Diploms.",
+   "ru": "Мне нужен заверенный перевод диплома.",
+   "uk": "Мені потрібен засвідчений переклад диплома.",
+   "cloze": "Ich brauche eine ___ Übersetzung meines Diploms.",
+   "tags": [
+    "adjective_ending"
+   ]
+  },
+  {
+   "id": "b1-amt-07",
+   "de": "Muss ich persönlich vorbeikommen?",
+   "ru": "Нужно ли мне прийти лично?",
+   "uk": "Чи треба мені прийти особисто?",
+   "cloze": "Muss ich ___ vorbeikommen?"
+  },
+  {
+   "id": "b1-amt-08",
+   "de": "Ich bin verpflichtet, Änderungen sofort zu melden.",
+   "ru": "Я обязан(а) сразу сообщать об изменениях.",
+   "uk": "Я зобов'язаний(а) одразу повідомляти про зміни.",
+   "cloze": "Ich bin ___, Änderungen sofort zu melden."
+  },
+  {
+   "id": "b1-amt-09",
+   "de": "Mein Sachbearbeiter ist im Urlaub.",
+   "ru": "Мой куратор в отпуске.",
+   "uk": "Мій куратор у відпустці.",
+   "cloze": "Mein ___ ist im Urlaub."
+  },
+  {
+   "id": "b1-amt-10",
+   "de": "Die Steuererklärung muss bis Ende Juli abgegeben werden.",
+   "ru": "Налоговую декларацию нужно подать до конца июля.",
+   "uk": "Податкову декларацію треба подати до кінця липня.",
+   "cloze": "Die ___ muss bis Ende Juli abgegeben werden."
+  },
+  {
+   "id": "b1-amt-11",
+   "de": "Wird mein Abschluss in Deutschland anerkannt?",
+   "ru": "Признаётся ли мой диплом в Германии?",
+   "uk": "Чи визнається мій диплом у Німеччині?",
+   "cloze": "Wird mein Abschluss in Deutschland ___?"
+  },
+  {
+   "id": "b1-amt-12",
+   "de": "Ich habe eine Frage zu meinem Bescheid.",
+   "ru": "У меня вопрос по моему решению.",
+   "uk": "У мене питання щодо мого рішення.",
+   "cloze": "Ich habe eine Frage zu meinem ___."
+  },
+  {
+   "id": "b1-amt-13",
+   "de": "Bitte geben Sie Ihr Aktenzeichen an.",
+   "ru": "Пожалуйста, укажите номер вашего дела.",
+   "uk": "Будь ласка, вкажіть номер вашої справи.",
+   "cloze": "Bitte geben Sie Ihr ___ an."
+  },
+  {
+   "id": "b1-amt-14",
+   "de": "Ohne Termin werden Sie leider nicht bedient.",
+   "ru": "Без записи вас, к сожалению, не обслужат.",
+   "uk": "Без запису вас, на жаль, не обслужать.",
+   "cloze": "Ohne Termin werden Sie leider nicht ___.",
+   "tags": [
+    "negation"
+   ]
+  },
+  {
+   "id": "b1-amt-15",
+   "de": "Das Jobcenter übernimmt die Kosten für den Kurs.",
+   "ru": "Джобцентр оплачивает курс.",
+   "uk": "Джобцентр оплачує курс.",
+   "cloze": "Das Jobcenter ___ die Kosten für den Kurs."
+  },
+  {
+   "id": "b1-amt-16",
+   "de": "Ich lege Ihnen eine Kopie meines Ausweises bei.",
+   "ru": "Прилагаю копию моего удостоверения.",
+   "uk": "Додаю копію мого посвідчення.",
+   "cloze": "Ich lege Ihnen eine Kopie meines Ausweises ___."
+  }
+ ]
+}

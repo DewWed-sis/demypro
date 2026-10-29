@@ -1,0 +1,149 @@
+{
+ "level": "B1",
+ "topic": "wohnen",
+ "lesson": {
+  "id": "b1-wohnen-1",
+  "title_ru": "Жильё (B1)",
+  "title_uk": "Житло (B1)",
+  "sort": 202
+ },
+ "items": [
+  {
+   "id": "b1-woh-01",
+   "de": "Der Mietvertrag ist unbefristet.",
+   "ru": "Договор аренды бессрочный.",
+   "uk": "Договір оренди безстроковий.",
+   "cloze": "Der Mietvertrag ist ___."
+  },
+  {
+   "id": "b1-woh-02",
+   "de": "Die Kündigungsfrist beträgt drei Monate.",
+   "ru": "Срок расторжения — три месяца.",
+   "uk": "Термін розірвання — три місяці.",
+   "cloze": "Die ___ beträgt drei Monate."
+  },
+  {
+   "id": "b1-woh-03",
+   "de": "Ich habe die Nebenkostenabrechnung bekommen und muss nachzahlen.",
+   "ru": "Я получил(а) расчёт коммуналки и должен(на) доплатить.",
+   "uk": "Я отримав(ла) розрахунок комуналки й маю доплатити.",
+   "cloze": "Ich habe die Nebenkostenabrechnung bekommen und muss ___.",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-woh-04",
+   "de": "In der Wohnung ist Schimmel, das ist ein Mangel.",
+   "ru": "В квартире плесень, это недостаток.",
+   "uk": "У квартирі пліснява, це недолік.",
+   "cloze": "In der Wohnung ist Schimmel, das ist ein ___."
+  },
+  {
+   "id": "b1-woh-05",
+   "de": "Der Vermieter muss die Reparatur bezahlen.",
+   "ru": "Арендодатель обязан оплатить ремонт.",
+   "uk": "Орендодавець зобов'язаний оплатити ремонт.",
+   "cloze": "Der Vermieter muss die ___ bezahlen.",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "b1-woh-06",
+   "de": "Könnten Sie bitte einen Handwerker schicken?",
+   "ru": "Не могли бы вы прислать мастера?",
+   "uk": "Чи не могли б ви надіслати майстра?",
+   "cloze": "___ Sie bitte einen Handwerker schicken?",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-woh-07",
+   "de": "Unser Nachbar beschwert sich über den Lärm.",
+   "ru": "Наш сосед жалуется на шум.",
+   "uk": "Наш сусід скаржиться на шум.",
+   "cloze": "Unser Nachbar ___ sich über den Lärm.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-woh-08",
+   "de": "Wir suchen eine Wohnung, die in der Nähe einer Schule liegt.",
+   "ru": "Мы ищем квартиру, которая находится рядом со школой.",
+   "uk": "Ми шукаємо квартиру, яка розташована біля школи.",
+   "cloze": "Wir suchen eine Wohnung, die in der Nähe einer Schule ___.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-woh-09",
+   "de": "Für die Wohnung brauche ich einen Wohnberechtigungsschein.",
+   "ru": "Для квартиры мне нужен WBS (право на соцжильё).",
+   "uk": "Для квартири мені потрібен WBS (право на соцжитло).",
+   "cloze": "Für die Wohnung brauche ich einen ___."
+  },
+  {
+   "id": "b1-woh-10",
+   "de": "Die Miete wird am Anfang des Monats überwiesen.",
+   "ru": "Аренда переводится в начале месяца.",
+   "uk": "Оренда переказується на початку місяця.",
+   "cloze": "Die Miete wird am Anfang des Monats ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-woh-11",
+   "de": "Die Wohnung wurde letztes Jahr renoviert.",
+   "ru": "Квартиру отремонтировали в прошлом году.",
+   "uk": "Квартиру відремонтували минулого року.",
+   "cloze": "Die Wohnung wurde letztes Jahr ___."
+  },
+  {
+   "id": "b1-woh-12",
+   "de": "Haustiere sind nur nach Absprache erlaubt.",
+   "ru": "Домашние животные — только по договорённости.",
+   "uk": "Домашні тварини — лише за домовленістю.",
+   "cloze": "Haustiere sind nur nach ___ erlaubt."
+  },
+  {
+   "id": "b1-woh-13",
+   "de": "Ich hätte gern eine Wohnung mit Einbauküche.",
+   "ru": "Я бы хотел(а) квартиру со встроенной кухней.",
+   "uk": "Я б хотів(ла) квартиру з вбудованою кухнею.",
+   "cloze": "Ich hätte gern eine Wohnung mit ___.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-woh-14",
+   "de": "Wir wohnen in einer WG mit zwei Studenten.",
+   "ru": "Мы живём в квартире с двумя студентами.",
+   "uk": "Ми живемо у спільній квартирі з двома студентами.",
+   "cloze": "Wir wohnen in einer ___ mit zwei Studenten."
+  },
+  {
+   "id": "b1-woh-15",
+   "de": "Wenn die Heizung kaputt ist, rufe ich sofort den Hausmeister an.",
+   "ru": "Если сломается отопление, я сразу звоню завхозу.",
+   "uk": "Якщо зламається опалення, я одразу телефоную завгоспу.",
+   "cloze": "Wenn die Heizung kaputt ist, ___ ich sofort den Hausmeister an.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-woh-16",
+   "de": "Beim Auszug muss die Wohnung besenrein sein.",
+   "ru": "При выезде квартира должна быть убрана.",
+   "uk": "При виїзді квартира має бути прибрана.",
+   "cloze": "Beim Auszug muss die Wohnung ___ sein."
+  }
+ ]
+}

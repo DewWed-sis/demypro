@@ -1,0 +1,146 @@
+{
+ "level": "B1",
+ "topic": "einkaufen",
+ "lesson": {
+  "id": "b1-einkaufen-1",
+  "title_ru": "Покупки (B1)",
+  "title_uk": "Покупки (B1)",
+  "sort": 205
+ },
+ "items": [
+  {
+   "id": "b1-ein-01",
+   "de": "Ich möchte mich über das Produkt beschweren.",
+   "ru": "Я хочу пожаловаться на товар.",
+   "uk": "Я хочу поскаржитися на товар.",
+   "cloze": "Ich möchte mich über das Produkt ___.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-ein-02",
+   "de": "Das Gerät war schon beim Auspacken kaputt.",
+   "ru": "Прибор был сломан уже при распаковке.",
+   "uk": "Прилад був зламаний уже при розпакуванні.",
+   "cloze": "Das Gerät war schon beim ___ kaputt."
+  },
+  {
+   "id": "b1-ein-03",
+   "de": "Kann ich das Geld zurückbekommen?",
+   "ru": "Можно вернуть деньги?",
+   "uk": "Можна повернути гроші?",
+   "cloze": "Kann ich das Geld ___?"
+  },
+  {
+   "id": "b1-ein-04",
+   "de": "Auf das Gerät gibt es zwei Jahre Garantie.",
+   "ru": "На прибор гарантия два года.",
+   "uk": "На прилад гарантія два роки.",
+   "cloze": "Auf das Gerät gibt es zwei Jahre ___."
+  },
+  {
+   "id": "b1-ein-05",
+   "de": "Ich habe den Vertrag online abgeschlossen.",
+   "ru": "Я заключил(а) договор онлайн.",
+   "uk": "Я уклав(ла) договір онлайн.",
+   "cloze": "Ich habe den Vertrag online ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-ein-06",
+   "de": "Innerhalb von 14 Tagen können Sie die Ware zurückschicken.",
+   "ru": "В течение 14 дней вы можете вернуть товар.",
+   "uk": "Протягом 14 днів ви можете повернути товар.",
+   "cloze": "___ von 14 Tagen können Sie die Ware zurückschicken."
+  },
+  {
+   "id": "b1-ein-07",
+   "de": "Die Lieferung verzögert sich um eine Woche.",
+   "ru": "Доставка задерживается на неделю.",
+   "uk": "Доставка затримується на тиждень.",
+   "cloze": "Die Lieferung ___ sich um eine Woche.",
+   "tags": [
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-ein-08",
+   "de": "Ich vergleiche die Preise, bevor ich etwas kaufe.",
+   "ru": "Я сравниваю цены, прежде чем что-то купить.",
+   "uk": "Я порівнюю ціни, перш ніж щось купити.",
+   "cloze": "Ich vergleiche die Preise, ___ ich etwas kaufe.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ein-09",
+   "de": "Bio-Produkte sind mir wichtig, auch wenn sie teurer sind.",
+   "ru": "Мне важны био-продукты, даже если они дороже.",
+   "uk": "Мені важливі біо-продукти, навіть якщо вони дорожчі.",
+   "cloze": "Bio-Produkte sind mir wichtig, auch wenn sie ___ sind."
+  },
+  {
+   "id": "b1-ein-10",
+   "de": "Ich kaufe lieber auf dem Wochenmarkt ein.",
+   "ru": "Я предпочитаю покупать на рынке.",
+   "uk": "Я волію купувати на ринку.",
+   "cloze": "Ich kaufe ___ auf dem Wochenmarkt ein."
+  },
+  {
+   "id": "b1-ein-11",
+   "de": "Könnten Sie mir das bitte als Geschenk einpacken?",
+   "ru": "Не могли бы вы упаковать это как подарок?",
+   "uk": "Чи не могли б ви запакувати це як подарунок?",
+   "cloze": "Könnten Sie mir das bitte als Geschenk ___?",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ein-12",
+   "de": "Das Pfand für die Flasche beträgt 25 Cent.",
+   "ru": "Залог за бутылку — 25 центов.",
+   "uk": "Застава за пляшку — 25 центів.",
+   "cloze": "Das ___ für die Flasche beträgt 25 Cent."
+  },
+  {
+   "id": "b1-ein-13",
+   "de": "Ich bezahle in Raten.",
+   "ru": "Я плачу в рассрочку.",
+   "uk": "Я плачу в розстрочку.",
+   "cloze": "Ich bezahle in ___."
+  },
+  {
+   "id": "b1-ein-14",
+   "de": "Das Sonderangebot gilt nur bis Samstag.",
+   "ru": "Спецпредложение действует только до субботы.",
+   "uk": "Спецпропозиція діє лише до суботи.",
+   "cloze": "Das Sonderangebot ___ nur bis Samstag."
+  },
+  {
+   "id": "b1-ein-15",
+   "de": "Den Kassenbon sollten Sie aufheben.",
+   "ru": "Чек лучше сохранить.",
+   "uk": "Чек краще зберегти.",
+   "cloze": "Den Kassenbon sollten Sie ___.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ein-16",
+   "de": "Ich hätte gern eine Rechnung mit meinem Namen.",
+   "ru": "Мне нужен счёт на моё имя.",
+   "uk": "Мені потрібен рахунок на моє ім'я.",
+   "cloze": "Ich hätte gern eine ___ mit meinem Namen.",
+   "tags": [
+    "konjunktiv"
+   ]
+  }
+ ]
+}

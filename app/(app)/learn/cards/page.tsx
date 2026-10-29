@@ -33,11 +33,13 @@ function CardsSession() {
   const [done, setDone] = useState(0);
   const [error, setError] = useState("");
 
+  const level = profile?.level;
   useEffect(() => {
-    (mode === "new" ? loadNew(newCardsFor(minutes), lesson) : loadDue())
+    if (!level) return;
+    (mode === "new" ? loadNew(newCardsFor(minutes), lesson, level) : loadDue())
       .then(setQueue)
       .catch((e: Error) => setError(e.message));
-  }, [mode, lesson, minutes]);
+  }, [mode, lesson, minutes, level]);
 
   const current = queue?.[0];
   const finished = queue !== null && queue.length === 0;

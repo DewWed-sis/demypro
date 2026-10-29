@@ -1,0 +1,148 @@
+{
+ "level": "B1",
+ "topic": "schule",
+ "lesson": {
+  "id": "b1-schule-1",
+  "title_ru": "Школа и дети (B1)",
+  "title_uk": "Школа і діти (B1)",
+  "sort": 209
+ },
+ "items": [
+  {
+   "id": "b1-sch-01",
+   "de": "Ich mache mir Sorgen, weil mein Sohn schlechte Noten hat.",
+   "ru": "Я переживаю, потому что у сына плохие оценки.",
+   "uk": "Я хвилююся, бо в сина погані оцінки.",
+   "cloze": "Ich mache mir ___, weil mein Sohn schlechte Noten hat.",
+   "tags": [
+    "verb_final",
+    "reflexive"
+   ]
+  },
+  {
+   "id": "b1-sch-02",
+   "de": "Nach der vierten Klasse wechselt sie aufs Gymnasium.",
+   "ru": "После четвёртого класса она переходит в гимназию.",
+   "uk": "Після четвертого класу вона переходить до гімназії.",
+   "cloze": "Nach der vierten Klasse ___ sie aufs Gymnasium.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-sch-03",
+   "de": "Die Lehrerin empfiehlt die Realschule.",
+   "ru": "Учительница рекомендует реальную школу.",
+   "uk": "Учителька рекомендує реальну школу.",
+   "cloze": "Die Lehrerin ___ die Realschule."
+  },
+  {
+   "id": "b1-sch-04",
+   "de": "Mein Kind wird in der Schule gemobbt.",
+   "ru": "Моего ребёнка травят в школе.",
+   "uk": "Мою дитину цькують у школі.",
+   "cloze": "Mein Kind wird in der Schule ___."
+  },
+  {
+   "id": "b1-sch-05",
+   "de": "Ich hätte gern einen Gesprächstermin mit der Klassenlehrerin.",
+   "ru": "Я бы хотел(а) встретиться с классной руководительницей.",
+   "uk": "Я б хотів(ла) зустрітися з класною керівничкою.",
+   "cloze": "Ich hätte gern einen ___ mit der Klassenlehrerin.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-sch-06",
+   "de": "Die Schulpflicht beginnt mit sechs Jahren.",
+   "ru": "Обязательное обучение начинается с шести лет.",
+   "uk": "Обов'язкове навчання починається з шести років.",
+   "cloze": "Die ___ beginnt mit sechs Jahren."
+  },
+  {
+   "id": "b1-sch-07",
+   "de": "Für die Klassenfahrt gibt es Zuschüsse vom Jobcenter.",
+   "ru": "На поездку класса есть доплаты от джобцентра.",
+   "uk": "На поїздку класу є доплати від джобцентру.",
+   "cloze": "Für die Klassenfahrt gibt es ___ vom Jobcenter."
+  },
+  {
+   "id": "b1-sch-08",
+   "de": "Die Kinder lernen in der Schule, Konflikte friedlich zu lösen.",
+   "ru": "Дети учатся в школе решать конфликты мирно.",
+   "uk": "Діти вчаться в школі вирішувати конфлікти мирно.",
+   "cloze": "Die Kinder lernen in der Schule, Konflikte ___ zu lösen."
+  },
+  {
+   "id": "b1-sch-09",
+   "de": "Nach der Schule geht er in die Ganztagsbetreuung.",
+   "ru": "После уроков он идёт на продлёнку.",
+   "uk": "Після уроків він іде на продовжений день.",
+   "cloze": "Nach der Schule geht er in die ___."
+  },
+  {
+   "id": "b1-sch-10",
+   "de": "Meine Tochter möchte nach dem Abitur studieren.",
+   "ru": "Моя дочь хочет учиться в вузе после абитура.",
+   "uk": "Моя донька хоче вчитися у виші після абітуру.",
+   "cloze": "Meine Tochter möchte nach dem ___ studieren."
+  },
+  {
+   "id": "b1-sch-11",
+   "de": "Wir haben für unseren Sohn einen Nachhilfelehrer gefunden.",
+   "ru": "Мы нашли сыну репетитора.",
+   "uk": "Ми знайшли синові репетитора.",
+   "cloze": "Wir haben für unseren Sohn einen ___ gefunden.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "b1-sch-12",
+   "de": "Die Eltern sollen sich an den Kosten beteiligen.",
+   "ru": "Родители должны участвовать в расходах.",
+   "uk": "Батьки мають брати участь у витратах.",
+   "cloze": "Die Eltern sollen sich an den Kosten ___.",
+   "tags": [
+    "reflexive",
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-sch-13",
+   "de": "In der Kita lernen die Kinder schnell Deutsch.",
+   "ru": "В детском саду дети быстро учат немецкий.",
+   "uk": "У дитсадку діти швидко вчать німецьку.",
+   "cloze": "In der Kita ___ die Kinder schnell Deutsch.",
+   "tags": [
+    "word_order_v2"
+   ]
+  },
+  {
+   "id": "b1-sch-14",
+   "de": "Ich bin im Elternbeirat aktiv.",
+   "ru": "Я активна в родительском совете.",
+   "uk": "Я активна в батьківській раді.",
+   "cloze": "Ich bin im ___ aktiv."
+  },
+  {
+   "id": "b1-sch-15",
+   "de": "Die Ausbildung dauert drei Jahre und wird bezahlt.",
+   "ru": "Обучение длится три года и оплачивается.",
+   "uk": "Навчання триває три роки й оплачується.",
+   "cloze": "Die Ausbildung dauert drei Jahre und wird ___."
+  },
+  {
+   "id": "b1-sch-16",
+   "de": "Wenn mein Kind krank ist, bleibe ich zu Hause.",
+   "ru": "Когда ребёнок болеет, я остаюсь дома.",
+   "uk": "Коли дитина хворіє, я залишаюся вдома.",
+   "cloze": "Wenn mein Kind krank ist, ___ ich zu Hause.",
+   "tags": [
+    "word_order_v2",
+    "verb_final"
+   ]
+  }
+ ]
+}

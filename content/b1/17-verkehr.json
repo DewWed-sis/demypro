@@ -1,0 +1,142 @@
+{
+ "level": "B1",
+ "topic": "verkehr",
+ "lesson": {
+  "id": "b1-verkehr-1",
+  "title_ru": "Транспорт (B1)",
+  "title_uk": "Транспорт (B1)",
+  "sort": 207
+ },
+ "items": [
+  {
+   "id": "b1-ver-01",
+   "de": "Wegen eines Streiks fallen heute viele Züge aus.",
+   "ru": "Из-за забастовки сегодня отменено много поездов.",
+   "uk": "Через страйк сьогодні скасовано багато потягів.",
+   "cloze": "Wegen eines ___ fallen heute viele Züge aus."
+  },
+  {
+   "id": "b1-ver-02",
+   "de": "Ich hätte gern eine Fahrkarte nach Hamburg, hin und zurück.",
+   "ru": "Мне билет до Гамбурга туда и обратно.",
+   "uk": "Мені квиток до Гамбурга туди й назад.",
+   "cloze": "Ich hätte gern eine Fahrkarte nach Hamburg, hin und ___.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ver-03",
+   "de": "Bei mehr als einer Stunde Verspätung bekommt man Geld zurück.",
+   "ru": "При опоздании больше часа возвращают деньги.",
+   "uk": "При запізненні понад годину повертають гроші.",
+   "cloze": "Bei mehr als einer Stunde ___ bekommt man Geld zurück."
+  },
+  {
+   "id": "b1-ver-04",
+   "de": "Ich bin geblitzt worden.",
+   "ru": "Меня сфотографировала камера скорости.",
+   "uk": "Мене сфотографувала камера швидкості.",
+   "cloze": "Ich bin ___ worden."
+  },
+  {
+   "id": "b1-ver-05",
+   "de": "Das Auto muss zum TÜV.",
+   "ru": "Машине нужно пройти техосмотр.",
+   "uk": "Авто має пройти техогляд.",
+   "cloze": "Das Auto muss zum ___."
+  },
+  {
+   "id": "b1-ver-06",
+   "de": "Ich hatte einen kleinen Unfall, zum Glück ist niemand verletzt.",
+   "ru": "У меня была небольшая авария, к счастью, никто не пострадал.",
+   "uk": "У мене була невелика аварія, на щастя, ніхто не постраждав.",
+   "cloze": "Ich hatte einen kleinen ___, zum Glück ist niemand verletzt."
+  },
+  {
+   "id": "b1-ver-07",
+   "de": "Wenn ich einen Führerschein hätte, würde ich mit dem Auto fahren.",
+   "ru": "Если бы у меня были права, я бы ездил(а) на машине.",
+   "uk": "Якби в мене були права, я б їздив(ла) машиною.",
+   "cloze": "Wenn ich einen Führerschein ___, würde ich mit dem Auto fahren.",
+   "tags": [
+    "konjunktiv"
+   ]
+  },
+  {
+   "id": "b1-ver-08",
+   "de": "Mein ausländischer Führerschein muss umgeschrieben werden.",
+   "ru": "Мои иностранные права нужно переоформить.",
+   "uk": "Мої іноземні права треба переоформити.",
+   "cloze": "Mein ausländischer Führerschein muss ___ werden."
+  },
+  {
+   "id": "b1-ver-09",
+   "de": "Ich fahre lieber mit dem Fahrrad, weil es umweltfreundlicher ist.",
+   "ru": "Я лучше езжу на велосипеде, потому что это экологичнее.",
+   "uk": "Я краще їжджу велосипедом, бо це екологічніше.",
+   "cloze": "Ich fahre lieber mit dem Fahrrad, weil es ___ ist.",
+   "tags": [
+    "verb_final"
+   ]
+  },
+  {
+   "id": "b1-ver-10",
+   "de": "Ohne gültigen Fahrschein zahlt man 60 Euro.",
+   "ru": "Без действительного билета платишь 60 евро.",
+   "uk": "Без дійсного квитка платиш 60 євро.",
+   "cloze": "Ohne ___ Fahrschein zahlt man 60 Euro.",
+   "tags": [
+    "adjective_ending"
+   ]
+  },
+  {
+   "id": "b1-ver-11",
+   "de": "Die Strecke ist wegen Bauarbeiten gesperrt.",
+   "ru": "Участок закрыт из-за строительных работ.",
+   "uk": "Ділянка закрита через будівельні роботи.",
+   "cloze": "Die Strecke ist wegen Bauarbeiten ___."
+  },
+  {
+   "id": "b1-ver-12",
+   "de": "Es gibt einen Schienenersatzverkehr mit Bussen.",
+   "ru": "Вместо поезда ходят автобусы.",
+   "uk": "Замість потяга курсують автобуси.",
+   "cloze": "Es gibt einen ___ mit Bussen."
+  },
+  {
+   "id": "b1-ver-13",
+   "de": "Wie lange brauchen Sie zur Arbeit?",
+   "ru": "Сколько вы добираетесь до работы?",
+   "uk": "Скільки ви добираєтеся до роботи?",
+   "cloze": "Wie lange ___ Sie zur Arbeit?"
+  },
+  {
+   "id": "b1-ver-14",
+   "de": "Ich pendle jeden Tag nach Köln.",
+   "ru": "Я каждый день езжу на работу в Кёльн.",
+   "uk": "Я щодня їжджу на роботу до Кельна.",
+   "cloze": "Ich ___ jeden Tag nach Köln."
+  },
+  {
+   "id": "b1-ver-15",
+   "de": "Bitte achten Sie auf Ihr Gepäck.",
+   "ru": "Пожалуйста, следите за своим багажом.",
+   "uk": "Будь ласка, стежте за своїм багажем.",
+   "cloze": "Bitte ___ Sie auf Ihr Gepäck.",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "b1-ver-16",
+   "de": "Ich habe mein Handy im Zug liegen lassen.",
+   "ru": "Я оставил(а) телефон в поезде.",
+   "uk": "Я залишив(ла) телефон у потязі.",
+   "cloze": "Ich habe mein Handy im Zug ___ lassen.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  }
+ ]
+}

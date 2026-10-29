@@ -1,0 +1,143 @@
+{
+ "level": "A2",
+ "topic": "verkehr",
+ "lesson": {
+  "id": "a2-verkehr-1",
+  "title_ru": "Транспорт (A2)",
+  "title_uk": "Транспорт (A2)",
+  "sort": 107
+ },
+ "items": [
+  {
+   "id": "a2-ver-01",
+   "de": "Wo kann ich ein Ticket kaufen?",
+   "ru": "Где можно купить билет?",
+   "uk": "Де можна купити квиток?",
+   "cloze": "Wo kann ich ein ___ kaufen?"
+  },
+  {
+   "id": "a2-ver-02",
+   "de": "Ich habe ein Deutschlandticket.",
+   "ru": "У меня Deutschlandticket.",
+   "uk": "У мене Deutschlandticket.",
+   "cloze": "Ich habe ein ___."
+  },
+  {
+   "id": "a2-ver-03",
+   "de": "Muss ich umsteigen?",
+   "ru": "Мне нужно пересаживаться?",
+   "uk": "Мені треба пересідати?",
+   "cloze": "Muss ich ___?",
+   "tags": [
+    "modal_verbs"
+   ]
+  },
+  {
+   "id": "a2-ver-04",
+   "de": "Der Zug hat zehn Minuten Verspätung.",
+   "ru": "Поезд опаздывает на десять минут.",
+   "uk": "Потяг запізнюється на десять хвилин.",
+   "cloze": "Der Zug hat zehn Minuten ___."
+  },
+  {
+   "id": "a2-ver-05",
+   "de": "Die S-Bahn fällt heute aus.",
+   "ru": "Электричка сегодня отменена.",
+   "uk": "Електричка сьогодні скасована.",
+   "cloze": "Die S-Bahn ___ heute aus."
+  },
+  {
+   "id": "a2-ver-06",
+   "de": "Von welchem Gleis fährt der Zug ab?",
+   "ru": "С какого пути отправляется поезд?",
+   "uk": "З якої колії відправляється потяг?",
+   "cloze": "Von welchem ___ fährt der Zug ab?",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ver-07",
+   "de": "Ich habe meinen Anschluss verpasst.",
+   "ru": "Я опоздал(а) на пересадку.",
+   "uk": "Я спізнився(лася) на пересадку.",
+   "cloze": "Ich habe meinen Anschluss ___.",
+   "tags": [
+    "tense_perfekt"
+   ]
+  },
+  {
+   "id": "a2-ver-08",
+   "de": "Fährt dieser Bus zum Hauptbahnhof?",
+   "ru": "Этот автобус едет до главного вокзала?",
+   "uk": "Цей автобус їде до головного вокзалу?",
+   "cloze": "Fährt dieser Bus ___ Hauptbahnhof?",
+   "tags": [
+    "preposition"
+   ]
+  },
+  {
+   "id": "a2-ver-09",
+   "de": "Steigen Sie an der nächsten Haltestelle aus.",
+   "ru": "Выходите на следующей остановке.",
+   "uk": "Виходьте на наступній зупинці.",
+   "cloze": "Steigen Sie an der nächsten ___ aus."
+  },
+  {
+   "id": "a2-ver-10",
+   "de": "Ich fahre mit dem Fahrrad zur Arbeit.",
+   "ru": "Я езжу на работу на велосипеде.",
+   "uk": "Я їжджу на роботу велосипедом.",
+   "cloze": "Ich fahre ___ dem Fahrrad zur Arbeit.",
+   "tags": [
+    "case_dativ"
+   ]
+  },
+  {
+   "id": "a2-ver-11",
+   "de": "Hier darf man nicht parken.",
+   "ru": "Здесь нельзя парковаться.",
+   "uk": "Тут не можна паркуватися.",
+   "cloze": "Hier darf man nicht ___.",
+   "tags": [
+    "modal_verbs",
+    "negation"
+   ]
+  },
+  {
+   "id": "a2-ver-12",
+   "de": "Ich mache gerade meinen Führerschein.",
+   "ru": "Я сейчас получаю права.",
+   "uk": "Я зараз отримую права.",
+   "cloze": "Ich mache gerade meinen ___."
+  },
+  {
+   "id": "a2-ver-13",
+   "de": "Wegen einer Baustelle gibt es Stau.",
+   "ru": "Из-за стройки пробка.",
+   "uk": "Через будівництво затор.",
+   "cloze": "___ einer Baustelle gibt es Stau."
+  },
+  {
+   "id": "a2-ver-14",
+   "de": "Fahrkarten bitte!",
+   "ru": "Ваши билеты, пожалуйста!",
+   "uk": "Ваші квитки, будь ласка!",
+   "cloze": "___ bitte!"
+  },
+  {
+   "id": "a2-ver-15",
+   "de": "Ist dieser Platz noch frei?",
+   "ru": "Это место свободно?",
+   "uk": "Це місце вільне?",
+   "cloze": "Ist dieser Platz noch ___?"
+  },
+  {
+   "id": "a2-ver-16",
+   "de": "Wie komme ich am besten zum Rathaus?",
+   "ru": "Как лучше добраться до ратуши?",
+   "uk": "Як найкраще дістатися до ратуші?",
+   "cloze": "Wie komme ich am ___ zum Rathaus?"
+  }
+ ]
+}
