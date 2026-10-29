@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-ok: #4ade80;      /* только «верно» */
+  --color-err: #ff7f6e;     /* только «ошибка» (коралловый) */
+  --color-der: #60a5fa;
+  --color-die: #f87171;
+  --color-das: #4ade80;
+}
+
+:root {
+  --bg: #120c2e;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: #f5f3ff;
+  min-height: 100dvh;
+}
+
+/* Aurora: 3 медленно плавающих размытых пятна */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(120% 80% at 50% 0%, #2a1a5e 0%, var(--bg) 60%);
+}
+.aurora i {
+  position: absolute;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  animation: drift 28s ease-in-out infinite alternate;
+}
+.aurora i:nth-child(1) { background: #7c3aed; top: -20vmax; left: -15vmax; }
+.aurora i:nth-child(2) { background: #c026d3; bottom: -25vmax; right: -20vmax; animation-duration: 34s; opacity: 0.3; }
+.aurora i:nth-child(3) { background: #4f46e5; top: 30%; left: 40%; width: 40vmax; height: 40vmax; animation-duration: 40s; opacity: 0.3; }
+
+@keyframes drift {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(8vmax, 6vmax) scale(1.15); }
+}
+
+/* Стекло */
+@utility glass {
+  background: rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgb(255 255 255 / 0.2);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.25), 0 8px 32px rgb(10 5 30 / 0.35);
+}
+
+/* Немецкий текст чуть крупнее русского */
+[lang="de"] { font-size: 1.08em; }
+
+/* Упрощённый режим: без blur и анимации фона */
+.simple .glass { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgb(40 30 80 / 0.92); }
+.simple .aurora i { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora i { animation: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+:focus-visible { outline: 2px solid #c4b5fd; outline-offset: 2px; }
