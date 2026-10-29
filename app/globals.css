@@ -97,3 +97,4 @@ body {
 }
 .light.simple .glass { background: rgb(255 255 255 / 0.95); }
 .light :focus-visible { outline-color: #6d28d9; }
+.light :is(input, textarea, select) { border-color: rgb(109 40 217 / 0.3); background: rgb(255 255 255 / 0.7); }
