@@ -14,7 +14,7 @@ const blockMeta: Record<Block["kind"], { key: Key; href?: (b: Block) => string }
   review: { key: "blockReview", href: (b) => `/learn/cards?mode=review&min=${b.minutes}` },
   new: { key: "blockNew", href: (b) => `/learn/cards?mode=new&min=${b.minutes}` },
   speak: { key: "blockSpeak", href: () => "/exam/sprechen?plan=1" },
-  write: { key: "blockWrite" },
+  write: { key: "blockWrite", href: () => "/exam/schreiben?plan=1" },
   lid: { key: "blockLid", href: () => "/lid/practice?plan=1" },
 };
 

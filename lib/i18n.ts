@@ -140,6 +140,17 @@ const dict = {
   examSchreiben: { ru: "Письмо или e-mail", uk: "Лист або e-mail" },
   examSprechen: { ru: "Говорение с AI-экзаменатором", uk: "Говоріння з AI-екзаменатором" },
   examMock: { ru: "Пробный экзамен раз в неделю", uk: "Пробний іспит раз на тиждень" },
+  schreiben: { ru: "Schreiben — письмо", uk: "Schreiben — лист" },
+  chooseTopic: { ru: "Выбери одну тему из двух (как на экзамене)", uk: "Обери одну тему з двох (як на іспиті)" },
+  otherPair: { ru: "Другие темы", uk: "Інші теми" },
+  writeAllPoints: { ru: "Раскрой все 4 пункта. Примерно 80 слов, 30 минут.", uk: "Розкрий усі 4 пункти. Приблизно 80 слів, 30 хвилин." },
+  insertTemplate: { ru: "Вставить шаблон", uk: "Вставити шаблон" },
+  words: { ru: "слов", uk: "слів" },
+  check: { ru: "Проверить", uk: "Перевірити" },
+  formell: { ru: "официально (Sie)", uk: "офіційно (Sie)" },
+  informell: { ru: "неофициально (du)", uk: "неофіційно (du)" },
+  writeMore: { ru: "Напиши хотя бы 20 слов.", uk: "Напиши хоча б 20 слів." },
+  newLetter: { ru: "Новое письмо", uk: "Новий лист" },
 } as const;
 
 export type Key = keyof typeof dict;
