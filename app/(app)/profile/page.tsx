@@ -6,6 +6,38 @@ import { GlassButton, GlassCard, GlassInput } from "@/components/ui";
 import { supabase } from "@/lib/supabase";
 import type { Lang } from "@/lib/i18n";
 
+// Ежедневное напоминание файлом .ics: работает в календаре iPhone/Mac/Android без push-сервера.
+function downloadIcs(time: string) {
+  const [h, m] = time.split(":");
+  const d = new Date();
+  const day = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+  const ics = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Deutsch DTZ//RU",
+    "BEGIN:VEVENT",
+    `UID:dtz-daily-${day}@deutsch-dtz`,
+    `DTSTAMP:${day}T000000Z`,
+    `DTSTART:${day}T${h}${m}00`,
+    "DURATION:PT35M",
+    "RRULE:FREQ=DAILY",
+    "SUMMARY:Deutsch: план дня 🇩🇪",
+    `URL:${location.origin}`,
+    "BEGIN:VALARM",
+    "TRIGGER:PT0M",
+    "ACTION:DISPLAY",
+    "DESCRIPTION:Время немецкого!",
+    "END:VALARM",
+    "END:VEVENT",
+    "END:VCALENDAR",
+  ].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+  a.download = "deutsch-dtz.ics";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
 export default function ProfilePage() {
   const { t, session, profile, settings, setSettings, updateProfile } = useApp();
   const [key, setKey] = useState(settings.groqKey);
@@ -14,6 +46,8 @@ export default function ProfilePage() {
   const [minutesDraft, setMinutes] = useState<number | null>(null);
   const minutes = minutesDraft ?? profile?.daily_minutes ?? 35;
   const [msg, setMsg] = useState("");
+  const [reminderDraft, setReminder] = useState<string | null>(null);
+  const reminder = reminderDraft ?? profile?.reminder_time?.slice(0, 5) ?? "19:00";
 
   async function setLang(lang: Lang) {
     setSettings({ lang });
@@ -70,7 +104,7 @@ export default function ProfilePage() {
 
         <div className="space-y-2">
           <label htmlFor="minutes" className="text-sm text-violet-200">
-            {t("dailyGoal")}: <b className="text-white">{minutes}</b>
+            {t("dailyGoal")}: <b className="text-violet-50">{minutes}</b>
           </label>
           <input
             id="minutes"
@@ -124,6 +158,34 @@ export default function ProfilePage() {
               <option key={m}>{m}</option>
             ))}
           </select>
+        </div>
+
+        <label className="flex items-center gap-3 text-sm">
+          <input
+            type="checkbox"
+            checked={settings.theme === "light"}
+            onChange={(e) => setSettings({ theme: e.target.checked ? "light" : "dark" })}
+            className="size-5 accent-violet-400"
+          />
+          {t("lightTheme")}
+        </label>
+
+        <div className="space-y-2">
+          <label htmlFor="reminder" className="text-sm text-violet-200">{t("reminder")}</label>
+          <div className="flex gap-2">
+            <GlassInput
+              id="reminder"
+              type="time"
+              value={reminder}
+              onChange={(e) => setReminder(e.target.value)}
+              onBlur={() => reminder && updateProfile({ reminder_time: reminder })}
+              className="w-36"
+            />
+            <GlassButton onClick={() => downloadIcs(reminder)} disabled={!reminder} className="text-sm">
+              📅 {t("addToCalendar")}
+            </GlassButton>
+          </div>
+          <p className="text-xs text-violet-300">{t("reminderHint")}</p>
         </div>
 
         <label className="flex items-center gap-3 text-sm">

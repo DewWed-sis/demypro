@@ -2,7 +2,7 @@
 
 import { supabase } from "./supabase";
 import { newCard } from "./srs";
-import type { Evaluation, ExtractedError } from "./ai/schemas";
+import type { ExtractedError } from "./ai/schemas";
 
 export type I18n = { de: string; ru: string; uk: string };
 export type ExamTask = {
@@ -67,5 +67,4 @@ export async function saveErrors(errors: ExtractedError[], attemptId: string | n
   }
 }
 
-export const totalScore = (e: Pick<Evaluation, "scores">) =>
-  (e.scores.task + e.scores.coherence + e.scores.grammar + e.scores.vocabulary) / 20;
+export { totalScore } from "./exam-score";

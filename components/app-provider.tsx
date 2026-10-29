@@ -7,9 +7,9 @@ import { supabase, type Profile } from "@/lib/supabase";
 import { t as tr, type Key, type Lang } from "@/lib/i18n";
 
 // Только на устройстве (localStorage): ключ Groq, модель, упрощённый режим.
-export type LocalSettings = { groqKey: string; groqModel: string; simple: boolean; lang: Lang };
+export type LocalSettings = { groqKey: string; groqModel: string; simple: boolean; lang: Lang; theme: "dark" | "light" };
 const LS_KEY = "dtz-settings";
-const defaults: LocalSettings = { groqKey: "", groqModel: "llama-3.3-70b-versatile", simple: false, lang: "ru" };
+const defaults: LocalSettings = { groqKey: "", groqModel: "llama-3.3-70b-versatile", simple: false, lang: "ru", theme: "dark" };
 
 function readLocal(): LocalSettings {
   try {
@@ -65,8 +65,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.classList.toggle("simple", settings.simple);
+    document.documentElement.classList.toggle("light", settings.theme === "light");
     document.documentElement.lang = settings.lang;
-  }, [settings.simple, settings.lang]);
+  }, [settings.simple, settings.lang, settings.theme]);
 
   const setSettings = useCallback((patch: Partial<LocalSettings>) => {
     setLocal((s) => {

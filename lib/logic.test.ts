@@ -139,3 +139,23 @@ describe("exam tasks", () => {
     }
   });
 });
+
+describe("ai evaluation schema", () => {
+  it("строгий JSON: баллы 0–5, неизвестный тип ошибки → other, мусор не ломает разбор", async () => {
+    const { evaluation, speakingEvaluation } = await import("./ai/schemas");
+    const { totalScore } = await import("./exam-score");
+    const ok = evaluation.parse({
+      points_covered: ["Grund"],
+      scores: { task: "4", coherence: 3, grammar: 9, vocabulary: -1 },
+      level_estimate: "B1",
+      corrected_text: "Ich komme morgen.",
+      corrections: [{ original: "Ich morgen komme", fixed: "Morgen komme ich", rule_ru: "V2", rule_uk: "V2" }],
+      errors: [{ type: "weird_type", example: "x" }],
+    });
+    expect(ok.scores).toEqual({ task: 4, coherence: 3, grammar: 0, vocabulary: 0 });
+    expect(ok.errors[0].type).toBe("other");
+    expect(totalScore(ok)).toBeCloseTo(7 / 20);
+    expect(speakingEvaluation.parse({ ...ok, next_question: 7 }).next_question).toBe("");
+    expect(evaluation.safeParse({ scores: "bad" }).success).toBe(false);
+  });
+});

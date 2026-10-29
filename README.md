@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deutsch DTZ — немецкий с нуля до B1
 
-## Getting Started
+PWA для подготовки к **DTZ** (Deutsch-Test für Zuwanderer) и тесту **Leben in Deutschland**. Объяснения на русском и украинском.
 
-First, run the development server:
+Сайт: https://www.print-3d-ten.site (также https://demypro.vercel.app)
+
+## Что внутри
+
+- **План дня** собирается сам: повторение FSRS → новые фразы → говорение → письмо или LiD.
+- **Карточки**: 728 фраз A1–B1 по 12 темам DTZ, с переводом ru/uk, пропусками и озвучкой Piper; цветные артикли der/die/das.
+- **Sprechen**: AI-экзаменатор для трёх частей DTZ (Whisper → LLM → голос браузера), оценка по критериям, shadowing с подсветкой расхождений.
+- **Schreiben**: выбор темы из двух, 4 пункта, шаблон, таймер 30 мин, AI-проверка с исправленной версией и правилами, банк клише.
+- **Hören / Lesen**: 2 полных варианта в формате g.a.s.t. (20 + 25 заданий), таймеры, тренинг ловушек, диалоги разными голосами.
+- **LiD**: официальный каталог BAMF (300 + 10 NRW), перевод и объяснения, режим ошибок, пробный тест 33/60 мин.
+- **Тетрадь ошибок** → личные карточки и грамматика по типу ошибки; входные тесты уровней; пробный DTZ раз в неделю; шкала готовности.
+- PWA: офлайн для карточек и LiD (ответы синхронизируются при появлении сети), светлая тема, упрощённый режим, напоминание через календарь (.ics).
+
+## Запуск
 
 ```bash
+npm install
+cp .env.example .env.local   # URL и publishable key проекта Supabase
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Команда | Что делает |
+| --- | --- |
+| `npm run build` / `npm run lint` / `npm test` | сборка, линтер, Vitest |
+| `npm run seed` | генерирует `supabase/seed.sql` из `/content` (выполнить в SQL Editor) |
+| `npm run tts` | озвучка фраз и диалогов Hören через Piper (`uvx`, локально) |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Миграции — `supabase/migrations/*.sql`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## AI и ключи
 
-## Learn More
+AI работает через Groq по ключу пользователя (BYOK): ключ вводится в Профиле, хранится только в `localStorage` и уходит в заголовке `x-groq-key` в роуты `/api/ai/*`. Роуты ключ не сохраняют и не логируют; в коде и env ключей нет. Без ключа работают карточки, LiD, Hören/Lesen, тесты и аудио.
 
-To learn more about Next.js, take a look at the following resources:
+Промпты — `lib/ai/prompts` (версия `PROMPT_VERSION`), ответы проверяются Zod (`lib/ai/schemas.ts`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Стек
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 16 (App Router, TypeScript strict), Tailwind 4, Motion, Supabase (Auth, Postgres, RLS), ts-fsrs, Zod, Serwist, Vitest, Vercel.

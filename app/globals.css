@@ -69,3 +69,31 @@ body {
 }
 
 :focus-visible { outline: 2px solid #c4b5fd; outline-offset: 2px; }
+
+/* Светлая тема (опция в Профиле): светлый фон, тёмный текст. Шкала violet-50…300 используется для текста —
+   в светлой теме переворачиваем её в тёмные оттенки, 400+ (кнопки, акценты) остаются. */
+.light {
+  --bg: #f4f0ff;
+  color-scheme: light;
+  --color-violet-50: #1e1033;
+  --color-violet-100: #2e1065;
+  --color-violet-200: #4c1d95;
+  --color-violet-300: #6d28d9;
+  --color-fuchsia-200: #86198f;
+  --color-fuchsia-300: #a21caf;
+  --color-ok: #15803d;
+  --color-err: #c2410c;
+  --color-der: #1d4ed8;
+  --color-die: #b91c1c;
+  --color-das: #15803d;
+}
+.light body { color: #1e1033; }
+.light .aurora { background: radial-gradient(120% 80% at 50% 0%, #e9ddff 0%, var(--bg) 60%); }
+.light .aurora i { opacity: 0.18; }
+.light .glass {
+  background: rgb(255 255 255 / 0.6);
+  border-color: rgb(255 255 255 / 0.9);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.9), 0 8px 32px rgb(76 29 149 / 0.12);
+}
+.light.simple .glass { background: rgb(255 255 255 / 0.95); }
+.light :focus-visible { outline-color: #6d28d9; }

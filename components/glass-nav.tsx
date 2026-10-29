@@ -26,7 +26,7 @@ export function GlassNav() {
             href={it.href}
             aria-current={active ? "page" : undefined}
             className={`flex min-w-14 flex-col items-center gap-0.5 rounded-2xl px-2 py-1.5 text-[11px] transition ${
-              active ? "bg-white/15 text-white" : "text-violet-200 hover:text-white"
+              active ? "bg-white/15 text-violet-50" : "text-violet-200 hover:text-violet-50"
             }`}
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
