@@ -185,3 +185,54 @@ describe("groq", () => {
     }
   });
 });
+
+describe("games", async () => {
+  const { buildLesson, pictureItems, same } = await import("./games");
+  const item = (id: string, de: string, ru: string, extra: object = {}) =>
+    ({ id, kind: "phrase", de, ru, uk: ru, cloze: null, example_de: null, example_ru: null, example_uk: null, article: null, plural: null, audio_url: null, lesson_id: null, ...extra }) as const;
+  const pool = [
+    item("1", "Ich wohne in Köln.", "Я живу в Кёльне.", { cloze: "Ich wohne ___ Köln." }),
+    item("2", "Wie spät ist es?", "Который час?", { cloze: "Wie ___ ist es?" }),
+    item("3", "Ich habe einen Termin.", "У меня назначена встреча.", { cloze: "Ich habe einen ___." }),
+    item("4", "Der Bus kommt gleich.", "Автобус скоро придёт.", { cloze: "Der Bus ___ gleich." }),
+    item("5", "die Wohnung", "квартира", { kind: "word", article: "die" }),
+    item("6", "Kannst du mir helfen?", "Можешь мне помочь?"),
+  ];
+
+  it("урок: 12 заданий, верный ответ всегда среди вариантов", () => {
+    const tasks = buildLesson(pool);
+    expect(tasks).toHaveLength(12);
+    for (const t of tasks) {
+      if ("options" in t && t.kind !== "cloze") expect(t.options.some((o) => o.id === t.item.id)).toBe(true);
+      if (t.kind === "cloze") expect(t.options).toContain(t.answer);
+      if (t.kind === "build") for (const w of t.item.de.split(" ")) expect(t.tiles).toContain(w);
+      if (t.kind === "article") expect(`${t.article} ${t.noun}`).toBe(t.item.de);
+    }
+    expect(new Set(tasks.map((t) => t.kind)).size).toBeGreaterThanOrEqual(5);
+  });
+
+  it("картинки: у каждого существительного артикль и эмодзи", () => {
+    for (const p of pictureItems) {
+      expect(p.de).toMatch(/^(der|die|das) \S/);
+      expect(p.emoji).toBeTruthy();
+    }
+    expect(new Set(pictureItems.map((p) => p.de)).size).toBe(pictureItems.length);
+  });
+
+  it("сравнение фраз без регистра, пунктуации и ß", () => {
+    expect(same("ich wohne in köln", "Ich wohne in Köln.")).toBe(true);
+    expect(same("Strasse", "Straße")).toBe(true);
+    expect(same("Ich in Köln wohne", "Ich wohne in Köln.")).toBe(false);
+  });
+});
+
+describe("dictionary schema", async () => {
+  const { dictionaryEntry } = await import("./ai/schemas");
+  it("мягко чинит неполный ответ модели", () => {
+    const r = dictionaryEntry.parse({ lemma: "Termin", article: "der", pos: "Nomen", examples: [{ de: "Ich habe einen Termin." }] });
+    expect(r.pos).toBe("other");
+    expect(r.found).toBe(true);
+    expect(r.examples[0].ru).toBe("");
+    expect(dictionaryEntry.safeParse({ lemma: "" }).success).toBe(false);
+  });
+});

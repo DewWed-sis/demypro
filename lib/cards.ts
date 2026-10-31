@@ -21,9 +21,10 @@ export type Item = {
   lesson_id: string | null;
 };
 
-export type QueueEntry = { item: Item; cardId: string | null; fsrs: StoredCard; type?: "content" | "error" };
+export type CardType = "content" | "error" | "word";
+export type QueueEntry = { item: Item; cardId: string | null; fsrs: StoredCard; type?: CardType };
 
-const REVIEW_TYPES = ["content", "error"];
+const REVIEW_TYPES = ["content", "error", "word"];
 
 const ITEM_COLS = "id, kind, de, ru, uk, cloze, example_de, example_ru, example_uk, article, plural, audio_url, lesson_id";
 const today = () => ymd();
@@ -41,6 +42,17 @@ async function errorItems(ids: string[]) {
       } as Item,
     ]),
   );
+}
+
+const WORD_COLS = "id, de, ru, uk, article, plural, example_de, example_ru, example_uk";
+const wordItem = (w: Record<string, unknown>) =>
+  ({ ...w, kind: "word", cloze: null, audio_url: null, lesson_id: null }) as Item;
+
+/** Слова из личного словаря. */
+async function wordItems(ids: string[]) {
+  if (!ids.length) return new Map<string, Item>();
+  const { data } = await supabase.from("user_words").select(WORD_COLS).in("id", ids);
+  return new Map((data ?? []).map((w) => [w.id as string, wordItem(w)]));
 }
 
 async function itemsByIds(ids: string[]) {
@@ -70,9 +82,11 @@ export async function loadDue(limit = 60): Promise<QueueEntry[]> {
   if (error) throw error;
   const items = await itemsByIds(data.filter((c) => c.item_type === "content").map((c) => c.item_id));
   const errors = await errorItems(data.filter((c) => c.item_type === "error").map((c) => c.item_id));
+  const own = await wordItems(data.filter((c) => c.item_type === "word").map((c) => c.item_id));
+  const maps: Record<string, Map<string, Item>> = { content: items, error: errors, word: own };
   return data.flatMap((c) => {
-    const item = c.item_type === "error" ? errors.get(c.item_id) : items.get(c.item_id);
-    return item ? [{ item, cardId: c.id as string, fsrs: c.fsrs as StoredCard, type: c.item_type as "content" | "error" }] : [];
+    const item = maps[c.item_type].get(c.item_id);
+    return item ? [{ item, cardId: c.id as string, fsrs: c.fsrs as StoredCard, type: c.item_type as CardType }] : [];
   });
 }
 
@@ -149,4 +163,64 @@ export async function shadowingItems(limit: number): Promise<Item[]> {
   const { data, error } = await q;
   if (error) throw error;
   return (data as Item[]).sort(() => Math.random() - 0.5).slice(0, limit);
+}
+
+const LEVELS = ["A1", "A2", "B1"] as const;
+
+/** Материал для мини-игр: фразы курса до уровня пользователя + личный словарь. */
+export async function gamePool(level: (typeof LEVELS)[number]): Promise<(Item & { src: "content" | "word" })[]> {
+  const [{ data, error }, { data: own }] = await Promise.all([
+    supabase.from("content_items").select(ITEM_COLS).in("kind", ["phrase", "word"]).in("level_id", LEVELS.slice(0, LEVELS.indexOf(level) + 1)).limit(1000),
+    supabase.from("user_words").select(WORD_COLS).limit(300),
+  ]);
+  if (error) throw error;
+  return [...(data as Item[]).map((i) => ({ ...i, src: "content" as const })), ...(own ?? []).map((w) => ({ ...wordItem(w), src: "word" as const }))];
+}
+
+// Словарь
+export type DictEntry = {
+  found: boolean; lemma: string; pos: string; article: "der" | "die" | "das" | null; plural: string | null; forms: string;
+  ru: string; uk: string; level: string; grammar_ru: string; grammar_uk: string; examples: { de: string; ru: string; uk: string }[];
+};
+export type Word = Item & { data: DictEntry | null };
+
+const clean = (q: string) => q.replace(/[,()*%\\"]/g, " ").trim();
+
+/** Поиск по фразам курса и своему словарю (работает без ключа). */
+export async function searchLocal(q: string) {
+  const s = clean(q);
+  if (!s) return [];
+  const or = `de.ilike.%${s}%,ru.ilike.%${s}%,uk.ilike.%${s}%`;
+  const { data } = await supabase.from("content_items").select(ITEM_COLS).neq("kind", "letter").or(or).order("sort").limit(8);
+  return (data ?? []) as Item[];
+}
+
+export async function myWords(): Promise<Word[]> {
+  const { data, error } = await supabase.from("user_words").select(`${WORD_COLS}, data`).order("created_at", { ascending: false });
+  if (error) throw error;
+  return data.map((w) => ({ ...wordItem(w), data: w.data as DictEntry | null }));
+}
+
+/** Сохранить слово в свой словарь и сразу поставить карточку FSRS в повторение. */
+export async function saveWord(e: DictEntry) {
+  const ex = e.examples[0];
+  const { data, error } = await supabase
+    .from("user_words")
+    .upsert(
+      { de: e.article ? `${e.article} ${e.lemma}` : e.lemma, ru: e.ru, uk: e.uk, article: e.article, plural: e.plural,
+        example_de: ex?.de ?? null, example_ru: ex?.ru ?? null, example_uk: ex?.uk ?? null, data: e },
+      { onConflict: "user_id,de" },
+    )
+    .select("id")
+    .single();
+  if (error) throw error;
+  const card = newCard();
+  await supabase.from("user_cards").upsert({ item_type: "word", item_id: data.id, fsrs: card, due: card.due }, { onConflict: "user_id,item_type,item_id", ignoreDuplicates: true });
+  return data.id as string;
+}
+
+export async function deleteWord(id: string) {
+  await supabase.from("user_cards").delete().eq("item_type", "word").eq("item_id", id);
+  const { error } = await supabase.from("user_words").delete().eq("id", id);
+  if (error) throw error;
 }

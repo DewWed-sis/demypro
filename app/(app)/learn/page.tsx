@@ -43,6 +43,11 @@ export default function LearnPage() {
         <span aria-hidden>→</span>
       </Link>
       <div className="grid grid-cols-2 gap-3">
+        <Link href="/learn/games" className={`${row} col-span-2 bg-gradient-to-br from-violet-500/30 to-fuchsia-500/30`}>
+          <span><span className="block font-medium">🎮 {t("games")}</span><span className="text-sm text-violet-200">{t("gamesHint")}</span></span>
+          <span aria-hidden>→</span>
+        </Link>
+        <Link href="/learn/dictionary" className={`${row} col-span-2`}><span>📖 {t("dictionary")}</span><span className="text-sm text-violet-200">{t("dictSearch")} →</span></Link>
         <Link href="/learn/shadowing" className={row}><span>{t("shadowing").split(":")[0]}</span><span aria-hidden>🎙</span></Link>
         <Link href="/learn/errors" className={row}><span>{t("errorNotebook")}</span><span aria-hidden>📒</span></Link>
         <Link href="/learn/grammar" className={row}><span>{t("grammar")}</span><span aria-hidden>📐</span></Link>

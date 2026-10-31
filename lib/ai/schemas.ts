@@ -71,3 +71,20 @@ export const chatInput = z.object({
 export const speakingInput = z.object({ model, level, part: z.number().int().min(1).max(3), task: text(1500), transcript: text(8000) });
 export const writingInput = z.object({ model, level, task: text(1500), points: z.array(text(300)).min(1).max(6), text: text(5000) });
 export const extractInput = z.object({ model, text: text(8000), corrections: z.array(correction).max(40).default([]) });
+
+export const dictionaryInput = z.object({ model, query: text(80) });
+const str = z.string().catch("");
+export const dictionaryEntry = z.object({
+  found: z.boolean().catch(true),
+  lemma: z.string().min(1),
+  pos: z.enum(["noun", "verb", "adjective", "adverb", "preposition", "phrase", "other"]).catch("other"),
+  article: z.enum(["der", "die", "das"]).nullable().catch(null),
+  plural: z.string().nullable().catch(null),
+  forms: str,
+  ru: str,
+  uk: str,
+  level: z.enum(["A1", "A2", "B1", "B2", "C1"]).catch("B1"),
+  grammar_ru: str,
+  grammar_uk: str,
+  examples: z.array(z.object({ de: z.string(), ru: str, uk: str })).max(5).catch([]),
+});

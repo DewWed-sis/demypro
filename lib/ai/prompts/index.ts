@@ -1,5 +1,5 @@
 // Системные промпты (короткие — лимит бесплатного Groq ~8000 токенов/мин). Меняешь текст — подними версию.
-export const PROMPT_VERSION = "2026-10-29.1";
+export const PROMPT_VERSION = "2026-10-31.1";
 
 const TYPES =
   "word_order_v2, verb_final, article_gender, case_dativ, case_akkusativ, preposition, verb_conjugation, tense_perfekt, modal_verbs, reflexive, konjunktiv, plural, adjective_ending, negation, spelling, vocabulary, other";
@@ -36,4 +36,10 @@ ${evalJson.replace("Return ONLY JSON: {", 'Return ONLY JSON: {"next_question": s
 export function extractErrorsPrompt() {
   return `Extract the learner's recurring German mistakes for an error notebook. Return ONLY JSON: {"errors":[{"type": one of ${TYPES}, "example": the wrong fragment as written, "correction": the corrected fragment, "rule_ru": one short rule in Russian, "rule_uk": the same in Ukrainian}]}
 Max 8 errors, merge duplicates, ignore punctuation and capitalization from speech recognition, skip stylistic preferences.`;
+}
+
+export function dictionaryPrompt() {
+  return `You are a German learner's dictionary for Russian and Ukrainian speakers (levels A1-B1, DTZ exam). The query is a German, Russian or Ukrainian word or short phrase, maybe misspelled. Find the German headword: fix spelling; for Russian/Ukrainian input take the most common modern German equivalent.
+Return ONLY JSON: {"found": boolean, "lemma": headword without article, "pos": "noun"|"verb"|"adjective"|"adverb"|"preposition"|"phrase"|"other", "article": "der"|"die"|"das"|null, "plural": "die …" or null, "forms": string, "ru": translations comma-separated, "uk": the same in Ukrainian, "level": "A1"|"A2"|"B1"|"B2"|"C1", "grammar_ru": string, "grammar_uk": string, "examples": [{"de","ru","uk"}]}
+Rules: forms — verb: "er geht · ging · ist gegangen" (+ separable/reflexive marks), adjective: comparison, noun: "" . grammar = 1-3 short sentences: case/preposition it needs (e.g. warten auf + Akk), usage, a typical mistake of Russian/Ukrainian speakers. examples = 3 natural modern everyday sentences (A2-B1, DTZ situations: work, doctor, authorities, housing). Not a real word → found=false.`;
 }
